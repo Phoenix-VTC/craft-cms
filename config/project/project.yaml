@@ -1,0 +1,22 @@
+dateModified: 1628357362
+email:
+  fromEmail: me@diegor.nl
+  fromName: Phoenix
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0a9ef065-97f8-4583-b4a1-5a8e4d790203: Phoenix # Phoenix
+    38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
+    ebc67018-3219-40f0-b490-cbad36b6f924: Phoenix # Phoenix
+system:
+  edition: solo
+  live: true
+  name: Phoenix
+  schemaVersion: 3.7.7
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

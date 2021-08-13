@@ -1,0 +1,19 @@
+columnSuffix: qvhgrtdw
+contentColumnType: text
+fieldGroup: d81fe9c4-26c1-4f72-8c78-89894a2ae2f4 # News Post Fields
+handle: authorName
+instructions: ''
+name: 'Author Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "postcss resources/css/styles.css -o web/assets/css/styles.css",
+    "watch": "postcss resources/css/styles.css -o web/assets/css/styles.css --watch -d ./templates"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
+}

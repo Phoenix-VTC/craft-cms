@@ -1,13 +1,35 @@
-dateModified: 1628357362
+dateModified: 1628363012
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0a9bf03d-0f29-4dd6-83c6-03d236e25e91: 'Post Content' # Post Content
     0a9ef065-97f8-4583-b4a1-5a8e4d790203: Phoenix # Phoenix
+    0bddbef9-ed48-48d3-8400-ae8d91152a64: News # News
+    1b8d609a-4d46-4b14-a53e-b08fd8c89e5a: News # News
+    1e13d2f1-5244-411c-b082-a7ed076b9317: Text # Text
+    2f77ede5-2b7e-42c5-814c-34eed8199a98: 'Author Image' # Author Image
+    3e6987f6-ab76-42a4-85fe-a56f9aebbc91: 'Author Name' # Author Name
+    4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
+    5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
+    6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
     38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
+    79a4a62f-a360-4b4b-acf3-4c2a7028f9cb: Text # Text
+    611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
+    3238e03c-bb36-4104-99b4-49ba379e23ca: 'Global Fields' # Global Fields
+    707026a3-1953-4b64-a6fb-f842bdfafde7: News # News
+    c2b59848-98ff-4771-80c2-63824451dc81: 'Site Information' # Site Information
+    d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'News Post Fields' # News Post Fields
     ebc67018-3219-40f0-b490-cbad36b6f924: Phoenix # Phoenix
+    f2cf9586-f81f-404f-b8e6-57b9fe1d530d: 'Post Categories' # Post Categories
+    f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true

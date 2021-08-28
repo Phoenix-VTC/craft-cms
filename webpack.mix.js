@@ -3,6 +3,8 @@ const mix = require("laravel-mix");
 const tailwindcss = require("tailwindcss");
 require("laravel-mix-versionhash");
 
+mix.disableSuccessNotifications();
+
 mix.js(["resources/js/app.js"], "web/assets/js/app.js").extract();
 
 mix

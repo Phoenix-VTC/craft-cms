@@ -1,4 +1,4 @@
-dateModified: 1628363012
+dateModified: 1630161338
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -26,6 +26,10 @@ meta:
     f2cf9586-f81f-404f-b8e6-57b9fe1d530d: 'Post Categories' # Post Categories
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
 plugins:
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true

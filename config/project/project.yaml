@@ -1,4 +1,4 @@
-dateModified: 1630161338
+dateModified: 1630168461
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -14,14 +14,19 @@ meta:
     3e6987f6-ab76-42a4-85fe-a56f9aebbc91: 'Author Name' # Author Name
     4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
     5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
+    6a47a1ab-b90e-44c5-85bd-7cd2418f1474: 'Timeline Fields' # Timeline Fields
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
+    013adfa4-03a2-4c3c-be4e-d32f5e058c6e: Default # Default
     38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
     79a4a62f-a360-4b4b-acf3-4c2a7028f9cb: Text # Text
+    515e28a4-d6fa-41c6-86a7-f6da2f446770: Timeline # Timeline
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
     3238e03c-bb36-4104-99b4-49ba379e23ca: 'Global Fields' # Global Fields
     707026a3-1953-4b64-a6fb-f842bdfafde7: News # News
+    af8f7d0b-2b4c-4f80-8851-dff30d069306: Date # Date
     c2b59848-98ff-4771-80c2-63824451dc81: 'Site Information' # Site Information
     d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'News Post Fields' # News Post Fields
+    e01166b9-8228-41b5-a800-350a24eab09c: Description # Description
     ebc67018-3219-40f0-b490-cbad36b6f924: Phoenix # Phoenix
     f2cf9586-f81f-404f-b8e6-57b9fe1d530d: 'Post Categories' # Post Categories
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description

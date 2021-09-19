@@ -13,7 +13,11 @@ mix
     .options({
         processCssUrls: false,
         postCss: [tailwindcss("./tailwind.config.js")]
-    });
+    })
+    .copy(
+        'node_modules/@fortawesome/fontawesome-pro/webfonts',
+        'web/assets/webfonts'
+    );
 
 // Run BrowserSync Locally, off by default
 if (!mix.inProduction()) {

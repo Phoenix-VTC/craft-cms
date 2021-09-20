@@ -1,4 +1,4 @@
-dateModified: 1630168461
+dateModified: 1632098205
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -39,11 +39,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  redirect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.5
 system:
   edition: solo
   live: true
   name: Phoenix
-  schemaVersion: 3.7.7
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

@@ -1,0 +1,45 @@
+fieldLayouts:
+  6340b0c1-f6cb-435b-b384-cc43968371d6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a188b6b7-e2cc-4ded-863e-b4cf8007ea57 # Privacy Policy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Privacy Policy'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 95971943-f483-45a2-9c05-c74ea1ef6475 # Terms and Conditions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Terms and Conditions'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: aecaf734-f36e-4662-bb30-795eaa9300ed # Cookie Policy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Cookie Policy'
+        sortOrder: 3
+handle: legal
+name: Legal
+sortOrder: 3

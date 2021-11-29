@@ -11,7 +11,7 @@
     {% embed '_partials/post/content.twig' with {'rectangles': false} %}
         {% block content %}
             <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                {{ typogrify(siteInformation.privacyPolicy) }}
+                {{ typogrify(legal.privacyPolicy) }}
             </div>
         {% endblock %}
     {% endembed %}

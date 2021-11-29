@@ -17,28 +17,6 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 9413c31d-3095-4413-a3a9-7aab05f22886 # Community Rules
-            instructions: ''
-            label: ''
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 917f5627-3dc6-423b-aa1d-d3e9d2553add # Member Rules
-            instructions: ''
-            label: ''
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Rules
-        sortOrder: 2
-      -
-        elements:
-          -
             fieldUid: a188b6b7-e2cc-4ded-863e-b4cf8007ea57 # Privacy Policy
             instructions: ''
             label: ''
@@ -66,7 +44,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: Legal
-        sortOrder: 3
+        sortOrder: 2
 handle: siteInformation
 name: 'Site Information'
 sortOrder: 1

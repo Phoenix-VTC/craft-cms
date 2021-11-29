@@ -11,7 +11,7 @@
     {% embed '_partials/post/content.twig' with {'rectangles': false} %}
         {% block content %}
             <div class="space-y-16">
-                {% if siteInformation.communityRules is not null %}
+                {% if ruleset.communityRules is not null %}
                     <div>
                         <h1>
                             <span class="block text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Community Rules</span>
@@ -19,12 +19,12 @@
                         </h1>
 
                         <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                            {{ typogrify(siteInformation.communityRules) }}
+                            {{ typogrify(ruleset.communityRules) }}
                         </div>
                     </div>
                 {% endif %}
 
-                {% if siteInformation.memberRules is not null %}
+                {% if ruleset.memberRules is not null %}
                     <div>
                         <h1>
                             <span class="block text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Member Rules</span>
@@ -32,7 +32,7 @@
                         </h1>
 
                         <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                            {{ typogrify(siteInformation.memberRules) }}
+                            {{ typogrify(ruleset.memberRules) }}
                         </div>
                     </div>
                 {% endif %}

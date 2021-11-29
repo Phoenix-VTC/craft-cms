@@ -1,17 +1,8 @@
 fieldLayouts:
-  2e7169e9-ba6c-4e50-a5d0-66a7143c2228:
+  c4c95f38-43ae-4c2a-a1ae-cbeee420494e:
     tabs:
       -
         elements:
-          -
-            fieldUid: af8f7d0b-2b4c-4f80-8851-dff30d069306 # Date
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -36,7 +27,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e01166b9-8228-41b5-a800-350a24eab09c # Description
+            fieldUid: 18e13e63-45a0-48c2-a5ae-2dfb7c27424f # Logo
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 81b6781d-4224-4093-a577-480f15545861 # Slogan
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ea97fd7b-0a78-47d9-b148-9ef9056d44a0 # Website
             instructions: ''
             label: ''
             required: '1'
@@ -46,11 +55,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: default
-hasTitleField: false
-name: Default
-section: 515e28a4-d6fa-41c6-86a7-f6da2f446770 # Timeline
+handle: partners
+hasTitleField: true
+name: Partners
+section: 231de198-3683-4015-b299-f40a845715bd # Partners
 sortOrder: 1
-titleFormat: '{date|timestamp}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

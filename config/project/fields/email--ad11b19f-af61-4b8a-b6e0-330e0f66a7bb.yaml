@@ -1,0 +1,12 @@
+columnSuffix: biinazur
+contentColumnType: string
+fieldGroup: 7386afed-ad3a-4215-9779-22c0947e4b3e # Team Member Fields
+handle: email
+instructions: ''
+name: Email
+searchable: false
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

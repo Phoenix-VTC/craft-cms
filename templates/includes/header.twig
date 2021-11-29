@@ -1,0 +1,45 @@
+{% set profilePictureOptions = {
+    mode: 'crop',
+    width: 24,
+    height: 24,
+    quality: 90
+} %}
+
+<div class="bg-gray-800" id="header">
+    <div class="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-base font-semibold text-orange-600 tracking-wide uppercase">{{ tag ?? '' }}</h2>
+            <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">{{ title }}</p>
+            <p class="max-w-xl mt-5 mx-auto text-xl text-gray-400">{{ description ?? '' }}</p>
+
+            {% if article ?? false %}
+                <div class="flex flex-row justify-center space-x-8 text-white font-medium">
+                    <div>
+                        {% for category in entry.postCategories %}
+                            <span class="inline-flex items-center px-3 py-0.5 rounded text-sm bg-orange-600 text-white">
+                                {{ category }}
+                            </span>
+                        {% endfor %}
+                    </div>
+                    <div>
+                    <span>
+                        {{ entry.postDate|date('F j, Y') }}
+                    </span>
+                    </div>
+                    <div class="flex flex-row">
+                        {% set authorProfilePicture = entry.authorUser.one().profilePicture.one() %}
+                        <img class="h-6 w-6 rounded-full"
+                             src="{{ authorProfilePicture.getUrl(profilePictureOptions) }}"
+                             alt="{{ entry.authorUser.one().title }}'s profile picture">
+                        <span class="ml-2">{{ entry.authorUser.one().title }}</span>
+                    </div>
+                    <div>
+                    <span>
+                        {{ readTime(entry.postContent.all(), false) }} read
+                    </span>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+<div class="bg-gray-50" x-data="{ open: false }">
+    <div class="relative overflow-hidden">
+        <div class="absolute inset-y-0 h-full w-full" aria-hidden="true">
+            <div class="relative h-full">
+                <svg class="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full"
+                     width="404" height="784" fill="none" viewBox="0 0 404 784">
+                    <defs>
+                        <pattern id="e229dbec-10e9-49ee-8ec3-0286ca089edf" x="0" y="0" width="20" height="20"
+                                 patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="784" fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)"/>
+                </svg>
+                <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4"
+                     width="404" height="784" fill="none" viewBox="0 0 404 784">
+                    <defs>
+                        <pattern id="d2a68204-c383-44b1-b99f-42ccff4e5365" x="0" y="0" width="20" height="20"
+                                 patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="784" fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="relative pt-6 pb-16 sm:pb-24">
+            <div>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <nav class="relative flex items-center justify-between sm:h-10 md:justify-center"
+                         aria-label="Global">
+                        <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+                            <div class="flex items-center justify-between w-full md:w-auto">
+                                <a href="{{ siteUrl }}">
+                                    <span class="sr-only">PhoenixVTC</span>
+                                    <img class="h-12 w-auto sm:h-14" src="/assets/images/branding/logo.svg"
+                                         alt="Phoenix Logo">
+                                </a>
+                                <div class="-mr-2 flex items-center md:hidden">
+                                    <button type="button" @click="open = true"
+                                            class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                            aria-expanded="false">
+                                        <span class="sr-only">Open main menu</span>
+                                        <!-- Heroicon name: outline/menu -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M4 6h16M4 12h16M4 18h16"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex md:space-x-10">
+                            <a href="{{ siteUrl }}" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+
+                            <div class="text-gray-500 hover:text-gray-900">
+                                {% include '_partials/navbar/components/about-us-dropdown.twig' %}
+                            </div>
+
+                            <a href="/news" class="font-medium text-gray-500 hover:text-gray-900">News</a>
+
+                            <a href="/blog" class="font-medium text-gray-500 hover:text-gray-900">Blog</a>
+
+                            <a href="/contact" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
+                        </div>
+                        <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+                            <span class="inline-flex rounded-md shadow">
+                                <a href="/apply"
+                                   class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:text-orange-500">
+                                    Apply Now
+                                </a>
+                            </span>
+                        </div>
+                    </nav>
+                </div>
+
+                {% embed '_partials/navbar/components/mobile-dropdown.twig' %}
+                {% endembed %}
+            </div>
+
+            <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
+                <div class="text-center">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block">PhoenixVTC</span>
+                        <span class="block text-orange-600">Where your dreams take flight</span>
+                    </h1>
+                    <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                        Phoenix is a Virtual Trucking Company for <span class="text-orange-600 font-semibold">Euro Truck Simulator 2</span>
+                        and <span class="text-orange-600 font-semibold">American Truck Simulator</span>,
+                        founded by experienced members of the community.
+                        We believe in <span class="text-orange-600 font-semibold">forward-thinking</span>, and
+                        strive to
+                        put our <span class="text-orange-600 font-semibold">members first</span>!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pb-16">
+            <div class="absolute inset-0 flex flex-col" aria-hidden="true">
+                <div class="flex-1"></div>
+                <div class="flex-1 w-full bg-gray-900 border border-b-2 border-gray-800 border-opacity-75"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <img class="relative rounded-lg shadow-lg"
+                     src="/assets/images/game-media/phoenix_truck_and_trailer.png"
+                     alt="Phoenix truck and trailer">
+            </div>
+        </div>
+    </div>
+</div>

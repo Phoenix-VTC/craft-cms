@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  f7a92616-a221-4863-8a8d-c89c323a733d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: teamPositions
+name: 'Team Positions'
+siteSettings:
+  0a9ef065-97f8-4583-b4a1-5a8e4d790203: # Phoenix
+    hasUrls: true
+    template: null
+    uriFormat: 'team-positions/{slug}'
+structure:
+  maxLevels: 1
+  uid: 774c77b6-451c-49ab-ac3b-07a3710c769b

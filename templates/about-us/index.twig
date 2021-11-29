@@ -1,0 +1,198 @@
+{% extends "_layout.twig" %}
+
+{% block scripts_top %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "PhoenixVTC",
+            "alternateName": "Phoenix",
+            "description": "Phoenix is a Virtual Trucking Company for Euro Truck Simulator 2 and American Truck Simulator, founded by experienced members of the community.",
+            "url": "https://phoenixvtc.com",
+            "logo": "https://base.phoenixvtc.com/img/logo.svg",
+            "sameAs": [
+                "https://facebook.com/PhoenixVirtualTrucking",
+                "https://twitter.com/PhoenixVTC",
+                "https://instagram.com/phoenix.vtc",
+                "https://youtube.com/channel/UChc5P3HnmwrMwIm5mJeFOIw",
+                "https://github.com/Phoenix-VTC",
+                "https://phoenixvtc.com"
+            ]
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'About Us',
+        'title': 'The Generation of the Phoenix',
+        'description': 'Our mission is to bring our experience and knowledge of the Virtual Trucking community and the games themselves, to create a top-notch company for both drivers and staff.'
+    } %}
+
+    <div class="relative bg-gray-900 py-16 sm:py-24" id="about-us">
+        <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+            <div class="relative sm:py-16 lg:py-0">
+                <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+                    <div class="absolute inset-y-0 right-1/2 w-full bg-gray-800 bg-opacity-25 rounded-r-3xl lg:right-72"></div>
+                    <svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" width="404"
+                         height="392" fill="none" viewBox="0 0 404 392">
+                        <defs>
+                            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20"
+                                     patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-800" fill="currentColor"/>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"/>
+                    </svg>
+                </div>
+                <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+                    <!-- Testimonial card-->
+                    <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+                        <img class="absolute inset-0 h-full w-full object-cover"
+                             src="/assets/images/game-media/phoenix_trucks_steps.png"
+                             alt="Phoenix fleet in step formation">
+                        <div class="absolute inset-0 bg-orange-500 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600 via-orange-600 opacity-90"></div>
+                        <div class="relative px-8">
+                            <blockquote class="mt-8">
+                                <div class="relative text-lg font-medium text-white md:flex-grow">
+                                    <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-orange-800"
+                                         fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
+                                    </svg>
+                                    <p class="relative">
+                                        We aim to make the Virtual Trucking experience at Phoenix as realistic and
+                                        immersive as possible,
+                                        in every aspect from maximum variety of new events and features, to the constant
+                                        search for new and exciting challenges.
+                                    </p>
+                                </div>
+
+                                <footer class="mt-4">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-6 w-6 rounded-full"
+                                                 src="/assets/images/profile-pictures/diego.jpg"
+                                                 alt="Diego's profile picture">
+                                        </div>
+                                        <div class="text-base font-medium text-orange-200">
+                                            Diego, Management
+                                        </div>
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+                <!-- Content area -->
+                <div class="pt-12 sm:pt-16 lg:pt-20">
+                    <h2 class="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">
+                        On a mission to revolutionize the VTC community
+                    </h2>
+                    <div class="mt-6 text-gray-400 space-y-6 prose">
+                        <p class="text-lg">
+                            Phoenix was thought up late one night by Stan & Diego, after realizing there was something
+                            missing in their current VTC. The idea of family and community was something that was really
+                            important from the very start - and that's how Phoenix was born!
+                        </p>
+                        <p class="text-base leading-7">
+                            We are a very active VTC within TruckersMP, attending many events and also hosting our own!
+                            Our members always come first, meaning we'll regularly ask them what it is they'd like to
+                            see or if they have any suggestions. Furthermore, the entire Phoenix Team works tirelessly
+                            to ensure every single member enjoys their time here. Members also gain full access to our
+                            Discord, custom technology and other exclusive content!
+                        </p>
+                        <p class="text-base leading-7">
+                            Our staff team is hand-picked, with some of the most experienced people in the VTC world!
+                            Between us, we can provide amazing experiences and forge long-lasting memories. At Phoenix,
+                            we believe in forward-thinking and excellence, pushing the boundaries of what is possible!
+                            We are a relatively new VTC, but we have grown fast and are still continuing to develop,
+                            making Phoenix a very exciting place to be.
+                        </p>
+                        <p class="text-base leading-7">
+                            And that's about it so far! We're hoping to bring many more exciting opportunities in the
+                            future, and are working as hard as we can to do so. If you're interested in joining, or just
+                            want to be a part of our community, feel free to join our Discord and say hi!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stats section -->
+                <div class="mt-10">
+                    <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-400">Founded</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-white">2020</dd>
+                        </div>
+
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-400">Staff Members</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-white">12</dd>
+                        </div>
+
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-400">Community Members</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-white">453</dd>
+                        </div>
+
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-400">Drivers</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-white">120</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% set partners = craft.entries()
+        .section('partners') %}
+
+    <div class="bg-gray-800" id="partners">
+        <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+            <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+                <div class="space-y-5 sm:space-y-4">
+                    <h2 class="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">Our {{ craft.typogrify.pluralize('Partner', partners.count()) }}</h2>
+                    <p class="text-xl text-gray-400">
+                        Because at Phoenix, we believe that VTCs are meant to come together and create new memories.
+                    </p>
+                </div>
+                <div class="lg:col-span-2">
+                    <ul role="list"
+                        class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+                        {% set partnerLogoOptions = {
+                            mode: 'crop',
+                            width: 384,
+                            height: 384,
+                            quality: 90
+                        } %}
+
+                        {% for partner in partners.all() %}
+                            <li>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-5 aspect-h-5">
+                                        {% set partnerLogo = partner.logo.one() %}
+                                        <img class="object-contain"
+                                             src="{{ partnerLogo.getUrl(partnerLogoOptions) }}"
+                                             alt="{{ partner.title }}'s logo">
+                                    </div>
+                                    <div class="text-lg leading-6 font-medium space-y-1">
+                                        <h3 class="text-white">
+                                            <a class="hover:underline" href="{{ partner.website }}" target="_blank">{{ partner.title }}</a>
+                                        </h3>
+                                        <p class="text-orange-600">{{ partner.slogan }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7386afed-ad3a-4215-9779-22c0947e4b3e # Team Member Fields
+handle: profilePicture
+instructions: ''
+name: 'Profile Picture'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:d94ef4da-7241-4a7c-8550-0a516d9e6972' # Profile Pictures
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: thumbs
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:d94ef4da-7241-4a7c-8550-0a516d9e6972' # Profile Pictures
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

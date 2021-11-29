@@ -4,6 +4,24 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: e21f420c-3fc2-4ddc-afdc-b4ae78c526e3 # Author
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6d529a0f-713a-4b29-b07b-1172eff1cd0e # Featured Image
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -27,24 +45,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3e6987f6-ab76-42a4-85fe-a56f9aebbc91 # Author Name
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 2f77ede5-2b7e-42c5-814c-34eed8199a98 # Author Image
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 611a4f85-a52f-4a80-8c72-a08f043b4268 # Summary
             instructions: ''
             label: ''
@@ -55,15 +55,6 @@ fieldLayouts:
             width: 100
           -
             fieldUid: f2cf9586-f81f-404f-b8e6-57b9fe1d530d # Post Categories
-            instructions: ''
-            label: ''
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 6d529a0f-713a-4b29-b07b-1172eff1cd0e # Featured Image
             instructions: ''
             label: ''
             required: '1'

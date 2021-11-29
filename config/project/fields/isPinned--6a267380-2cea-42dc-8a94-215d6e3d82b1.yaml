@@ -1,0 +1,14 @@
+columnSuffix: vccgbtpv
+contentColumnType: boolean
+fieldGroup: d81fe9c4-26c1-4f72-8c78-89894a2ae2f4 # Post Fields
+handle: isPinned
+instructions: 'If the post should always be showed at the top.'
+name: 'Is Pinned'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

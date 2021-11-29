@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: timeline
-name: Timeline
+handle: blog
+name: Blog
 propagationMethod: all
 siteSettings:
   0a9ef065-97f8-4583-b4a1-5a8e4d790203: # Phoenix
-    enabledByDefault: false
+    enabledByDefault: true
     hasUrls: true
-    template: timeline/_entry
-    uriFormat: 'timeline/{slug}'
+    template: blog/_entry
+    uriFormat: 'blog/{slug}'
 type: channel

@@ -1,0 +1,42 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'Our community and member rules',
+        'title': 'Phoenix Rules',
+    } %}
+
+    {% embed '_partials/post/content.twig' with {'rectangles': false} %}
+        {% block content %}
+            <div class="space-y-16">
+                {% if siteInformation.communityRules is not null %}
+                    <div>
+                        <h1>
+                            <span class="block text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Community Rules</span>
+                            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">For all Discord server members</span>
+                        </h1>
+
+                        <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
+                            {{ typogrify(siteInformation.communityRules) }}
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if siteInformation.memberRules is not null %}
+                    <div>
+                        <h1>
+                            <span class="block text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Member Rules</span>
+                            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">For all PhoenixVTC Members</span>
+                        </h1>
+
+                        <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
+                            {{ typogrify(siteInformation.communityRules) }}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

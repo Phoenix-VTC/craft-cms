@@ -1,0 +1,19 @@
+columnSuffix: ifjygvkn
+contentColumnType: text
+fieldGroup: 6b9b8791-54fd-4a11-acb5-43f1692e6f6b # Partner Fields
+handle: slogan
+instructions: ''
+name: Slogan
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

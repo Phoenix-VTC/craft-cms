@@ -1,0 +1,15 @@
+columnSuffix: jyrjmxjv
+contentColumnType: string(255)
+fieldGroup: 6b9b8791-54fd-4a11-acb5-43f1692e6f6b # Partner Fields
+handle: website
+instructions: ''
+name: Website
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

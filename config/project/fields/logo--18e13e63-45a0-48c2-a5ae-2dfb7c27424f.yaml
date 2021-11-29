@@ -1,21 +1,20 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: d81fe9c4-26c1-4f72-8c78-89894a2ae2f4 # News Post Fields
-handle: authorImage
+fieldGroup: 6b9b8791-54fd-4a11-acb5-43f1692e6f6b # Partner Fields
+handle: logo
 instructions: ''
-name: 'Author Image'
+name: Logo
 searchable: false
 settings:
   allowSelfRelations: false
   allowUploads: true
-  allowedKinds:
-    - image
+  allowedKinds: null
   defaultUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
   previewMode: full
-  restrictFiles: '1'
+  restrictFiles: ''
   selectionLabel: ''
   showSiteMenu: false
   showUnpermittedFiles: false
@@ -24,7 +23,7 @@ settings:
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+    - 'volume:dc6e9949-7832-497f-8453-c4982c626a9c' # Partners
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

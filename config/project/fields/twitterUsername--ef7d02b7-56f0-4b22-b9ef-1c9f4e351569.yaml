@@ -1,0 +1,19 @@
+columnSuffix: epfiuwqk
+contentColumnType: text
+fieldGroup: 7386afed-ad3a-4215-9779-22c0947e4b3e # Team Member Fields
+handle: twitterUsername
+instructions: 'Only the username, **not** the URL.'
+name: 'Twitter Username'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

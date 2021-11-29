@@ -1,4 +1,4 @@
-dateModified: 1638203853
+dateModified: 1638204047
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -14,10 +14,13 @@ meta:
     1e13d2f1-5244-411c-b082-a7ed076b9317: Text # Text
     1ee3f36f-8538-47a1-8ed5-6f0e6986693f: 'FAQ Items' # FAQ Items
     2c8cdca8-a909-4cc0-8aaf-bab454f00013: 'Recruitment FAQ' # Recruitment FAQ
+    2c156369-c025-4b90-86b7-878137ad5113: Requirements # Requirements
     4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
     5b3a42e5-ec56-4dab-8b94-d0a45f61734c: 'Profile Picture' # Profile Picture
+    5e19c644-0362-4afe-9fc4-45cc5f32ee43: Description # Description
     5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
     6a267380-2cea-42dc-8a94-215d6e3d82b1: 'Is Pinned' # Is Pinned
+    6ac6b856-c4bb-47c0-9d8a-749cbe20f95e: Requirement # Requirement
     6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
     6bccb7b8-eeac-42b5-981c-cc567a1d2314: 'Discord Invite' # Discord Invite
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image

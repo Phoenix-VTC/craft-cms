@@ -1,0 +1,41 @@
+field: 2c156369-c025-4b90-86b7-878137ad5113 # Requirements
+fieldLayouts:
+  cfbb07ca-83f0-468c-b048-4c6e37816437:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5e19c644-0362-4afe-9fc4-45cc5f32ee43 # Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5e19c644-0362-4afe-9fc4-45cc5f32ee43: # Description
+    columnSuffix: kzskxqze
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: requirement
+name: Requirement
+sortOrder: 1

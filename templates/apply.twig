@@ -14,10 +14,12 @@
             <div class="hidden lg:block bg-orange-700 absolute top-0 bottom-0 left-3/4 w-screen"></div>
             <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                 <div>
-                    <h2 class="text-base text-orange-600 font-semibold tracking-wide uppercase">Applicant
-                        Requirements</h2>
-                    <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Are you the
-                        perfect match?</h3>
+                    <h2 class="text-base text-orange-600 font-semibold tracking-wide uppercase">
+                        Applicant Requirements
+                    </h2>
+                    <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                        Are you the perfect match?
+                    </h3>
                 </div>
             </div>
             <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -62,13 +64,9 @@
                     </div>
                     <div class="mt-5 prose prose-orange text-gray-400 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                         <ul role="list">
-                            <li>Be over 16 years of age</li>
-                            <li>Have 75 Hours in ETS2 or ATS (this can be combined between both games)</li>
-                            <li>Have no TruckersMP bans within the past three months</li>
-                            <li>Be willing to log jobs and agree to meet our activity requirement of 1000 km (620 miles)
-                                per month
-                            </li>
-                            <li>Must speak English</li>
+                            {% for item in recruitment.requirements.all() %}
+                                <li>{{ item.description }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
 

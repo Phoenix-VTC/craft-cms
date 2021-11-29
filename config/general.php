@@ -34,4 +34,12 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+    // Set the Craft aliases
+    'aliases' => [
+        '@web' => App::env('PRIMARY_SITE_URL', ''),
+        '@webroot' => dirname(__DIR__) . '/web',
+        '@assetBaseUrl' => '@web/assets',
+        '@assetBasePath' => '@webroot/assets',
+    ],
 ];

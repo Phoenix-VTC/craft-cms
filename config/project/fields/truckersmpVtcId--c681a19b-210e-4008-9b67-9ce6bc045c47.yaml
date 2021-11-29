@@ -1,9 +1,9 @@
-columnSuffix: dgryowwb
+columnSuffix: rohdqcvw
 contentColumnType: text
-fieldGroup: 121970e2-9425-45cd-a8f1-7f026e67839e # Socials
-handle: twitchUsername
-instructions: 'Only the username, **not** the URL.'
-name: 'Twitch Username'
+fieldGroup: dcd87449-f024-484e-b16d-21f3a078647e # Company Socials
+handle: truckersmpVtcId
+instructions: 'Only the ID or slug, **not** the URL.'
+name: 'TruckersMP VTC ID'
 searchable: false
 settings:
   byteLimit: null

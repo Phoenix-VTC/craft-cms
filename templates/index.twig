@@ -183,7 +183,7 @@
                     .section('news')
                     .limit(3) %}
 
-                {% for entry in entries %}
+                {% for entry in entries.all() %}
                     {% include '_partials/post/card.twig' %}
                 {% endfor %}
             </div>

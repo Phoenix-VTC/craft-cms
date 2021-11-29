@@ -15,7 +15,7 @@
             {% if article ?? false %}
                 <div class="flex flex-row justify-center space-x-8 text-white font-medium">
                     <div>
-                        {% for category in entry.postCategories %}
+                        {% for category in entry.postCategories.all() %}
                             <span class="inline-flex items-center px-3 py-0.5 rounded text-sm bg-orange-600 text-white">
                                 {{ category }}
                             </span>

@@ -16,17 +16,13 @@
                 <p class="text-orange-600">{{ entry.jobTitle }}</p>
             </div>
 
-            <ul role="list" class="flex justify-center space-x-5">
+            <ul role="list" class="flex justify-center space-x-5 text-lg">
                 {% if entry.truckersmpId|length %}
                     <li>
                         <a class="text-gray-400 hover:text-gray-300"
                            href="https://truckersmp.com/user/{{ entry.truckersmpId }}" target="_blank">
                             <span class="sr-only">TruckersMP</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                 fill="currentColor">
-                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-                                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/>
-                            </svg>
+                            <i class="fas fa-truck"></i>
                         </a>
                     </li>
                 {% endif %}
@@ -35,11 +31,7 @@
                         <a class="text-gray-400 hover:text-gray-300"
                            href="https://steamcommunity.com/profiles/{{ entry.steamId }}" target="_blank">
                             <span class="sr-only">Steam</span>
-                            <svg class="w-5 h-5" fill="currentColor" role="img" viewBox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <title>Steam</title>
-                                <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/>
-                            </svg>
+                            <i class="fab fa-steam"></i>
                         </a>
                     </li>
                 {% endif %}
@@ -48,10 +40,7 @@
                         <a class="text-gray-400 hover:text-gray-300" href="https://twitch.tv/{{ entry.twitchUsername }}"
                            target="_blank">
                             <span class="sr-only">Twitch</span>
-                            <svg class="w-5 h-5" fill="currentColor" role="img" viewBox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg"><title>Twitch</title>
-                                <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
-                            </svg>
+                            <i class="fab fa-twitch"></i>
                         </a>
                     </li>
                 {% endif %}
@@ -60,10 +49,16 @@
                         <a class="text-gray-400 hover:text-gray-300"
                            href="https://twitter.com/{{ entry.twitterUsername }}" target="_blank">
                             <span class="sr-only">Twitter</span>
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                 aria-hidden="true">
-                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
-                            </svg>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                {% endif %}
+                {% if entry.githubUsername|length %}
+                    <li>
+                        <a class="text-gray-400 hover:text-gray-300"
+                           href="https://github.com/{{ entry.githubUsername }}" target="_blank">
+                            <span class="sr-only">GitHub</span>
+                            <i class="fab fa-github"></i>
                         </a>
                     </li>
                 {% endif %}

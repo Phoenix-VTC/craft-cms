@@ -12,8 +12,21 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: FAQ
+        name: 'Frequently Asked Questions'
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 2c156369-c025-4b90-86b7-878137ad5113 # Requirements
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Requirements
+        sortOrder: 2
 handle: recruitment
 name: Recruitment
-sortOrder: 4
+sortOrder: 1

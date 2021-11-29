@@ -1,6 +1,6 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: d81fe9c4-26c1-4f72-8c78-89894a2ae2f4 # News Post Fields
+fieldGroup: d81fe9c4-26c1-4f72-8c78-89894a2ae2f4 # Post Fields
 handle: postCategories
 instructions: ''
 name: 'Post Categories'

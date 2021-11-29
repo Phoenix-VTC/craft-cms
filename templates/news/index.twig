@@ -1,5 +1,48 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-    <h1 class="text-4xl text-black font-display my-4">News Index</h1>
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'News and Updates',
+        'title': 'Our Latest News Posts',
+        'description': 'Stay up-to-date with the latest Phoenix updates!'
+    } %}
+
+    <div class="relative bg-orange-700 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div class="absolute inset-0">
+            <div class="bg-gray-900 h-1/3 sm:h-2/3"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto">
+            <div class="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                {% set entries = craft.entries()
+                    .section('news')
+                    .all() %}
+
+                {% for entry in entries %}
+                    {% include '_partials/post/card.twig' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-orange-700 py-12">
+        <div class="relative max-w-7xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl tracking-tight font-extrabold text-white sm:text-4xl">
+                    Why not check out one of our blog posts?
+                </h2>
+            </div>
+            <div class="mt-8 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                {% set entries = craft.entries()
+                    .section('blog')
+                    .orderBy('popular')
+                    .limit(3) %}
+
+                {% for entry in entries %}
+                    {% include '_partials/post/card.twig' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}

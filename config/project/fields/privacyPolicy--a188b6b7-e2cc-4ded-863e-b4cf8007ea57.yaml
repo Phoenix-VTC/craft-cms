@@ -1,0 +1,29 @@
+columnSuffix: ysztacmq
+contentColumnType: text
+fieldGroup: 3238e03c-bb36-4104-99b4-49ba379e23ca # Global Fields
+handle: privacyPolicy
+instructions: ''
+name: 'Privacy Policy'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - de587533-76d9-4747-a138-71e89ccee6f5 # Site
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

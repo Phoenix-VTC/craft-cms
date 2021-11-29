@@ -1,0 +1,19 @@
+columnSuffix: wpppuney
+contentColumnType: text
+fieldGroup: 7386afed-ad3a-4215-9779-22c0947e4b3e # Team Member Fields
+handle: truckersmpId
+instructions: 'Only the ID, **not** the URL.'
+name: 'TruckersMP ID'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

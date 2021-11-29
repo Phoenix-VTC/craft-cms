@@ -6,14 +6,20 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" type="text/css" href="{{ rev('/assets/css/app.css') }}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {% block scripts_top %}
+    {% endblock %}
 </head>
-<body>
-{% block content %}
-{% endblock %}
+<body class="flex flex-col h-screen">
+<div class="flex-grow bg-gray-900">
+    {% block content %}
+    {% endblock %}
+</div>
 
 {% include 'includes/footer.twig' %}
 
 <script src="{{ rev('/assets/js/manifest.js') }}"></script>
 <script src="{{ rev('/assets/js/app.js') }}"></script>
+{% block scripts_bottom %}
+{% endblock %}
 </body>
 </html>

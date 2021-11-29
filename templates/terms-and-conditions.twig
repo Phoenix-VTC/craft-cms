@@ -1,0 +1,18 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'Terms and Conditions',
+        'title': 'The Terms and Conditions of Phoenix',
+    } %}
+
+    {% embed '_partials/post/content.twig' with {'rectangles': false} %}
+        {% block content %}
+            <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
+                {{ typogrify(siteInformation.termsAndConditions) }}
+            </div>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

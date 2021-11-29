@@ -1,4 +1,4 @@
-dateModified: 1632098205
+dateModified: 1638154876
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -10,28 +10,55 @@ meta:
     0bddbef9-ed48-48d3-8400-ae8d91152a64: News # News
     1b8d609a-4d46-4b14-a53e-b08fd8c89e5a: News # News
     1e13d2f1-5244-411c-b082-a7ed076b9317: Text # Text
-    2f77ede5-2b7e-42c5-814c-34eed8199a98: 'Author Image' # Author Image
-    3e6987f6-ab76-42a4-85fe-a56f9aebbc91: 'Author Name' # Author Name
     4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
+    5b3a42e5-ec56-4dab-8b94-d0a45f61734c: 'Profile Picture' # Profile Picture
     5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
-    6a47a1ab-b90e-44c5-85bd-7cd2418f1474: 'Timeline Fields' # Timeline Fields
+    6a267380-2cea-42dc-8a94-215d6e3d82b1: 'Is Pinned' # Is Pinned
+    6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
-    013adfa4-03a2-4c3c-be4e-d32f5e058c6e: Default # Default
+    18e13e63-45a0-48c2-a5ae-2dfb7c27424f: Logo # Logo
     38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
     79a4a62f-a360-4b4b-acf3-4c2a7028f9cb: Text # Text
-    515e28a4-d6fa-41c6-86a7-f6da2f446770: Timeline # Timeline
+    81b6781d-4224-4093-a577-480f15545861: Slogan # Slogan
+    231de198-3683-4015-b299-f40a845715bd: Partners # Partners
+    416a86cd-8066-4c2e-8add-e32a69a0b3b9: 'TruckersMP ID' # TruckersMP ID
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
+    917f5627-3dc6-423b-aa1d-d3e9d2553add: 'Member Rules' # Member Rules
     3238e03c-bb36-4104-99b4-49ba379e23ca: 'Global Fields' # Global Fields
+    5307bdd9-65c1-4010-8063-0082b5513429: Position # Position
+    7386afed-ad3a-4215-9779-22c0947e4b3e: 'Team Member Fields' # Team Member Fields
+    9413c31d-3095-4413-a3a9-7aab05f22886: 'Community Rules' # Community Rules
+    31015d93-cb7d-4480-b97e-929ad3938a7d: Partners # Partners
     707026a3-1953-4b64-a6fb-f842bdfafde7: News # News
-    af8f7d0b-2b4c-4f80-8851-dff30d069306: Date # Date
+    20481930-71dd-40a8-95d9-706aebeb215a: 'Twitch Username' # Twitch Username
+    95971943-f483-45a2-9c05-c74ea1ef6475: 'Terms and Conditions' # Terms and Conditions
+    a188b6b7-e2cc-4ded-863e-b4cf8007ea57: 'Privacy Policy' # Privacy Policy
+    a572aba4-62e9-4bf7-a5c7-d98c59ae4c3a: 'Steam ID' # Steam ID
+    ad11b19f-af61-4b8a-b6e0-330e0f66a7bb: Email # Email
+    ae17d579-95d6-4196-a49d-d3fe6c4a3c1b: 'Job Title' # Job Title
+    aecaf734-f36e-4662-bb30-795eaa9300ed: 'Cookie Policy' # Cookie Policy
+    b6aabefd-345d-4c38-a13a-caf0636d73ca: 'Team Positions' # Team Positions
     c2b59848-98ff-4771-80c2-63824451dc81: 'Site Information' # Site Information
-    d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'News Post Fields' # News Post Fields
-    e01166b9-8228-41b5-a800-350a24eab09c: Description # Description
+    c29d58b1-7ac7-481c-b814-fa6bb8898a37: Default # Default
+    ca553da7-62b5-4f20-a874-5d7d846cb931: Team # Team
+    d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'Post Fields' # Post Fields
+    d94ef4da-7241-4a7c-8550-0a516d9e6972: 'Profile Pictures' # Profile Pictures
+    dc6e9949-7832-497f-8453-c4982c626a9c: Partners # Partners
+    de5d5736-6132-4731-a93d-e5a74d0d6b36: Blog # Blog
+    de587533-76d9-4747-a138-71e89ccee6f5: Site # Site
+    e21f420c-3fc2-4ddc-afdc-b4ae78c526e3: Author # Author
+    ea97fd7b-0a78-47d9-b148-9ef9056d44a0: Website # Website
     ebc67018-3219-40f0-b490-cbad36b6f924: Phoenix # Phoenix
+    ef7d02b7-56f0-4b22-b9ef-1c9f4e351569: 'Twitter Username' # Twitter Username
     f2cf9586-f81f-404f-b8e6-57b9fe1d530d: 'Post Categories' # Post Categories
+    f8d2fcf0-a54c-4729-854b-11f93c2ae7a8: Blog # Blog
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
 plugins:
   assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  read-time:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -43,6 +70,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.5
+  trending-posts:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true

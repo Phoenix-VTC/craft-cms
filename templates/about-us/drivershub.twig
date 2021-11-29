@@ -1,0 +1,412 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'Our DriversHub',
+        'title': 'The New Gold Standard in Virtual Trucking',
+        'description': 'Let us welcome you to the world of virtual trucking. We have designed and built a DriversHub unlike any other in this industry.'
+    } %}
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="py-16 bg-gray-900 overflow-hidden lg:py-24">
+        <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+            <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404"
+                 height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+                <defs>
+                    <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20"
+                             patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-800" fill="currentColor"/>
+                    </pattern>
+                </defs>
+                <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"/>
+            </svg>
+
+            <div class="relative">
+                <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                    Let us introduce to you: The <span class="text-orange-600">PhoenixBase</span>
+                </h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-400">
+                    A DriversHub fully custom-built for our drivers. With tons of features to make your experience as a
+                    member as awesome and easy as possible!
+                </p>
+            </div>
+
+            <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div class="relative">
+                    <h3 class="text-2xl font-extrabold text-white tracking-tight sm:text-3xl">
+                        Easy to use custom tracker
+                    </h3>
+                    <p class="mt-3 text-lg text-gray-400">
+                        Don't like logging jobs manually? Then our tracker will be your best friend! Simply open it, and
+                        start driving! After completion, the job info will be automatically sent over to our DriversHub.
+                    </p>
+
+                    <dl class="mt-10 space-y-10">
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-600 text-white">
+                                    <!-- Heroicon name: outline/sparkles -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-white">Plug and play</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-400">
+                                Our tracker is made to be as easy as possible to use! Just install it, enter your
+                                personal token, and you're ready to go!
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-600 text-white">
+                                    <!-- Heroicon name: outline/cog -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-white">Mod support</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-400">
+                                Do you love driving with RusMap, Grand Utopia, or another map mod? No need to worry! Our
+                                tracker supports <i>every</i> map, cargo and company mod.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+                    <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784"
+                         height="404" fill="none" viewBox="0 0 784 404">
+                        <defs>
+                            <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20"
+                                     patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-800" fill="currentColor"/>
+                            </pattern>
+                        </defs>
+                        <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"/>
+                    </svg>
+                    <img class="pl-10 relative mx-auto" width="618" src="/assets/images/screenshots/tracker/home_dark.png" alt="Phoenix Tracker home page screenshot">
+                </div>
+            </div>
+
+            <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404"
+                 height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+                <defs>
+                    <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
+                             patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-800" fill="currentColor"/>
+                    </pattern>
+                </defs>
+                <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"/>
+            </svg>
+
+            <div class="relative mt-12 sm:mt-16 lg:mt-24">
+                <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+                    <div class="lg:col-start-2">
+                        <h3 class="text-2xl font-extrabold text-white tracking-tight sm:text-3xl">
+                            Rank up by logging jobs
+                        </h3>
+                        <p class="mt-3 text-lg text-gray-400">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae,
+                            porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci
+                            optio iste blanditiis facere. Totam, velit.
+                        </p>
+
+                        <dl class="mt-10 space-y-10">
+                            <div class="relative">
+                                <dt>
+                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-600 text-white">
+                                        <!-- Heroicon name: outline/trending-up -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                        </svg>
+                                    </div>
+                                    <p class="ml-16 text-lg leading-6 font-medium text-white">Driver competition</p>
+                                </dt>
+                                <dd class="mt-2 ml-16 text-base text-gray-400">
+                                    Who doesn't like some friendly competition? We offer Event XP, distance, income and
+                                    delivery count leaderboards to showcase our top-tier driver!
+                                </dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-600 text-white">
+                                        <!-- Heroicon name: outline/flag -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                                        </svg>
+                                    </div>
+                                    <p class="ml-16 text-lg leading-6 font-medium text-white">Milestone ranks on
+                                        Discord</p>
+                                </dt>
+                                <dd class="mt-2 ml-16 text-base text-gray-400">
+                                    After every 10 levels, you will automatically unlock a new rank on our Discord
+                                    server to show your progress as a driver!
+                                </dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-600 text-white">
+                                        <!-- Heroicon name: outline/star -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="ml-16 text-lg leading-6 font-medium text-white">Driver achievements</p>
+                                </dt>
+                                <dd class="mt-2 ml-16 text-base text-gray-400">
+                                    We offer a handful of achievements, some with progress, unlockable by simply
+                                    exploring our PhoenixBase and completing (special) jobs!
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+                        <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784"
+                             height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
+                            <defs>
+                                <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20"
+                                         patternUnits="userSpaceOnUse">
+                                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
+                                </pattern>
+                            </defs>
+                            <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"/>
+                        </svg>
+                        <img class="relative mx-auto" width="490" src="/assets/images/screenshots/base/my_driver_level.png" alt="My driver level screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-800 pt-16 overflow-hidden sm:pt-24 lg:pt-32">
+        <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
+            <div>
+                <h2 class="text-base font-semibold tracking-wider text-orange-600 uppercase">Event System</h2>
+                <p class="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+                    For convoys, truckfests, and more.
+                </p>
+                <p class="mt-5 max-w-prose mx-auto text-xl text-gray-400">
+                    Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc,
+                    ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+                </p>
+            </div>
+            <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
+                <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 border-2 border-orange-600"
+                     src="/assets/images/screenshots/base/event_system_home.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-900 py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <h2 class="text-base font-semibold tracking-wider text-orange-600 uppercase">Some of our features</h2>
+            <p class="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+                Get the most out of your time on the road!
+            </p>
+            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-400">
+                Designed and coded by experienced members of the Virtual Trucking community, we know exactly what our
+                drivers love to see.
+            </p>
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-orange-600 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/briefcase -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Job Logging</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Both manual and automatic.
+                                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                                    lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-orange-600 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/calendar -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Event System</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                                    lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-orange-600 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/trending-up -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Leaderboards</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                                    lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-orange-600 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/camera -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Screenshot Hub</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                                    lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-orange-600 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/identification -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">User Profiles</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                                    lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-orange-600 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/star -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Achievements</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                                    lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto bg-orange-600 lg:bg-transparent lg:px-8">
+            <div class="lg:grid lg:grid-cols-12">
+                <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                    <div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true"></div>
+                    <div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
+                        <div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                            <img class="object-cover object-center rounded-3xl shadow-2xl bg-gray-900"
+                                 src="/assets/images/branding/logo.svg" alt="Phoenix Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative bg-gradient-to-r from-orange-600 to-orange-700 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+                    <div class="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block" aria-hidden="true">
+                        <svg class="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2"
+                             width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+                            <defs>
+                                <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
+                                         patternUnits="userSpaceOnUse">
+                                    <rect x="0" y="0" width="4" height="4" fill="currentColor"/>
+                                </pattern>
+                            </defs>
+                            <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"/>
+                        </svg>
+                    </div>
+                    <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                        <h2 class="text-3xl font-extrabold text-white" id="join-heading">Are you ready to revolutionize
+                            your Virtual Trucking experience?</h2>
+                        <p class="text-lg text-white">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
+                            id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
+                        <a class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-orange-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
+                           href="/apply">Apply now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

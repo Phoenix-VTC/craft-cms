@@ -1,13 +1,14 @@
-columnSuffix: jfozeazu
+columnSuffix: flptolwe
 contentColumnType: text
-fieldGroup: 6a47a1ab-b90e-44c5-85bd-7cd2418f1474 # Timeline Fields
-handle: description
+fieldGroup: 3238e03c-bb36-4104-99b4-49ba379e23ca # Global Fields
+handle: communityRules
 instructions: ''
-name: Description
+name: 'Community Rules'
 searchable: false
 settings:
   availableTransforms: '*'
-  availableVolumes: ''
+  availableVolumes:
+    - de587533-76d9-4747-a138-71e89ccee6f5 # Site
   cleanupHtml: true
   columnType: text
   configSelectionMode: choose

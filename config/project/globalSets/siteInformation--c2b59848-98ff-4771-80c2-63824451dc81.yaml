@@ -14,6 +14,59 @@ fieldLayouts:
             width: 100
         name: 'Site Information'
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 9413c31d-3095-4413-a3a9-7aab05f22886 # Community Rules
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 917f5627-3dc6-423b-aa1d-d3e9d2553add # Member Rules
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Rules
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: a188b6b7-e2cc-4ded-863e-b4cf8007ea57 # Privacy Policy
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 95971943-f483-45a2-9c05-c74ea1ef6475 # Terms and Conditions
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aecaf734-f36e-4662-bb30-795eaa9300ed # Cookie Policy
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Legal
+        sortOrder: 3
 handle: siteInformation
 name: 'Site Information'
 sortOrder: 1

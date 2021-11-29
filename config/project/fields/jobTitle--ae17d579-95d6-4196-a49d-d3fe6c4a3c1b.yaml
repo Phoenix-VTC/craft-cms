@@ -1,9 +1,9 @@
-columnSuffix: qvhgrtdw
+columnSuffix: xsjsssvc
 contentColumnType: text
-fieldGroup: d81fe9c4-26c1-4f72-8c78-89894a2ae2f4 # News Post Fields
-handle: authorName
-instructions: ''
-name: 'Author Name'
+fieldGroup: 7386afed-ad3a-4215-9779-22c0947e4b3e # Team Member Fields
+handle: jobTitle
+instructions: 'E.g. "COO"'
+name: 'Job Title'
 searchable: false
 settings:
   byteLimit: null

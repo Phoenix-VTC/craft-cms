@@ -14,37 +14,6 @@ fieldLayouts:
             width: 100
         name: 'Site Information'
         sortOrder: 1
-      -
-        elements:
-          -
-            fieldUid: a188b6b7-e2cc-4ded-863e-b4cf8007ea57 # Privacy Policy
-            instructions: ''
-            label: ''
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 95971943-f483-45a2-9c05-c74ea1ef6475 # Terms and Conditions
-            instructions: ''
-            label: ''
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: aecaf734-f36e-4662-bb30-795eaa9300ed # Cookie Policy
-            instructions: ''
-            label: ''
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Legal
-        sortOrder: 2
 handle: siteInformation
 name: 'Site Information'
 sortOrder: 1

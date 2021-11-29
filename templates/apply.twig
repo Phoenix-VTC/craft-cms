@@ -117,17 +117,24 @@
 
                     <div class="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
                         <div class="rounded-md shadow">
-                            <a href="#"
+                            <a href="https://apply.phoenixvtc.com" target="_blank"
                                class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700">
                                 Apply now
                             </a>
                         </div>
-                        <div class="rounded-md shadow ml-4">
-                            <a href="#"
-                               class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-gray-50">
-                                How to apply
-                            </a>
-                        </div>
+
+                        {% set howToApplyBlog = craft.entries()
+                            .section('blog')
+                            .title('How to apply')
+                            .one() %}
+                        {% if howToApplyBlog is not null %}
+                            <div class="rounded-md shadow ml-4">
+                                <a href="{{ howToApplyBlog.url }}"
+                                   class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-gray-50">
+                                    How to apply
+                                </a>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>

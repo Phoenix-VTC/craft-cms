@@ -1,4 +1,4 @@
-dateModified: 1638204047
+dateModified: 1638204722
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -35,6 +35,7 @@ meta:
     402a82f9-e12c-49dd-b30f-60c6906159a4: Legal # Legal
     416a86cd-8066-4c2e-8add-e32a69a0b3b9: 'TruckersMP ID' # TruckersMP ID
     480f7c1b-cf61-408a-bd58-9cf1741fb7ad: 'Instagram Username' # Instagram Username
+    489b83c6-d573-4d90-ab13-00524b36ec89: Contact # Contact
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
     917f5627-3dc6-423b-aa1d-d3e9d2553add: 'Member Rules' # Member Rules
     3238e03c-bb36-4104-99b4-49ba379e23ca: 'Global Fields' # Global Fields
@@ -74,10 +75,6 @@ meta:
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
 plugins:
   assetrev:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  craft-ray:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

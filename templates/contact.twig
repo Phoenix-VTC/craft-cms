@@ -269,32 +269,36 @@
         </div>
     </div>
 
-    <div class="bg-gray-800">
-        <div class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                <div>
-                    <h2 class="text-3xl font-extrabold text-white">
-                        Frequently asked questions
-                    </h2>
-                    <p class="mt-4 text-lg text-gray-400">Can’t find the answer you’re looking for? Reach out to
-                        our <a href="mailto:support@phoenixvtc.com"
-                               class="font-medium text-orange-700 hover:text-orange-600">support team</a>.
-                    </p>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:col-span-2">
-                    <dl class="space-y-12">
-                        <div>
-                            <dt class="text-lg font-medium text-white">
-                                How do you make holy water?
-                            </dt>
-                            <dd class="mt-2 text-base text-gray-400">
-                                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quas cupiditate laboriosam fugiat.
-                            </dd>
-                        </div>
-                    </dl>
+    {% if contact.faqItems.all()|length %}
+        <div class="bg-gray-800">
+            <div class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white">
+                            Frequently asked questions
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-400">
+                            Can’t find the answer you’re looking for? Reach out to
+                            our <a href="mailto:support@phoenixvtc.com"
+                                   class="font-medium text-orange-700 hover:text-orange-600">support team</a>.
+                        </p>
+                    </div>
+                    <div class="mt-12 lg:mt-0 lg:col-span-2">
+                        <dl class="space-y-12">
+                            {% for item in contact.faqItems.all() %}
+                                <div>
+                                    <dt class="text-lg font-medium text-white">
+                                        {{ item.question }}
+                                    </dt>
+                                    <dd class="mt-2 text-base text-gray-400">
+                                        {{ item.answer }}
+                                    </dd>
+                                </div>
+                            {% endfor %}
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    {% endif %}
 {% endblock %}

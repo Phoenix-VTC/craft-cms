@@ -12,7 +12,7 @@
     {% embed '_partials/post/content.twig' %}
         {% block content %}
             <div class="prose prose-lg prose-orange text-gray-400 mx-auto max-w-6xl">
-                {% for block in entry.postContent %}
+                {% for block in entry.postContent.all() %}
                     {{ typogrify(block.text) }}
                 {% endfor %}
             </div>

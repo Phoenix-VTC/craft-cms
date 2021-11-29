@@ -1,4 +1,4 @@
-dateModified: 1638154876
+dateModified: 1638193628
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -55,6 +55,10 @@ meta:
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
 plugins:
   assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  craft-ray:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

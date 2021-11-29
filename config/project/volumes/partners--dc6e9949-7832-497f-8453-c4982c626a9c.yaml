@@ -35,6 +35,6 @@ settings:
   path: '@webroot/assets/partners'
 sortOrder: 5
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@web/assets/partners'

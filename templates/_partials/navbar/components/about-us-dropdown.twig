@@ -1,6 +1,6 @@
 {% embed '_partials/flyouts/stacked-with-footer.twig' %}
     {% block content %}
-        <a href="/about-us"
+        <a href="{{ url('about-us') }}"
            class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
             <!-- Heroicon name: outline/information-circle -->
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
             </div>
         </a>
 
-        <a href="/team"
+        <a href="{{ url('team') }}"
            class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
             <!-- Heroicon name: outline/user-group -->
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@
             </div>
         </a>
 
-        <a href="/about-us/drivershub"
+        <a href="{{ url('about-us/drivershub') }}"
            class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
             <!-- Heroicon name: outline/desktop-computer -->
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@
             </div>
         </a>
 
-        <a href="/about-us/our-fleet"
+        <a href="{{ url('about-us/our-fleet') }}"
            class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
             <!-- Heroicon name: outline/truck -->
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
         </div>
 
         <div class="flow-root">
-            <a href="#"
+            <a href="{{ url('about-us/brand-guidelines') }}"
                class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150">
                 <!-- Heroicon name: outline/pencil -->
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
                 </svg>
-                <span class="ml-3">Branding Guidelines</span>
+                <span class="ml-3">Brand Guidelines</span>
             </a>
         </div>
     {% endblock %}

@@ -3,7 +3,9 @@
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-8 xl:col-span-1">
-                <img class="h-12" src="{{ alias('@assetBaseUrl/images/branding/logo.svg') }}" alt="Phoenix Logo">
+                <a href="{{ siteUrl }}">
+                    <img class="h-12" src="{{ alias('@assetBaseUrl/images/branding/logo.svg') }}" alt="Phoenix Logo">
+                </a>
                 <p class="text-gray-300 text-base">
                     We believe in forward thinking, and strive to put our members first!
                 </p>
@@ -60,7 +62,7 @@
                         </h3>
                         <ul class="mt-4 space-y-4">
                             <li>
-                                <a href="/about-us"
+                                <a href="{{ url('about-us') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     About Us
                                 </a>
@@ -74,7 +76,7 @@
                             </li>
 
                             <li>
-                                <a href="/about-us/our-fleet"
+                                <a href="{{ url('about-us/our-fleet') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Our Fleet
                                 </a>
@@ -87,7 +89,7 @@
                         </h3>
                         <ul class="mt-4 space-y-4">
                             <li>
-                                <a href="/contact"
+                                <a href="{{ url('contact') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Contact
                                 </a>
@@ -115,14 +117,14 @@
                         </h3>
                         <ul class="mt-4 space-y-4">
                             <li>
-                                <a href="#"
+                                <a href="{{ url('about-us/brand-guidelines') }}"
                                    class="text-base text-gray-300 hover:text-white">
-                                    Brand Kit
+                                    Brand Guidelines
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#"
+                                <a href="{{ url('careers') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Careers
                                 </a>
@@ -135,28 +137,28 @@
                         </h3>
                         <ul class="mt-4 space-y-4">
                             <li>
-                                <a href="/rules"
+                                <a href="{{ url('rules') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Rules
                                 </a>
                             </li>
 
                             <li>
-                                <a href="/privacy-policy"
+                                <a href="{{ url('privacy-policy') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Privacy
                                 </a>
                             </li>
 
                             <li>
-                                <a href="/terms-and-conditions"
+                                <a href="{{ url('terms-and-conditions') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Terms
                                 </a>
                             </li>
 
                             <li>
-                                <a href="/cookie-policy"
+                                <a href="{{ url('cookie-policy') }}"
                                    class="text-base text-gray-300 hover:text-white">
                                     Cookies
                                 </a>

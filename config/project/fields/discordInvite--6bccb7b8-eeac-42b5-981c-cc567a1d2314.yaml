@@ -1,0 +1,15 @@
+columnSuffix: niwargmy
+contentColumnType: string(255)
+fieldGroup: dcd87449-f024-484e-b16d-21f3a078647e # Company Socials
+handle: discordInvite
+instructions: 'The full Discord invite, e.g. `https://discord.gg/PhoenixVTC`'
+name: 'Discord Invite'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

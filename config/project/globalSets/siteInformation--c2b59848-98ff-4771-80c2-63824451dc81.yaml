@@ -14,6 +14,82 @@ fieldLayouts:
             width: 100
         name: 'Site Information'
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 6bccb7b8-eeac-42b5-981c-cc567a1d2314 # Discord Invite
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c681a19b-210e-4008-9b67-9ce6bc045c47 # TruckersMP VTC ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 25ed42ae-bd38-4a53-a160-9fca36906d1f # Facebook Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b0777c01-9f29-4b74-a410-1c07259d96ec # GitHub Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 480f7c1b-cf61-408a-bd58-9cf1741fb7ad # Instagram Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 20481930-71dd-40a8-95d9-706aebeb215a # Twitch Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 38928dc1-8714-4f7a-97bd-d3d445732573 # Steam Group
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ef7d02b7-56f0-4b22-b9ef-1c9f4e351569 # Twitter Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Company Socials'
+        sortOrder: 2
 handle: siteInformation
 name: 'Site Information'
 sortOrder: 1

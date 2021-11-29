@@ -1,4 +1,4 @@
-dateModified: 1638196651
+dateModified: 1638198947
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -15,14 +15,17 @@ meta:
     5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
     6a267380-2cea-42dc-8a94-215d6e3d82b1: 'Is Pinned' # Is Pinned
     6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
+    6bccb7b8-eeac-42b5-981c-cc567a1d2314: 'Discord Invite' # Discord Invite
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
     18e13e63-45a0-48c2-a5ae-2dfb7c27424f: Logo # Logo
+    25ed42ae-bd38-4a53-a160-9fca36906d1f: 'Facebook Username' # Facebook Username
     38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
     79a4a62f-a360-4b4b-acf3-4c2a7028f9cb: Text # Text
     81b6781d-4224-4093-a577-480f15545861: Slogan # Slogan
     231de198-3683-4015-b299-f40a845715bd: Partners # Partners
     402a82f9-e12c-49dd-b30f-60c6906159a4: Legal # Legal
     416a86cd-8066-4c2e-8add-e32a69a0b3b9: 'TruckersMP ID' # TruckersMP ID
+    480f7c1b-cf61-408a-bd58-9cf1741fb7ad: 'Instagram Username' # Instagram Username
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
     917f5627-3dc6-423b-aa1d-d3e9d2553add: 'Member Rules' # Member Rules
     3238e03c-bb36-4104-99b4-49ba379e23ca: 'Global Fields' # Global Fields
@@ -30,6 +33,8 @@ meta:
     7386afed-ad3a-4215-9779-22c0947e4b3e: 'Team Member Fields' # Team Member Fields
     9413c31d-3095-4413-a3a9-7aab05f22886: 'Community Rules' # Community Rules
     31015d93-cb7d-4480-b97e-929ad3938a7d: Partners # Partners
+    38928dc1-8714-4f7a-97bd-d3d445732573: 'Steam Group' # Steam Group
+    121970e2-9425-45cd-a8f1-7f026e67839e: Socials # Socials
     707026a3-1953-4b64-a6fb-f842bdfafde7: News # News
     20481930-71dd-40a8-95d9-706aebeb215a: 'Twitch Username' # Twitch Username
     95971943-f483-45a2-9c05-c74ea1ef6475: 'Terms and Conditions' # Terms and Conditions
@@ -39,13 +44,16 @@ meta:
     ae17d579-95d6-4196-a49d-d3fe6c4a3c1b: 'Job Title' # Job Title
     ae463a07-0fb5-4515-8649-b0ad5c4170b8: Rules # Rules
     aecaf734-f36e-4662-bb30-795eaa9300ed: 'Cookie Policy' # Cookie Policy
+    b0777c01-9f29-4b74-a410-1c07259d96ec: 'GitHub Username' # GitHub Username
     b6aabefd-345d-4c38-a13a-caf0636d73ca: 'Team Positions' # Team Positions
     c2b59848-98ff-4771-80c2-63824451dc81: 'Site Information' # Site Information
     c29d58b1-7ac7-481c-b814-fa6bb8898a37: Default # Default
+    c681a19b-210e-4008-9b67-9ce6bc045c47: 'TruckersMP VTC ID' # TruckersMP VTC ID
     ca553da7-62b5-4f20-a874-5d7d846cb931: Team # Team
     d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'Post Fields' # Post Fields
     d94ef4da-7241-4a7c-8550-0a516d9e6972: 'Profile Pictures' # Profile Pictures
     dc6e9949-7832-497f-8453-c4982c626a9c: Partners # Partners
+    dcd87449-f024-484e-b16d-21f3a078647e: 'Company Socials' # Company Socials
     de5d5736-6132-4731-a93d-e5a74d0d6b36: Blog # Blog
     de587533-76d9-4747-a138-71e89ccee6f5: Site # Site
     e21f420c-3fc2-4ddc-afdc-b4ae78c526e3: Author # Author

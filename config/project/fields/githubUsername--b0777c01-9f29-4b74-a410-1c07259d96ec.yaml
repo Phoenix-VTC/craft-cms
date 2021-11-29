@@ -1,9 +1,9 @@
-columnSuffix: dgryowwb
+columnSuffix: metnysev
 contentColumnType: text
 fieldGroup: 121970e2-9425-45cd-a8f1-7f026e67839e # Socials
-handle: twitchUsername
+handle: githubUsername
 instructions: 'Only the username, **not** the URL.'
-name: 'Twitch Username'
+name: 'GitHub Username'
 searchable: false
 settings:
   byteLimit: null

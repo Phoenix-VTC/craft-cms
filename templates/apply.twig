@@ -1,48 +1,5 @@
 {% extends "_layout.twig" %}
 
-{% block scripts_top %}
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "I just applied. When will I receive an answer?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "First of all, thank you for applying to Phoenix! Your application will usually be processed within a few hours, but this may vary depending on the time and day. However, we strive to process all applications within 12 hours. The status of your application is also visible in real-time via the link you received in your inbox. For any more questions or concerns, please contact our recruitment team at recruitment@phoenixvtc.com."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can I be in multiple VTCs?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sadly, it is not allowed to be a member of another VTC while driving for Phoenix. So before applying, please make sure that you have fully left your previous VTC."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "I previously was a member of Phoenix. Can my account be reactivated?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Unfortunately once an account is removed from our database, we are unable to restore it. However, if you meet our requirements, you are more than welcome to re-apply to Phoenix!"
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can I reapply if my application gets denied?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "If your application gets denied, you are more than welcome to re-apply again after one week if you meet our requirements. For any additional information about your application, please contact our recruitment team at recruitment@phoenixvtc.com."
-                    }
-                }
-            ]
-        }
-    </script>
-{% endblock %}
-
 {% block content %}
     {% include '_partials/navbar/navbar.twig' %}
 
@@ -329,75 +286,24 @@
         </div>
     </div>
 
-    <div class="bg-gray-800">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-                <h2 class="text-center text-3xl font-extrabold text-white sm:text-4xl">
-                    Frequently asked questions
-                </h2>
-                <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-                    {% embed '_partials/faq/item.twig' with {'title': 'I just applied. When will I receive an answer?'} %}
-                        {% block content %}
-                            First of all, thank you for applying to Phoenix!
-                            <br><br>
-                            Your application will usually be processed within a few hours, but this may vary depending on the time and day. However, we strive to process all applications within 12 hours.
-                            The status of your application is also visible in real-time via the link you received in your inbox.
-                            <br><br>
-                            For any more questions or concerns, please contact our recruitment team at
-                            <a href="mailto:recruitment@phoenixvtc.com">recruitment@phoenixvtc.com</a>.
-                        {% endblock %}
-                    {% endembed %}
-
-                    {% embed '_partials/faq/item.twig' with {'title': 'Can I be in multiple VTCs?'} %}
-                        {% block content %}
-                            Sadly, it is not allowed to be a member of another VTC while driving for Phoenix.
-                            So before applying, please make sure that you have fully left your previous VTC.
-                        {% endblock %}
-                    {% endembed %}
-
-                    {% embed '_partials/faq/item.twig' with {'title': 'I previously was a member of Phoenix. Can my account be reactivated?'} %}
-                        {% block content %}
-                            Unfortunately once an account is removed from our database, we are unable to restore it. However, if you meet our requirements, you are more than welcome to re-apply to Phoenix!
-                        {% endblock %}
-                    {% endembed %}
-
-                    {% embed '_partials/faq/item.twig' with {'title': 'How do I change my Steam profile to public?'} %}
-                        {% block content %}
-                            Our system automatically checks if you meet our ETS2 and/or ATS requirements.
-                            In order for us to do this, we need your Steam profile to be set to public.
-                            <br><br>
-                            If you're unsure on how to do this, you can follow <a
-                                href="https://support.steampowered.com/kb_article.php?ref=4113-YUDH-6401"
-                                rel="noopener noreferrer">these</a> instructions.
-                            <br><br>
-                            Please make sure that "Game details" is set to
-                            <b>public</b>, and that the "Always keep my total playtime private even if users can see my game details." checkbox is
-                            <b>unchecked</b>.
-                        {% endblock %}
-                    {% endembed %}
-
-                    {% embed '_partials/faq/item.twig' with {'title': 'How do I change my TruckersMP ban history to public?'} %}
-                        {% block content %}
-                            Our system automatically checks if you meet our TruckersMP requirements.
-                            In order for us to do this, we need your ban history publicly visible.
-                            <br><br>
-                            You can do this <a href="https://truckersmp.com/profile/settings" rel="noopener noreferrer">here</a>.
-                            <br><br>
-                            Please make sure that the "Display your bans on your profile and API" checkbox is
-                            <b>checked</b>.
-                        {% endblock %}
-                    {% endembed %}
-
-                    {% embed '_partials/faq/item.twig' with {'title': 'Can I reapply if my application gets denied?'} %}
-                        {% block content %}
-                            If your application gets denied, you are more than welcome to re-apply again after one week if you meet our requirements.
-                            <br><br>
-                            For any additional information about your application, please contact our recruitment team at
-                            <a href="mailto:recruitment@phoenixvtc.com">recruitment@phoenixvtc.com</a>.
-                        {% endblock %}
-                    {% endembed %}
-                </dl>
+    {% if recruitment.faqItems.all()|length %}
+        <div class="bg-gray-800">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+                    <h2 class="text-center text-3xl font-extrabold text-white sm:text-4xl">
+                        Frequently asked questions
+                    </h2>
+                    <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+                        {% for item in recruitment.faqItems.all() %}
+                            {% embed '_partials/faq/item.twig' with {'title': item.question} %}
+                                {% block content %}
+                                    {{ item.answer }}
+                                {% endblock %}
+                            {% endembed %}
+                        {% endfor %}
+                    </dl>
+                </div>
             </div>
         </div>
-    </div>
+    {% endif %}
 {% endblock %}

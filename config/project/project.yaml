@@ -1,4 +1,4 @@
-dateModified: 1638193628
+dateModified: 1638196432
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -36,6 +36,7 @@ meta:
     a572aba4-62e9-4bf7-a5c7-d98c59ae4c3a: 'Steam ID' # Steam ID
     ad11b19f-af61-4b8a-b6e0-330e0f66a7bb: Email # Email
     ae17d579-95d6-4196-a49d-d3fe6c4a3c1b: 'Job Title' # Job Title
+    ae463a07-0fb5-4515-8649-b0ad5c4170b8: Rules # Rules
     aecaf734-f36e-4662-bb30-795eaa9300ed: 'Cookie Policy' # Cookie Policy
     b6aabefd-345d-4c38-a13a-caf0636d73ca: 'Team Positions' # Team Positions
     c2b59848-98ff-4771-80c2-63824451dc81: 'Site Information' # Site Information

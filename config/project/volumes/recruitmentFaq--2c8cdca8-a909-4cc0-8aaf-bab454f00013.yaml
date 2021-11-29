@@ -1,0 +1,40 @@
+fieldLayouts:
+  a1841343-4df9-4139-8f89-25b564a66d28:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: recruitmentFaq
+hasUrls: true
+name: 'Recruitment FAQ'
+settings:
+  path: '@webroot/assets/recruitmentFaq'
+sortOrder: 6
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: '@web/assets/recruitmentFaq'

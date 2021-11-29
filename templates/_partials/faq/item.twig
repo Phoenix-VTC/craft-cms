@@ -1,6 +1,5 @@
 <div class="pt-6" x-data="{ open: false }" x-cloak>
     <dt class="text-lg">
-        <!-- Expand/collapse question button -->
         <button type="button" @click="open = !open"
                 class="text-left w-full flex justify-between items-start text-gray-400"
                 aria-controls="faq-0" aria-expanded="false">
@@ -8,13 +7,6 @@
                 {{ title }}
             </span>
             <span class="ml-6 h-7 flex items-center">
-                <!--
-                  Expand/collapse icon, toggle classes based on question open state.
-
-                  Heroicon name: outline/chevron-down
-
-                  Open: "-rotate-180", Closed: "rotate-0"
-                -->
                 <svg class="rotate-0 h-6 w-6 transform" :class="{ '-rotate-180': open, 'rotate-0': !(open) }" xmlns="http://www.w3.org/2000/svg"
                      fill="none"
                      viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -25,9 +17,9 @@
         </button>
     </dt>
     <dd class="mt-2 pr-12" x-show="open">
-        <p class="text-base text-gray-400 prose prose-orange max-w-none">
+        <div class="text-base text-gray-400 prose prose-orange max-w-none">
             {% block content %}
             {% endblock %}
-        </p>
+        </div>
     </dd>
 </div>

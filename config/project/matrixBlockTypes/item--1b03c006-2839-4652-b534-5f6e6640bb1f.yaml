@@ -1,0 +1,80 @@
+field: 1ee3f36f-8538-47a1-8ed5-6f0e6986693f # FAQ Items
+fieldLayouts:
+  d902962a-caaf-4e5c-91d4-19deb3ad34fb:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1d3d2f8a-80e9-4f2f-ad50-69e13aa8d67f # Question
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9e4e2aa5-2938-472c-9ef6-c2d3d67203a1 # Answer
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1d3d2f8a-80e9-4f2f-ad50-69e13aa8d67f: # Question
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: question
+    instructions: ''
+    name: Question
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9e4e2aa5-2938-472c-9ef6-c2d3d67203a1: # Answer
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: answer
+    instructions: ''
+    name: Answer
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - 2c8cdca8-a909-4cc0-8aaf-bab454f00013 # Recruitment FAQ
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: item
+name: Item
+sortOrder: 1

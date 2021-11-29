@@ -1,0 +1,19 @@
+fieldLayouts:
+  25d39a14-9c8a-498a-a78f-b062c2413726:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1ee3f36f-8538-47a1-8ed5-6f0e6986693f # FAQ Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: FAQ
+        sortOrder: 1
+handle: recruitment
+name: Recruitment
+sortOrder: 4

@@ -1,0 +1,19 @@
+fieldLayouts:
+  7c16057e-6be4-46be-9cca-774037c269fd:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1ee3f36f-8538-47a1-8ed5-6f0e6986693f # FAQ Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Frequently Asked Questions'
+        sortOrder: 1
+handle: contact
+name: Contact
+sortOrder: 5

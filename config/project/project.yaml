@@ -1,4 +1,4 @@
-dateModified: 1638217272
+dateModified: 1638354806
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -78,6 +78,38 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  cookie-though:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.3
+    settings:
+      cookiePolicyLabel: 'Read the full cookie declaration'
+      cookiePolicyUrl: /cookie-policy
+      cookiePreferenceKey: cookie-preferences
+      customizeLabel: Customize
+      essentialLabel: 'Always on'
+      headerDescription: 'Everybody wants to show their best side - and so do we. That’s why we use cookies to guarantee you a better experience.'
+      headerSubTitle: 'You''re probably fed up with these banners...'
+      headerTitle: 'Cookie though?'
+      permissionLabelsAccept: Accept
+      permissionLabelsAcceptAll: 'Accept all'
+      permissionLabelsDecline: Decline
+      policies:
+        0:
+          - essential
+          - 'Essential Cookies'
+          - essential
+          - 'We need to save some technical cookies, for the website to function properly.'
+        2:
+          - statistics
+          - Statistics
+          - statistics
+          - 'We need to save some technical cookies, for the website to function properly.'
+        3:
+          - social
+          - 'Social Media Cookies'
+          - social
+          - 'We need to save some social cookies, for the website to function properly.'
   fetch:
     edition: standard
     enabled: true

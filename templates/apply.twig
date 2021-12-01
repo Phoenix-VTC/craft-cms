@@ -63,11 +63,13 @@
                         </p>
                     </div>
                     <div class="mt-5 prose prose-orange text-gray-400 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                        <ul role="list">
-                            {% for item in recruitment.requirements.all() %}
-                                <li>{{ item.description }}</li>
-                            {% endfor %}
-                        </ul>
+                        {% cache %}
+                            <ul role="list">
+                                {% for item in recruitment.requirements.all() %}
+                                    <li>{{ item.description }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endcache %}
                     </div>
 
                     <div class="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
@@ -78,18 +80,20 @@
                             </a>
                         </div>
 
-                        {% set howToApplyBlog = craft.entries()
-                            .section('blog')
-                            .title('How to apply')
-                            .one() %}
-                        {% if howToApplyBlog is not null %}
-                            <div class="rounded-md shadow ml-4">
-                                <a href="{{ howToApplyBlog.url }}"
-                                   class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-gray-50">
-                                    How to apply
-                                </a>
-                            </div>
-                        {% endif %}
+                        {% cache %}
+                            {% set howToApplyBlog = craft.entries()
+                                .section('blog')
+                                .title('How to apply')
+                                .one() %}
+                            {% if howToApplyBlog is not null %}
+                                <div class="rounded-md shadow ml-4">
+                                    <a href="{{ howToApplyBlog.url }}"
+                                       class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-gray-50">
+                                        How to apply
+                                    </a>
+                                </div>
+                            {% endif %}
+                        {% endcache %}
                     </div>
                 </div>
             </div>
@@ -284,24 +288,26 @@
         </div>
     </div>
 
-    {% if recruitment.faqItems.all()|length %}
-        <div class="bg-gray-800">
-            <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-                <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-                    <h2 class="text-center text-3xl font-extrabold text-white sm:text-4xl">
-                        Frequently asked questions
-                    </h2>
-                    <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-                        {% for item in recruitment.faqItems.all() %}
-                            {% embed '_partials/faq/item.twig' with {'title': item.question} %}
-                                {% block content %}
-                                    {{ item.answer }}
-                                {% endblock %}
-                            {% endembed %}
-                        {% endfor %}
-                    </dl>
+    {% cache %}
+        {% if recruitment.faqItems.all()|length %}
+            <div class="bg-gray-800">
+                <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+                        <h2 class="text-center text-3xl font-extrabold text-white sm:text-4xl">
+                            Frequently asked questions
+                        </h2>
+                        <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+                            {% for item in recruitment.faqItems.all() %}
+                                {% embed '_partials/faq/item.twig' with {'title': item.question} %}
+                                    {% block content %}
+                                        {{ item.answer }}
+                                    {% endblock %}
+                                {% endembed %}
+                            {% endfor %}
+                        </dl>
+                    </div>
                 </div>
             </div>
-        </div>
-    {% endif %}
+        {% endif %}
+    {% endcache %}
 {% endblock %}

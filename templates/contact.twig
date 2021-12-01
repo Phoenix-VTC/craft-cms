@@ -292,10 +292,10 @@
                                 {% for item in contact.faqItems.all() %}
                                     <div>
                                         <dt class="text-lg font-medium text-white">
-                                            {{ item.question }}
+                                            {{ typogrify(item.question) }}
                                         </dt>
                                         <dd class="mt-2 text-base text-gray-400">
-                                            {{ item.answer }}
+                                            {{ typogrify(item.answer) }}
                                         </dd>
                                     </div>
                                 {% endfor %}

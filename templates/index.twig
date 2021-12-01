@@ -146,7 +146,7 @@
                                         Community Members
                                     </dt>
                                     <dd class="order-1 text-5xl font-extrabold text-orange-600">
-                                        {{ request.body.communityMembers ?? '? ? ?' }}
+                                        {{ request.body.communityMembers ?? '? ? ?' }}{{ (request.body.communityMembers is same as 1000) ? '+' : '' }}
                                     </dd>
                                 </div>
                                 <div class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">

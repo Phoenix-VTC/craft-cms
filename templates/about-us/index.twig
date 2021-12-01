@@ -140,17 +140,23 @@
 
                             <div class="border-t-2 border-gray-100 pt-6">
                                 <dt class="text-base font-medium text-gray-400">Staff Members</dt>
-                                <dd class="text-3xl font-extrabold tracking-tight text-white">{{ request.body.staffMembers ?? '? ? ?' }}</dd>
+                                <dd class="text-3xl font-extrabold tracking-tight text-white">
+                                    {{ request.body.staffMembers ?? '? ? ?' }}
+                                </dd>
                             </div>
 
                             <div class="border-t-2 border-gray-100 pt-6">
                                 <dt class="text-base font-medium text-gray-400">Community Members</dt>
-                                <dd class="text-3xl font-extrabold tracking-tight text-white">{{ request.body.communityMembers ?? '? ? ?' }}</dd>
+                                <dd class="text-3xl font-extrabold tracking-tight text-white">
+                                    {{ request.body.communityMembers ?? '? ? ?' }}{{ (request.body.communityMembers is same as 1000) ? '+' : '' }}
+                                </dd>
                             </div>
 
                             <div class="border-t-2 border-gray-100 pt-6">
                                 <dt class="text-base font-medium text-gray-400">Active Drivers</dt>
-                                <dd class="text-3xl font-extrabold tracking-tight text-white">{{ request.body.activeDrivers ?? '? ? ?' }}</dd>
+                                <dd class="text-3xl font-extrabold tracking-tight text-white">
+                                    {{ request.body.activeDrivers ?? '? ? ?' }}
+                                </dd>
                             </div>
                         </dl>
                     </div>

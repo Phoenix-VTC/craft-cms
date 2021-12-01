@@ -2,8 +2,8 @@
 <html lang="{{ craft.app.language }}">
 <head>
     <meta charset="utf-8"/>
-    <title>{{ siteName }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {% include 'includes/favicons.twig' %}
     <link rel="stylesheet" type="text/css" href="{{ rev('/assets/css/app.css') }}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {% block scripts_top %}

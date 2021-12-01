@@ -96,34 +96,37 @@
                             </dl>
                         </a>
                         <ul role="list" class="mt-8 flex space-x-12 text-2xl">
-                            <li>
-                                {% if siteInformation.twitterUsername is not null %}
-                                    <a href="https://twitter.com/{{ siteInformation.twitterUsername }}" target="_blank"
-                                       class="text-orange-200 hover:text-orange-100">
-                                        <span class="sr-only">Twitter</span>
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                {% endif %}
-                            </li>
-                            <li>
-                                {% if siteInformation.discordInvite is not null %}
-                                    <a href="{{ siteInformation.discordInvite }}" target="_blank"
-                                       class="text-orange-200 hover:text-orange-100">
-                                        <span class="sr-only">Discord</span>
-                                        <i class="fab fa-discord"></i>
-                                    </a>
-                                {% endif %}
-                            </li>
-                            <li>
-                                {% if siteInformation.truckersmpVtcId is not null %}
-                                    <a href="https://truckersmp.com/vtc/{{ siteInformation.truckersmpVtcId }}"
-                                       target="_blank"
-                                       class="text-orange-200 hover:text-orange-100">
-                                        <span class="sr-only">TruckersMP</span>
-                                        <i class="fas fa-truck"></i>
-                                    </a>
-                                {% endif %}
-                            </li>
+                            {% cache %}
+                                <li>
+                                    {% if siteInformation.twitterUsername is not null %}
+                                        <a href="https://twitter.com/{{ siteInformation.twitterUsername }}"
+                                           target="_blank"
+                                           class="text-orange-200 hover:text-orange-100">
+                                            <span class="sr-only">Twitter</span>
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    {% if siteInformation.discordInvite is not null %}
+                                        <a href="{{ siteInformation.discordInvite }}" target="_blank"
+                                           class="text-orange-200 hover:text-orange-100">
+                                            <span class="sr-only">Discord</span>
+                                            <i class="fab fa-discord"></i>
+                                        </a>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    {% if siteInformation.truckersmpVtcId is not null %}
+                                        <a href="https://truckersmp.com/vtc/{{ siteInformation.truckersmpVtcId }}"
+                                           target="_blank"
+                                           class="text-orange-200 hover:text-orange-100">
+                                            <span class="sr-only">TruckersMP</span>
+                                            <i class="fas fa-truck"></i>
+                                        </a>
+                                    {% endif %}
+                                </li>
+                            {% endcache %}
                         </ul>
                     </div>
 
@@ -269,36 +272,38 @@
         </div>
     </div>
 
-    {% if contact.faqItems.all()|length %}
-        <div class="bg-gray-800">
-            <div class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                    <div>
-                        <h2 class="text-3xl font-extrabold text-white">
-                            Frequently asked questions
-                        </h2>
-                        <p class="mt-4 text-lg text-gray-400">
-                            Can’t find the answer you’re looking for? Reach out to
-                            our <a href="mailto:support@phoenixvtc.com"
-                                   class="font-medium text-orange-700 hover:text-orange-600">support team</a>.
-                        </p>
-                    </div>
-                    <div class="mt-12 lg:mt-0 lg:col-span-2">
-                        <dl class="space-y-12">
-                            {% for item in contact.faqItems.all() %}
-                                <div>
-                                    <dt class="text-lg font-medium text-white">
-                                        {{ item.question }}
-                                    </dt>
-                                    <dd class="mt-2 text-base text-gray-400">
-                                        {{ item.answer }}
-                                    </dd>
-                                </div>
-                            {% endfor %}
-                        </dl>
+    {% cache %}
+        {% if contact.faqItems.all()|length %}
+            <div class="bg-gray-800">
+                <div class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+                    <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                        <div>
+                            <h2 class="text-3xl font-extrabold text-white">
+                                Frequently asked questions
+                            </h2>
+                            <p class="mt-4 text-lg text-gray-400">
+                                Can’t find the answer you’re looking for? Reach out to
+                                our <a href="mailto:support@phoenixvtc.com"
+                                       class="font-medium text-orange-700 hover:text-orange-600">support team</a>.
+                            </p>
+                        </div>
+                        <div class="mt-12 lg:mt-0 lg:col-span-2">
+                            <dl class="space-y-12">
+                                {% for item in contact.faqItems.all() %}
+                                    <div>
+                                        <dt class="text-lg font-medium text-white">
+                                            {{ item.question }}
+                                        </dt>
+                                        <dd class="mt-2 text-base text-gray-400">
+                                            {{ item.answer }}
+                                        </dd>
+                                    </div>
+                                {% endfor %}
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    {% endif %}
+        {% endif %}
+    {% endcache %}
 {% endblock %}

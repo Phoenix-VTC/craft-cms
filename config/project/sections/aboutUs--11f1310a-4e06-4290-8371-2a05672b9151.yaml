@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: aboutUs
+name: 'About Us'
+propagationMethod: all
+siteSettings:
+  0a9ef065-97f8-4583-b4a1-5a8e4d790203: # Phoenix
+    enabledByDefault: true
+    hasUrls: true
+    template: about-us/index
+    uriFormat: about-us
+type: single

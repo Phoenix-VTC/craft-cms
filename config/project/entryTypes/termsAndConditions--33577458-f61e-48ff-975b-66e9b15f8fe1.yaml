@@ -1,0 +1,38 @@
+fieldLayouts:
+  e155e15c-8522-4737-a48d-09f6e1fd59b8:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: termsAndConditions
+hasTitleField: false
+name: 'Terms and Conditions'
+section: bfb6dafa-b0e3-4838-a9d9-b73b1b958087 # Terms and Conditions
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

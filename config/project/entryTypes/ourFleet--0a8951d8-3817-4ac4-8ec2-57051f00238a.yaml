@@ -1,0 +1,38 @@
+fieldLayouts:
+  e0dd1715-7bc6-404f-af1a-1e2ddf5aea45:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: ourFleet
+hasTitleField: false
+name: 'Our Fleet'
+section: ba185bf2-d6ec-4a15-898e-f2bb827f9e67 # Our Fleet
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

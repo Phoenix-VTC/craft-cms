@@ -1,4 +1,4 @@
-dateModified: 1638442348
+dateModified: 1638443900
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -212,7 +212,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: Phoenix
   retryDuration: null

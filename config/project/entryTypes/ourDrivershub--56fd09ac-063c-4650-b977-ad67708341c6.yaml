@@ -1,0 +1,38 @@
+fieldLayouts:
+  5ed62aa3-a301-423a-a7cd-557acb4aaa2b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: ourDrivershub
+hasTitleField: false
+name: 'Our DriversHub'
+section: e9813ba6-2bb3-44d9-86aa-4e478bd1c82d # Our DriversHub
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

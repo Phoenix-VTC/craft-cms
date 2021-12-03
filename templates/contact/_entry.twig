@@ -273,7 +273,7 @@
     </div>
 
     {% cache %}
-        {% if contact.faqItems.all()|length %}
+        {% if entry.faqItems.all()|length %}
             <div class="bg-gray-800">
                 <div class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div class="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -289,7 +289,7 @@
                         </div>
                         <div class="mt-12 lg:mt-0 lg:col-span-2">
                             <dl class="space-y-12">
-                                {% for item in contact.faqItems.all() %}
+                                {% for item in entry.faqItems.all() %}
                                     <div>
                                         <dt class="text-lg font-medium text-white">
                                             {{ typogrify(item.question) }}

@@ -1,19 +1,6 @@
 fieldLayouts:
-  0edfe7af-086d-4c52-a966-0e0e1c842a92:
+  f3df4a11-018d-4fde-89ed-b090de9bbd45:
     tabs:
-      -
-        elements:
-          -
-            fieldUid: f769ee18-1b99-4a77-ac43-171d9805aa76 # Site Description
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: 'Site Information'
-        sortOrder: 1
       -
         elements:
           -
@@ -26,34 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c681a19b-210e-4008-9b67-9ce6bc045c47 # TruckersMP VTC ID
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 25ed42ae-bd38-4a53-a160-9fca36906d1f # Facebook Username
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: b0777c01-9f29-4b74-a410-1c07259d96ec # GitHub Username
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 480f7c1b-cf61-408a-bd58-9cf1741fb7ad # Instagram Username
+            fieldUid: ef7d02b7-56f0-4b22-b9ef-1c9f4e351569 # Twitter Username
             instructions: null
             label: null
             required: false
@@ -71,6 +31,24 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 480f7c1b-cf61-408a-bd58-9cf1741fb7ad # Instagram Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 25ed42ae-bd38-4a53-a160-9fca36906d1f # Facebook Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 38928dc1-8714-4f7a-97bd-d3d445732573 # Steam Group
             instructions: null
             label: null
@@ -80,7 +58,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ef7d02b7-56f0-4b22-b9ef-1c9f4e351569 # Twitter Username
+            fieldUid: b0777c01-9f29-4b74-a410-1c07259d96ec # GitHub Username
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c681a19b-210e-4008-9b67-9ce6bc045c47 # TruckersMP VTC ID
             instructions: null
             label: null
             required: false
@@ -89,7 +76,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: 'Company Socials'
-        sortOrder: 2
+        sortOrder: 1
 handle: siteInformation
 name: 'Site Information'
-sortOrder: 4
+sortOrder: 6

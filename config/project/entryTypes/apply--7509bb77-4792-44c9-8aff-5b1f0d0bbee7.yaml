@@ -26,6 +26,24 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
+          -
+            fieldUid: 2c156369-c025-4b90-86b7-878137ad5113 # Requirements
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1ee3f36f-8538-47a1-8ed5-6f0e6986693f # FAQ Items
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: apply

@@ -10,7 +10,7 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:d94ef4da-7241-4a7c-8550-0a516d9e6972' # Profile Pictures
+  defaultUploadLocationSource: 'volume:8ed20a17-9666-4d48-acbb-87e39d5f2831' # Team
   defaultUploadLocationSubpath: ''
   limit: ''
   localizeRelations: false
@@ -24,7 +24,7 @@ settings:
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:d94ef4da-7241-4a7c-8550-0a516d9e6972' # Profile Pictures
+    - 'volume:8ed20a17-9666-4d48-acbb-87e39d5f2831' # Team
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

@@ -1,5 +1,5 @@
 fieldLayouts:
-  627ce341-6275-47a3-951b-13d807b82fbf:
+  ae563aee-bc17-4cff-9f0f-0e61b349f228:
     tabs:
       -
         elements:
@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: ''
-            label: ''
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -28,13 +28,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: profilePictures
+handle: team
 hasUrls: true
-name: 'Profile Pictures'
+name: Team
 settings:
-  path: '@webroot/assets/profilePictures'
-sortOrder: 3
+  path: '@webroot/assets/team'
+sortOrder: 7
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
 type: craft\volumes\Local
-url: '@web/assets/profilePictures'
+url: '@web/assets/team'

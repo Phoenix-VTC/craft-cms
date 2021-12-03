@@ -1,4 +1,4 @@
-dateModified: 1638527005
+dateModified: 1638530772
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -28,6 +28,7 @@ meta:
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
     7a444e6c-effe-4031-a9b7-f24f92b4ef2b: Contact # Contact
     8b8f7d8a-ced8-41b7-8132-2ff407ac591c: 'News Index' # News Index
+    8ed20a17-9666-4d48-acbb-87e39d5f2831: Team # Team
     9a2d8217-0087-49b4-b760-b4dad07a1c57: 'About Us' # About Us
     9d57e550-7644-47f6-a197-47ddaa230d1f: Home # Home
     9e4e2aa5-2938-472c-9ef6-c2d3d67203a1: Answer # Answer
@@ -75,9 +76,9 @@ meta:
     c29d58b1-7ac7-481c-b814-fa6bb8898a37: Default # Default
     c48b8408-ca02-4d29-986e-31a35a7dab20: 'Cookie Policy' # Cookie Policy
     c681a19b-210e-4008-9b67-9ce6bc045c47: 'TruckersMP VTC ID' # TruckersMP VTC ID
+    c8389542-b6fa-4246-b78a-2fc2e1264ece: About # About
     ca553da7-62b5-4f20-a874-5d7d846cb931: Team # Team
     d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'Post Fields' # Post Fields
-    d94ef4da-7241-4a7c-8550-0a516d9e6972: 'Profile Pictures' # Profile Pictures
     dc6e9949-7832-497f-8453-c4982c626a9c: Partners # Partners
     dcd87449-f024-484e-b16d-21f3a078647e: 'Company Socials' # Company Socials
     de5d5736-6132-4731-a93d-e5a74d0d6b36: Blog # Blog

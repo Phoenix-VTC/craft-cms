@@ -1,0 +1,29 @@
+columnSuffix: pphknulu
+contentColumnType: text
+fieldGroup: 7386afed-ad3a-4215-9779-22c0947e4b3e # Team Member Fields
+handle: about
+instructions: 'A (short or long) about me text for the team member.'
+name: About
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - 8ed20a17-9666-4d48-acbb-87e39d5f2831 # Team
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Simple.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

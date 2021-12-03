@@ -12,7 +12,7 @@
         {% block content %}
             {% cache %}
                 <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                    {{ typogrify(legal.cookiePolicy) }}
+                    {{ typogrify(entry.cookiePolicy) }}
                 </div>
             {% endcache %}
         {% endblock %}

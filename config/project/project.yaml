@@ -42,12 +42,9 @@ meta:
     79b7c25d-1c23-4710-9989-91bd5bfee85a: 'Team Index' # Team Index
     81b6781d-4224-4093-a577-480f15545861: Slogan # Slogan
     81bec3ca-8e95-4530-b7a6-75bc23a56604: Contact # Contact
-    84eb6db6-21a9-47ac-a3e1-bad89cde13af: Recruitment # Recruitment
     231de198-3683-4015-b299-f40a845715bd: Partners # Partners
-    402a82f9-e12c-49dd-b30f-60c6906159a4: Legal # Legal
     416a86cd-8066-4c2e-8add-e32a69a0b3b9: 'TruckersMP ID' # TruckersMP ID
     480f7c1b-cf61-408a-bd58-9cf1741fb7ad: 'Instagram Username' # Instagram Username
-    489b83c6-d573-4d90-ab13-00524b36ec89: Contact # Contact
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
     665ef879-9eb6-4341-9bde-0fa85e06f7cb: 'Blog Index' # Blog Index
     917f5627-3dc6-423b-aa1d-d3e9d2553add: 'Member Rules' # Member Rules
@@ -68,7 +65,6 @@ meta:
     ac16972b-cbc7-4985-ba76-0bdc2d397b5b: Apply # Apply
     ad11b19f-af61-4b8a-b6e0-330e0f66a7bb: Email # Email
     ae17d579-95d6-4196-a49d-d3fe6c4a3c1b: 'Job Title' # Job Title
-    ae463a07-0fb5-4515-8649-b0ad5c4170b8: Rules # Rules
     aecaf734-f36e-4662-bb30-795eaa9300ed: 'Cookie Policy' # Cookie Policy
     b0777c01-9f29-4b74-a410-1c07259d96ec: 'GitHub Username' # GitHub Username
     b6aabefd-345d-4c38-a13a-caf0636d73ca: 'Team Positions' # Team Positions
@@ -76,7 +72,6 @@ meta:
     bee2519e-ac80-4425-a6b0-8cdbb8e094d4: 'Team Index' # Team Index
     bfb6dafa-b0e3-4838-a9d9-b73b1b958087: 'Terms and Conditions' # Terms and Conditions
     c1b4fdeb-34af-4ec3-afb6-b5f30a2a2fa5: 'Privacy Policy' # Privacy Policy
-    c2b59848-98ff-4771-80c2-63824451dc81: 'Site Information' # Site Information
     c29d58b1-7ac7-481c-b814-fa6bb8898a37: Default # Default
     c48b8408-ca02-4d29-986e-31a35a7dab20: 'Cookie Policy' # Cookie Policy
     c681a19b-210e-4008-9b67-9ce6bc045c47: 'TruckersMP VTC ID' # TruckersMP VTC ID
@@ -89,6 +84,7 @@ meta:
     de587533-76d9-4747-a138-71e89ccee6f5: Site # Site
     e8cf3d59-dc7d-4d37-9c21-e03049533db0: Rules # Rules
     e21f420c-3fc2-4ddc-afdc-b4ae78c526e3: Author # Author
+    e50e2ae1-1c46-4cc3-922a-8b9568186243: Legal # Legal
     e9813ba6-2bb3-44d9-86aa-4e478bd1c82d: 'Our DriversHub' # Our DriversHub
     e1703234-d6af-4b85-9cd4-6b0b7c35b7fe: 'News Index' # News Index
     ea97fd7b-0a78-47d9-b148-9ef9056d44a0: Website # Website
@@ -96,6 +92,7 @@ meta:
     eda59c5d-c991-453a-93a9-c4db97859fdb: 'Blog Index' # Blog Index
     ef7d02b7-56f0-4b22-b9ef-1c9f4e351569: 'Twitter Username' # Twitter Username
     f2cf9586-f81f-404f-b8e6-57b9fe1d530d: 'Post Categories' # Post Categories
+    f4c60350-d227-470d-8a13-7a70782c8d64: 'Site Information' # Site Information
     f8d2fcf0-a54c-4729-854b-11f93c2ae7a8: Blog # Blog
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
     fc020470-86c3-46e1-9bca-440954ee7bf6: Rules # Rules

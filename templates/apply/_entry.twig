@@ -65,7 +65,7 @@
                     <div class="mt-5 prose prose-orange text-gray-400 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                         {% cache %}
                             <ul role="list">
-                                {% for item in recruitment.requirements.all() %}
+                                {% for item in entry.requirements.all() %}
                                     <li>{{ typogrify(item.description) }}</li>
                                 {% endfor %}
                             </ul>
@@ -289,7 +289,7 @@
     </div>
 
     {% cache %}
-        {% if recruitment.faqItems.all()|length %}
+        {% if entry.faqItems.all()|length %}
             <div class="bg-gray-800">
                 <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
                     <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
@@ -297,7 +297,7 @@
                             Frequently asked questions
                         </h2>
                         <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-                            {% for item in recruitment.faqItems.all() %}
+                            {% for item in entry.faqItems.all() %}
                                 {% embed '_partials/faq/item.twig' with {'title': typogrify(item.question)} %}
                                     {% block content %}
                                         {{ typogrify(item.answer) }}

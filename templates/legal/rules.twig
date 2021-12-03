@@ -12,7 +12,7 @@
         {% block content %}
             {% cache %}
                 <div class="space-y-16">
-                    {% if ruleset.communityRules is not null %}
+                    {% if entry.communityRules is not null %}
                         <div>
                             <h1>
                                 <span class="block text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Community Rules</span>
@@ -20,12 +20,12 @@
                             </h1>
 
                             <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                                {{ typogrify(ruleset.communityRules) }}
+                                {{ typogrify(entry.communityRules) }}
                             </div>
                         </div>
                     {% endif %}
 
-                    {% if ruleset.memberRules is not null %}
+                    {% if entry.memberRules is not null %}
                         <div>
                             <h1>
                                 <span class="block text-base text-center text-orange-600 font-semibold tracking-wide uppercase">Member Rules</span>
@@ -33,7 +33,7 @@
                             </h1>
 
                             <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                                {{ typogrify(ruleset.memberRules) }}
+                                {{ typogrify(entry.memberRules) }}
                             </div>
                         </div>
                     {% endif %}

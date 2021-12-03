@@ -26,8 +26,30 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-        name: Content
+          -
+            fieldUid: 9413c31d-3095-4413-a3a9-7aab05f22886 # Community Rules
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Community Rules'
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 917f5627-3dc6-423b-aa1d-d3e9d2553add # Member Rules
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Member Rules'
+        sortOrder: 2
 handle: phoenixRules
 hasTitleField: false
 name: Rules

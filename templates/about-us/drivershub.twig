@@ -94,7 +94,11 @@
                         </defs>
                         <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"/>
                     </svg>
-                    <img class="pl-10 relative mx-auto" width="618" src="{{ alias('@assetBaseUrl/images/screenshots/tracker/home_dark.png') }}" alt="Phoenix Tracker home page screenshot">
+                    {% set trackerHomeDark = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/tracker/home_dark.png'), {
+                        format: 'webp',
+                    }) %}
+                    <img class="pl-10 relative mx-auto" width="618" src="{{ trackerHomeDark }}"
+                         alt="Phoenix Tracker home page screenshot">
                 </div>
             </div>
 
@@ -190,7 +194,11 @@
                             </defs>
                             <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"/>
                         </svg>
-                        <img class="relative mx-auto" width="490" src="{{ alias('@assetBaseUrl/images/screenshots/base/my_driver_level.png') }}" alt="My driver level screenshot">
+                        {% set myDriverLevel = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/base/my_driver_level.png'), {
+                            format: 'webp',
+                        }) %}
+                        <img class="relative mx-auto" width="490" src="{{ myDriverLevel }}"
+                             alt="My driver level screenshot">
                     </div>
                 </div>
             </div>
@@ -210,8 +218,11 @@
                 </p>
             </div>
             <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
+                {% set eventSystemHome = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/base/event_system_home.png'), {
+                    format: 'webp',
+                }) %}
                 <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 border-2 border-orange-600"
-                     src="{{ alias('@assetBaseUrl/images/screenshots/base/event_system_home.png') }}" alt="">
+                     src="{{ eventSystemHome }}" alt="Phoenix Event System homepage">
             </div>
         </div>
     </div>

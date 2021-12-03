@@ -1,3 +1,7 @@
+{% set heroImage = craft.imager.transformImage(alias('@assetBaseUrl/images/game-media/phoenix_truck_and_trailer.png'), {
+    format: 'webp',
+}) %}
+
 <div class="bg-gray-50" x-data="{ open: false }">
     <div class="relative overflow-hidden">
         <div class="absolute inset-y-0 h-full w-full" aria-hidden="true">
@@ -105,7 +109,7 @@
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <img class="relative rounded-lg shadow-lg"
-                     src="{{ alias('@assetBaseUrl/images/game-media/phoenix_truck_and_trailer.png') }}"
+                     src="{{ heroImage }}"
                      alt="Phoenix truck and trailer">
             </div>
         </div>

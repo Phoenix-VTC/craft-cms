@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea8eb995c552cda7d6c566719908899c",
+    "content-hash": "8f20a667524128af0517c6465a62af01",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -501,11 +501,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.23",
+            "version": "3.7.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/653495ebda3787711812fe03fd6d4483c1340473",
-                "reference": "653495ebda3787711812fe03fd6d4483c1340473",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/2e6b98c885da7d5a150e6eb4851710c32bbf71f7",
+                "reference": "2e6b98c885da7d5a150e6eb4851710c32bbf71f7",
                 "shasum": ""
             },
             "require": {
@@ -589,7 +589,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2021-11-26T18:39:28+00:00"
+            "time": "2021-12-02T18:33:06+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",

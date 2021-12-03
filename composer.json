@@ -11,6 +11,7 @@
     "nystudio107/craft-seomatic": "3.4.20",
     "nystudio107/craft-typogrify": "1.1.18",
     "shornuk/craft-plausible": "1.0.5",
+    "spacecatninja/imager-x": "v3.5.4",
     "verbb/knock-knock": "1.2.16",
     "vlucas/phpdotenv": "^3.4.0"
   },

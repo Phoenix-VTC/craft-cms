@@ -37,8 +37,11 @@
                     <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
                         <figure>
                             <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                {% set truckWithGoldenGateBridge = craft.imager.transformImage(alias('@assetBaseUrl/images/game-media/truck_with_golden_gate_bridge.png'), {
+                                    format: 'webp',
+                                }) %}
                                 <img class="rounded-lg shadow-lg object-cover object-center"
-                                     src="{{ alias('@assetBaseUrl/images/game-media/truck_with_golden_gate_bridge.png') }}"
+                                     src="{{ truckWithGoldenGateBridge }}"
                                      alt="Phoenix truck in front of the Golden Gate Bridge">
                             </div>
                             <figcaption class="mt-3 flex text-sm text-gray-400">
@@ -115,8 +118,11 @@
                 </p>
             </div>
             <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
+                {% set applicationSystem = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/base/application_system.png'), {
+                    format: 'webp',
+                }) %}
                 <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-                     src="{{ alias('@assetBaseUrl/images/screenshots/base/application_system.png') }}"
+                     src="{{ applicationSystem }}"
                      alt="Custom Phoenix Recruitment System">
             </div>
         </div>

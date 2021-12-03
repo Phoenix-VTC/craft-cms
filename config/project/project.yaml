@@ -1,4 +1,4 @@
-dateModified: 1638565680
+dateModified: 1638567055
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -21,7 +21,6 @@ meta:
     5b3a42e5-ec56-4dab-8b94-d0a45f61734c: 'Profile Picture' # Profile Picture
     5e19c644-0362-4afe-9fc4-45cc5f32ee43: Description # Description
     5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
-    6a267380-2cea-42dc-8a94-215d6e3d82b1: 'Is Pinned' # Is Pinned
     6ac6b856-c4bb-47c0-9d8a-749cbe20f95e: Requirement # Requirement
     6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
     6bccb7b8-eeac-42b5-981c-cc567a1d2314: 'Discord Invite' # Discord Invite

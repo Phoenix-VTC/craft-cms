@@ -42,4 +42,10 @@ return [
         '@assetBaseUrl' => '@web/assets',
         '@assetBasePath' => '@webroot/assets',
     ],
+
+    // Set the session cookie name
+    'phpSessionName' => 'PhoenixCmsSessionId',
+
+    // Set the CSRF token name
+    'csrfTokenName' => 'PHXCMS_CSRF_TOKEN'
 ];

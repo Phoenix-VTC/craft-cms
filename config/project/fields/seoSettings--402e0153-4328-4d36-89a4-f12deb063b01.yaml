@@ -1,0 +1,31 @@
+columnSuffix: wwapxaei
+contentColumnType: text
+fieldGroup: 38bc5335-6961-4b32-b011-c2925eb5486f # Common
+handle: seoSettings
+instructions: ''
+name: 'SEO Settings'
+searchable: false
+settings:
+  elementDisplayPreviewType: discord
+  facebookEnabledFields:
+    - seoPreview
+    - ogType
+  facebookTabEnabled: '1'
+  generalEnabledFields:
+    - seoPreview
+    - mainEntityOfPage
+    - seoTitle
+    - seoDescription
+    - seoKeywords
+    - seoImage
+    - seoImageDescription
+  generalTabEnabled: '1'
+  sitemapTabEnabled: ''
+  twitterEnabledFields:
+    - seoPreview
+    - twitterCardType
+    - twitterCreator
+  twitterTabEnabled: '1'
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\seomatic\fields\SeoSettings

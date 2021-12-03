@@ -27,6 +27,7 @@
                             {# Fetch all entries related to this category #}
                             {% set entries = craft.entries()
                                 .relatedTo(category)
+                                .orderBy('dateCreated', 'desc')
                                 .all() %}
 
                             {# Output them #}

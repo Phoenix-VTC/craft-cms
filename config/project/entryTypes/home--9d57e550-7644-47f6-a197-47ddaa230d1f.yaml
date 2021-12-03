@@ -26,6 +26,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
+          -
+            fieldUid: 6d529a0f-713a-4b29-b07b-1172eff1cd0e # Featured Image
+            instructions: ''
+            label: 'Hero Image'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: home

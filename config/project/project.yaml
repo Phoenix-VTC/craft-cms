@@ -1,4 +1,4 @@
-dateModified: 1638444499
+dateModified: 1638527005
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -101,38 +101,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  cookie-though:
+  cookie-consent:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.3
-    settings:
-      cookiePolicyLabel: 'Read the full cookie declaration'
-      cookiePolicyUrl: /cookie-policy
-      cookiePreferenceKey: cookie-preferences
-      customizeLabel: Customize
-      essentialLabel: 'Always on'
-      headerDescription: 'Everybody wants to show their best side - and so do we. That’s why we use cookies to guarantee you a better experience.'
-      headerSubTitle: 'You''re probably fed up with these banners...'
-      headerTitle: 'Cookie though?'
-      permissionLabelsAccept: Accept
-      permissionLabelsAcceptAll: 'Accept all'
-      permissionLabelsDecline: Decline
-      policies:
-        0:
-          - essential
-          - 'Essential Cookies'
-          - essential
-          - 'We need to save some technical cookies, for the website to function properly.'
-        2:
-          - statistics
-          - Statistics
-          - statistics
-          - 'We need to save some technical cookies, for the website to function properly.'
-        3:
-          - social
-          - 'Social Media Cookies'
-          - social
-          - 'We need to save some social cookies, for the website to function properly.'
+    licenseKey: MOW4MYYEDJW7JLMR4VWR9R5Q
+    schemaVersion: 1.5.0
   fetch:
     edition: standard
     enabled: true
@@ -170,6 +143,13 @@ plugins:
       template: ''
       unprotectedUrls: ''
       useRemoteIp: ''
+  plausible:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      apiKey: $PLAUSIBLE_API_KEY
+      siteId: $PLAUSIBLE_SITE_ID
   read-time:
     edition: standard
     enabled: true

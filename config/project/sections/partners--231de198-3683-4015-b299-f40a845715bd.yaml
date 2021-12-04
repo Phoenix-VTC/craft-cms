@@ -5,8 +5,8 @@ name: Partners
 propagationMethod: all
 siteSettings:
   0a9ef065-97f8-4583-b4a1-5a8e4d790203: # Phoenix
-    enabledByDefault: true
-    hasUrls: true
-    template: partners/_entry
-    uriFormat: 'partners/{slug}'
+    enabledByDefault: false
+    hasUrls: false
+    template: null
+    uriFormat: null
 type: channel

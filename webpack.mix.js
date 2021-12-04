@@ -5,7 +5,9 @@ require("laravel-mix-versionhash");
 
 mix.disableSuccessNotifications();
 
-mix.js(["resources/js/app.js"], "web/assets/js/app.js").extract();
+mix.js(["resources/js/app.js"], "web/assets/js/app.js")
+    .js("resources/js/cookie-consent.js", "web/assets/js/cookie-consent.js")
+    .extract();
 
 mix
     .sass("resources/sass/app.scss", "assets/css/app.css")

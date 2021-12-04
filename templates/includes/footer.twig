@@ -9,73 +9,71 @@
                 <p class="text-gray-300 text-base">
                     We believe in forward thinking, and strive to put our members first!
                 </p>
-                {% cache globally %}
-                    <div class="flex space-x-6 text-xl">
-                        {% if siteInformation.discordInvite is not null %}
-                            <a href="{{ siteInformation.discordInvite }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">Discord</span>
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        {% endif %}
+                <div class="flex space-x-6 text-xl">
+                    {% if siteInformation.discordInvite is not null %}
+                        <a href="{{ siteInformation.discordInvite }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Discord</span>
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.twitterUsername is not null %}
-                            <a href="https://twitter.com/{{ siteInformation.twitterUsername }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">Twitter</span>
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        {% endif %}
+                    {% if siteInformation.twitterUsername is not null %}
+                        <a href="https://twitter.com/{{ siteInformation.twitterUsername }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.twitchUsername is not null %}
-                            <a href="https://twitch.tv/{{ siteInformation.twitchUsername }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">Twitch</span>
-                                <i class="fab fa-twitch"></i>
-                            </a>
-                        {% endif %}
+                    {% if siteInformation.twitchUsername is not null %}
+                        <a href="https://twitch.tv/{{ siteInformation.twitchUsername }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Twitch</span>
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.instagramUsername is not null %}
-                            <a href="https://instagram.com/{{ siteInformation.instagramUsername }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">Instagram</span>
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        {% endif %}
+                    {% if siteInformation.instagramUsername is not null %}
+                        <a href="https://instagram.com/{{ siteInformation.instagramUsername }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Instagram</span>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.facebookUsername is not null %}
-                            <a href="https://facebook.com/{{ siteInformation.facebookUsername }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">Facebook</span>
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        {% endif %}
+                    {% if siteInformation.facebookUsername is not null %}
+                        <a href="https://facebook.com/{{ siteInformation.facebookUsername }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Facebook</span>
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.steamGroup is not null %}
-                            <a href="https://steamcommunity.com/groups/{{ siteInformation.steamGroup }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">Steam</span>
-                                <i class="fab fa-steam"></i>
-                            </a>
-                        {% endif %}
+                    {% if siteInformation.steamGroup is not null %}
+                        <a href="https://steamcommunity.com/groups/{{ siteInformation.steamGroup }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Steam</span>
+                            <i class="fab fa-steam"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.githubUsername is not null %}
-                            <a href="https://github.com/{{ siteInformation.githubUsername }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">GitHub</span>
-                                <i class="fab fa-github"></i>
-                            </a>
-                        {% endif %}
+                    {% if siteInformation.githubUsername is not null %}
+                        <a href="https://github.com/{{ siteInformation.githubUsername }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    {% endif %}
 
-                        {% if siteInformation.truckersmpVtcId is not null %}
-                            <a href="https://truckersmp.com/vtc/{{ siteInformation.truckersmpVtcId }}" target="_blank"
-                               class="text-gray-400 hover:text-gray-500">
-                                <span class="sr-only">TruckersMP</span>
-                                <i class="fas fa-truck"></i>
-                            </a>
-                        {% endif %}
-                    </div>
-                {% endcache %}
+                    {% if siteInformation.truckersmpVtcId is not null %}
+                        <a href="https://truckersmp.com/vtc/{{ siteInformation.truckersmpVtcId }}" target="_blank"
+                           class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">TruckersMP</span>
+                            <i class="fas fa-truck"></i>
+                        </a>
+                    {% endif %}
+                </div>
             </div>
             <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
                 <div class="md:grid md:grid-cols-2 md:gap-8">

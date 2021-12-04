@@ -10,36 +10,34 @@
     } %}
 
     <div class="bg-gray-900" id="team">
-        {% cache %}
-            <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24 space-y-10">
-                {# Start a category query for the group 'teamPositions' #}
-                {% set categoryQuery = craft.categories()
-                    .group('teamPositions') %}
+        <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24 space-y-10">
+            {# Start a category query for the group 'teamPositions' #}
+            {% set categoryQuery = craft.categories()
+                .group('teamPositions') %}
 
-                {# Fetch the categories #}
-                {% set categories = categoryQuery.all() %}
+            {# Fetch the categories #}
+            {% set categories = categoryQuery.all() %}
 
-                {% for category in categories %}
-                    <div class="space-y-12">
-                        <h2 class="text-3xl text-center font-extrabold text-white sm:text-4xl">{{ category.title }}</h2>
-                        <ul role="list"
-                            class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
-                            {# Fetch all entries related to this category #}
-                            {% set entries = craft.entries()
-                                .with(['profilePicture'])
-                                .relatedTo(category)
-                                .orderBy('dateCreated', 'desc')
-                                .all() %}
+            {% for category in categories %}
+                <div class="space-y-12">
+                    <h2 class="text-3xl text-center font-extrabold text-white sm:text-4xl">{{ category.title }}</h2>
+                    <ul role="list"
+                        class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
+                        {# Fetch all entries related to this category #}
+                        {% set entries = craft.entries()
+                            .with(['profilePicture'])
+                            .relatedTo(category)
+                            .orderBy('dateCreated', 'desc')
+                            .all() %}
 
-                            {# Output them #}
-                            {% for entry in entries %}
-                                {% include '_partials/team/card.twig' %}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endfor %}
-            </div>
-        {% endcache %}
+                        {# Output them #}
+                        {% for entry in entries %}
+                            {% include '_partials/team/card.twig' %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 
     <div class="bg-gray-800" id="now-hiring-cta">

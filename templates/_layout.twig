@@ -6,11 +6,12 @@
     {% include 'includes/favicons.twig' %}
     <link rel="stylesheet" type="text/css" href="{{ rev('/assets/css/app.css') }}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {% do view.registerJsFile(rev('/assets/js/cookie-consent.js')) %}
     {% block scripts_top %}
     {% endblock %}
 </head>
 <body class="flex flex-col h-screen">
-{% hook 'after-body-start' %}
+{{ craft.blitz.getTemplate('includes/cookie-banner') }}
 <div class="flex-grow bg-gray-900">
     {% block content %}
     {% endblock %}

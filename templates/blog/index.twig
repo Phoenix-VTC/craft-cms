@@ -15,15 +15,13 @@
         </div>
         <div class="relative max-w-7xl mx-auto">
             <div class="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-                {% cache globally %}
-                    {% set entries = craft.entries()
-                        .section('blog')
-                        .all() %}
+                {% set entries = craft.entries()
+                    .section('blog')
+                    .all() %}
 
-                    {% for entry in entries %}
-                        {% include '_partials/post/card.twig' %}
-                    {% endfor %}
-                {% endcache %}
+                {% for entry in entries %}
+                    {% include '_partials/post/card.twig' %}
+                {% endfor %}
             </div>
         </div>
     </div>

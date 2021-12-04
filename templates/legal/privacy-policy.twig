@@ -10,11 +10,9 @@
 
     {% embed '_partials/post/content.twig' with {'rectangles': false} %}
         {% block content %}
-            {% cache %}
-                <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
-                    {{ typogrify(entry.privacyPolicy) }}
-                </div>
-            {% endcache %}
+            <div class="prose prose-lg prose-orange mt-6 text-gray-400 mx-auto max-w-6xl">
+                {{ typogrify(entry.privacyPolicy) }}
+            </div>
         {% endblock %}
     {% endembed %}
 {% endblock %}

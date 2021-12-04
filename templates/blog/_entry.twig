@@ -15,13 +15,11 @@
 
     {% embed '_partials/post/content.twig' %}
         {% block content %}
-            {% cache %}
-                <div class="prose prose-lg prose-orange text-gray-400 mx-auto max-w-6xl">
-                    {% for block in entry.postContent %}
-                        {{ typogrify(block.text) }}
-                    {% endfor %}
-                </div>
-            {% endcache %}
+            <div class="prose prose-lg prose-orange text-gray-400 mx-auto max-w-6xl">
+                {% for block in entry.postContent %}
+                    {{ typogrify(block.text) }}
+                {% endfor %}
+            </div>
         {% endblock %}
     {% endembed %}
 
@@ -33,16 +31,14 @@
                 </h2>
             </div>
             <div class="mt-8 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-                {% cache globally %}
-                    {% set entries = craft.entries()
-                        .section('news')
-                        .limit(3)
-                        .all() %}
+                {% set entries = craft.entries()
+                    .section('news')
+                    .limit(3)
+                    .all() %}
 
-                    {% for entry in entries %}
-                        {% include '_partials/post/card.twig' %}
-                    {% endfor %}
-                {% endcache %}
+                {% for entry in entries %}
+                    {% include '_partials/post/card.twig' %}
+                {% endfor %}
             </div>
         </div>
     </div>

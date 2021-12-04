@@ -178,10 +178,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
-  redirect:
+  retour:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.5
+    licenseKey: UB2NEYH2YHP8SC2Y2U46IGRJ
+    schemaVersion: 3.0.10
   seomatic:
     edition: standard
     enabled: true

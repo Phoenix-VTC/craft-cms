@@ -26,6 +26,7 @@
                             class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
                             {# Fetch all entries related to this category #}
                             {% set entries = craft.entries()
+                                .with(['profilePicture'])
                                 .relatedTo(category)
                                 .orderBy('dateCreated', 'desc')
                                 .all() %}

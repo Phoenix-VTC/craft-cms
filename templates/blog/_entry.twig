@@ -1,3 +1,7 @@
+{% do eagerLoadElements(entry, [
+    'postContent'
+]) %}
+
 {% extends "_layout.twig" %}
 
 {% block content %}
@@ -13,7 +17,7 @@
         {% block content %}
             {% cache %}
                 <div class="prose prose-lg prose-orange text-gray-400 mx-auto max-w-6xl">
-                    {% for block in entry.postContent.all() %}
+                    {% for block in entry.postContent %}
                         {{ typogrify(block.text) }}
                     {% endfor %}
                 </div>

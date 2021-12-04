@@ -10,7 +10,7 @@
     quality: 90
 } %}
 
-{% set heroImage = entry.featuredImage.one() %}
+{% set heroImage = entry.featuredImage[0] ?? null %}
 
 <div class="bg-gray-50" x-data="{ open: false }">
     <div class="relative overflow-hidden">

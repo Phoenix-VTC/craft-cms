@@ -42,9 +42,9 @@ handle: teamPositions
 name: 'Team Positions'
 siteSettings:
   0a9ef065-97f8-4583-b4a1-5a8e4d790203: # Phoenix
-    hasUrls: true
+    hasUrls: false
     template: null
-    uriFormat: 'team-positions/{slug}'
+    uriFormat: null
 structure:
   maxLevels: 1
   uid: 774c77b6-451c-49ab-ac3b-07a3710c769b

@@ -23,36 +23,34 @@
             <p class="max-w-xl mt-5 mx-auto text-xl text-gray-400">{{ description ?? '' }}</p>
 
             {% if article ?? false %}
-                {% cache %}
-                    <div class="flex flex-row justify-center space-x-8 text-white font-medium">
-                        <div>
-                            {% for category in entry.postCategories %}
-                                <span class="inline-flex items-center px-3 py-0.5 rounded text-sm bg-orange-600 text-white">
+                <div class="flex flex-row justify-center space-x-8 text-white font-medium">
+                    <div>
+                        {% for category in entry.postCategories %}
+                            <span class="inline-flex items-center px-3 py-0.5 rounded text-sm bg-orange-600 text-white">
                                 {{ category }}
                             </span>
-                            {% endfor %}
-                        </div>
-                        <div>
+                        {% endfor %}
+                    </div>
+                    <div>
                     <span>
                         {{ entry.postDate|date('F j, Y') }}
                     </span>
-                        </div>
-                        <div class="flex flex-row">
-                            {% set authorProfilePicture = entry.authorUser[0].profilePicture[0] ?? null %}
-                            {% if authorProfilePicture is not null %}
-                                <img class="h-6 w-6 rounded-full"
-                                     src="{{ authorProfilePicture.getUrl(profilePictureOptions) }}"
-                                     alt="{{ entry.authorUser[0].title ?? null }}'s profile picture">
-                                <span class="ml-2">{{ entry.authorUser[0].title ?? null }}</span>
-                            {% endif %}
-                        </div>
-                        <div>
+                    </div>
+                    <div class="flex flex-row">
+                        {% set authorProfilePicture = entry.authorUser[0].profilePicture[0] ?? null %}
+                        {% if authorProfilePicture is not null %}
+                            <img class="h-6 w-6 rounded-full"
+                                 src="{{ authorProfilePicture.getUrl(profilePictureOptions) }}"
+                                 alt="{{ entry.authorUser[0].title ?? null }}'s profile picture">
+                            <span class="ml-2">{{ entry.authorUser[0].title ?? null }}</span>
+                        {% endif %}
+                    </div>
+                    <div>
                     <span>
                         {{ readTime(entry.postContent, false) }} read
                     </span>
-                        </div>
                     </div>
-                {% endcache %}
+                </div>
             {% endif %}
         </div>
     </div>

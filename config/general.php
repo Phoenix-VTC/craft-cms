@@ -47,5 +47,5 @@ return [
     'phpSessionName' => 'PhoenixCmsSessionId',
 
     // Set the CSRF token name
-    'csrfTokenName' => 'PHXCMS_CSRF_TOKEN'
+    'csrfTokenName' => 'PHXCMS_CSRF_TOKEN',
 ];

@@ -146,57 +146,55 @@
         </div>
     </div>
 
-    {% cache %}
-        {% set partners = craft.entries()
-            .section('partners')
-            .with(['logo']) %}
+    {% set partners = craft.entries()
+        .section('partners')
+        .with(['logo']) %}
 
-        <div class="bg-gray-800" id="partners">
-            <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-                <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-                    <div class="space-y-5 sm:space-y-4">
-                        <h2 class="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">
-                            Our {{ craft.typogrify.pluralize('Partner', partners.count()) }}</h2>
-                        <p class="text-xl text-gray-400">
-                            Because at Phoenix, we believe that VTCs are meant to come together and create new memories.
-                        </p>
-                    </div>
-                    <div class="lg:col-span-2">
-                        <ul role="list"
-                            class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
-                            {% set partnerLogoOptions = {
-                                format: 'webp',
-                                mode: 'crop',
-                                width: 384,
-                                height: 384,
-                                quality: 90
-                            } %}
+    <div class="bg-gray-800" id="partners">
+        <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+            <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+                <div class="space-y-5 sm:space-y-4">
+                    <h2 class="text-3xl text-white font-extrabold tracking-tight sm:text-4xl">
+                        Our {{ craft.typogrify.pluralize('Partner', partners.count()) }}</h2>
+                    <p class="text-xl text-gray-400">
+                        Because at Phoenix, we believe that VTCs are meant to come together and create new memories.
+                    </p>
+                </div>
+                <div class="lg:col-span-2">
+                    <ul role="list"
+                        class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+                        {% set partnerLogoOptions = {
+                            format: 'webp',
+                            mode: 'crop',
+                            width: 384,
+                            height: 384,
+                            quality: 90
+                        } %}
 
-                            {% for partner in partners.all() %}
-                                <li>
-                                    <div class="space-y-4">
-                                        <div class="aspect-w-5 aspect-h-5">
-                                            {% set partnerLogo = partner.logo[0] ?? null %}
-                                            {% if partnerLogo is not null %}
-                                                <img class="object-contain"
-                                                     src="{{ partnerLogo.getUrl(partnerLogoOptions) }}"
-                                                     alt="{{ partner.title }}'s logo">
-                                            {% endif %}
-                                        </div>
-                                        <div class="text-lg leading-6 font-medium space-y-1">
-                                            <h3 class="text-white">
-                                                <a class="hover:underline" href="{{ partner.website }}"
-                                                   target="_blank">{{ partner.title }}</a>
-                                            </h3>
-                                            <p class="text-orange-600">{{ partner.slogan }}</p>
-                                        </div>
+                        {% for partner in partners.all() %}
+                            <li>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-5 aspect-h-5">
+                                        {% set partnerLogo = partner.logo[0] ?? null %}
+                                        {% if partnerLogo is not null %}
+                                            <img class="object-contain"
+                                                 src="{{ partnerLogo.getUrl(partnerLogoOptions) }}"
+                                                 alt="{{ partner.title }}'s logo">
+                                        {% endif %}
                                     </div>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+                                    <div class="text-lg leading-6 font-medium space-y-1">
+                                        <h3 class="text-white">
+                                            <a class="hover:underline" href="{{ partner.website }}"
+                                               target="_blank">{{ partner.title }}</a>
+                                        </h3>
+                                        <p class="text-orange-600">{{ partner.slogan }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
-    {% endcache %}
+    </div>
 {% endblock %}

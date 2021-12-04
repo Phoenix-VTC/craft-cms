@@ -1,4 +1,4 @@
-dateModified: 1638653854
+dateModified: 1638654075
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -203,39 +203,6 @@ plugins:
     enabled: true
     licenseKey: 1F7TBF6XNRHVC2VZQWSQM5IC
     schemaVersion: 3.0.0
-  knock-knock:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.1.1
-    settings:
-      allowIps: ''
-      checkInvalidLogins: ''
-      denyIps: ''
-      enabled: '1'
-      forcedRedirect: null
-      invalidLoginWindowDuration: '3600'
-      loginPath: ''
-      maxInvalidLogins: '10'
-      password: craftcmstesting
-      protectedUrls: ''
-      siteSettings:
-        __assoc__:
-          -
-            - default
-            -
-              __assoc__:
-                -
-                  - enabled
-                  - ''
-                -
-                  - password
-                  - ''
-                -
-                  - template
-                  - ''
-      template: ''
-      unprotectedUrls: ''
-      useRemoteIp: ''
   plausible:
     edition: standard
     enabled: true

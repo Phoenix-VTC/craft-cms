@@ -1,4 +1,4 @@
-dateModified: 1638571647
+dateModified: 1638646561
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -17,6 +17,7 @@ meta:
     2c8cdca8-a909-4cc0-8aaf-bab454f00013: 'Recruitment FAQ' # Recruitment FAQ
     2c156369-c025-4b90-86b7-878137ad5113: Requirements # Requirements
     4c882c79-0491-44ed-8f8f-73419177aad3: Home # Home
+    4cce5b3f-ef9a-4e49-91bc-9bb461e25220: Relations # Relations
     4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
     5b3a42e5-ec56-4dab-8b94-d0a45f61734c: 'Profile Picture' # Profile Picture
     5e19c644-0362-4afe-9fc4-45cc5f32ee43: Description # Description
@@ -114,6 +115,11 @@ plugins:
   eager-beaver:
     edition: standard
     enabled: true
+    schemaVersion: 1.0.0
+  element-relations:
+    edition: standard
+    enabled: true
+    licenseKey: J4MMSAA5V8DHJ6BHMY6VDUM2
     schemaVersion: 1.0.0
   fetch:
     edition: standard

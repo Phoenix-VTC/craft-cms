@@ -71,6 +71,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: 4cce5b3f-ef9a-4e49-91bc-9bb461e25220 # Relations
+            instructions: ''
+            label: 'Articles by member'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -

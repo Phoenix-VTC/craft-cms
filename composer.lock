@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c81553975640b3f9b03b9c906de49eeb",
+    "content-hash": "1517e4a9c46bfac6ce147f48ea949c04",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1672,6 +1672,57 @@
                 "imgix"
             ],
             "time": "2020-06-05T21:57:36+00:00"
+        },
+        {
+            "name": "internetztube/craft-element-relations",
+            "version": "1.0.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/internetztube/craft-element-relations/zipball/bb00affdc2a2c9bfbd629eb901ae19ab34412e16",
+                "reference": "bb00affdc2a2c9bfbd629eb901ae19ab34412e16",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "tightenco/collect": "^8.34"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Element Relations",
+                "handle": "element-relations",
+                "developer": "Frederic Koeberl",
+                "developerUrl": "https://frederickoeberl.com/",
+                "documentationUrl": "https://github.com/internetztube/craft-element-relations/blob/master/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/internetztube/craft-element-relations/master/CHANGELOG.md",
+                "class": "internetztube\\elementRelations\\ElementRelations"
+            },
+            "autoload": {
+                "psr-4": {
+                    "internetztube\\elementRelations\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frederic Koeberl",
+                    "homepage": "https://frederickoeberl.com/"
+                }
+            ],
+            "description": "Shows all relations of an element.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "element-relations"
+            ],
+            "support": {
+                "docs": "https://github.com/internetztube/craft-element-relations/blob/master/README.md",
+                "issues": "https://github.com/internetztube/craft-element-relations/issues"
+            },
+            "time": "2021-11-18T15:44:11+00:00"
         },
         {
             "name": "jalendport/craft-fetch",
@@ -4952,6 +5003,65 @@
             "time": "2021-11-24T10:02:00+00:00"
         },
         {
+            "name": "symfony/var-dumper",
+            "version": "v5.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/89ab66eaef230c9cd1992de2e9a1b26652b127b9",
+                "reference": "89ab66eaef230c9cd1992de2e9a1b26652b127b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<5.4.3",
+                "symfony/console": "<4.4"
+            },
+            "suggest": {
+                "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+                "ext-intl": "To show region name in time zone dump",
+                "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
+            },
+            "bin": [
+                "Resources/bin/var-dump-server"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2021-11-29T15:30:56+00:00"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v5.4.0",
             "dist": {
@@ -4999,6 +5109,45 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "time": "2021-11-28T15:25:38+00:00"
+        },
+        {
+            "name": "tightenco/collect",
+            "version": "v8.68.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/8bb884bdab8088b358074f629d8402b64efce2c0",
+                "reference": "8bb884bdab8088b358074f629d8402b64efce2c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collect/Support/helpers.php",
+                    "src/Collect/Support/alias.php"
+                ],
+                "psr-4": {
+                    "Tightenco\\Collect\\": "src/Collect"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2021-11-30T18:41:31+00:00"
         },
         {
             "name": "tinify/tinify",
@@ -6339,95 +6488,6 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.10.12"
             },
             "time": "2021-11-30T14:05:36+00:00"
-        },
-        {
-            "name": "symfony/var-dumper",
-            "version": "v5.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "89ab66eaef230c9cd1992de2e9a1b26652b127b9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/89ab66eaef230c9cd1992de2e9a1b26652b127b9",
-                "reference": "89ab66eaef230c9cd1992de2e9a1b26652b127b9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<5.4.3",
-                "symfony/console": "<4.4"
-            },
-            "require-dev": {
-                "ext-iconv": "*",
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/process": "^4.4|^5.0|^6.0",
-                "symfony/uid": "^5.1|^6.0",
-                "twig/twig": "^2.13|^3.0.4"
-            },
-            "suggest": {
-                "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
-                "ext-intl": "To show region name in time zone dump",
-                "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
-            },
-            "bin": [
-                "Resources/bin/var-dump-server"
-            ],
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "Resources/functions/dump.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Component\\VarDumper\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "debug",
-                "dump"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-11-29T15:30:56+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",

@@ -1,4 +1,4 @@
-dateModified: 1638567055
+dateModified: 1638571647
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -102,11 +102,19 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  blitz-recommendations:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   cookie-consent:
     edition: standard
     enabled: true
     licenseKey: MOW4MYYEDJW7JLMR4VWR9R5Q
     schemaVersion: 1.5.0
+  eager-beaver:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   fetch:
     edition: standard
     enabled: true

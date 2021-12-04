@@ -24,5 +24,32 @@ return [
     'modules' => [
         'my-module' => \modules\Module::class,
     ],
-    //'bootstrap' => ['my-module'],
+    'components' => [
+        'redis' => [
+            'class' => yii\redis\Connection::class,
+            'hostname' => 'localhost',
+            'port' => 6379,
+            'password' => App::env('REDIS_PASSWORD') ?: null,
+        ],
+        'cache' => [
+            'class' => yii\redis\Cache::class,
+            'defaultDuration' => 86400,
+            'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS',
+        ],
+        'session' => function() {
+            // Get the default component config
+            $config = App::sessionConfig();
+
+            // Override the class to use Redis' session class
+            $config['class'] = yii\redis\Session::class;
+
+            // Instantiate and return it
+            return Craft::createObject($config);
+        },
+        'queue' => [
+            'class' => yii\queue\redis\Queue::class,
+            'redis' => 'redis', // Redis connection component or its config
+            'channel' => 'queue', // Queue channel key
+        ],
+    ],
 ];

@@ -1,3 +1,7 @@
+{% do eagerLoadElements(entry, [
+    'featuredImage',
+]) %}
+
 {% extends "_layout.twig" %}
 
 {% block content %}
@@ -203,9 +207,10 @@
                 {% cache globally %}
                     {% set entries = craft.entries()
                         .section('news')
-                        .limit(3) %}
+                        .limit(3)
+                        .all() %}
 
-                    {% for entry in entries.all() %}
+                    {% for entry in entries %}
                         {% include '_partials/post/card.twig' %}
                     {% endfor %}
                 {% endcache %}

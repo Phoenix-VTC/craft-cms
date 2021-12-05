@@ -1,4 +1,4 @@
-dateModified: 1638728632
+dateModified: 1638728996
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -237,6 +237,13 @@ plugins:
     enabled: true
     licenseKey: J4MMSAA5V8DHJ6BHMY6VDUM2
     schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: '1'
+      redirectToEntry: '1'
   feed-me:
     edition: standard
     enabled: true

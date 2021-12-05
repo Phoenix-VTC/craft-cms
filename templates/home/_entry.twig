@@ -57,9 +57,12 @@
                                     <div class="flex-shrink-0">
                                         {% set stanProfilePicture = craft.imager.transformImage(alias('@assetBaseUrl/images/profile-pictures/stan.png'), {
                                             format: 'webp',
+                                            width: 24,
+                                            height: 24,
                                         }) %}
 
                                         <img class="h-6 w-6 rounded-full"
+                                             width="24" height="24"
                                              src="{{ stanProfilePicture }}"
                                              alt="Stan's profile picture">
                                     </div>
@@ -75,10 +78,13 @@
                     <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                         {% set phoenixTruckAndTrailerInTunnel = craft.imager.transformImage(alias('@assetBaseUrl/images/game-media/phoenix_truck_and_trailer_in_a_tunnel.png'), {
                             format: 'webp',
+                            width: 902,
+                            height: 571,
                         }) %}
 
                         <img class="w-full rounded-xl lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                              src="{{ phoenixTruckAndTrailerInTunnel }}"
+                             width="902" height="571"
                              alt="Phoenix truck and trailer in a tunnel">
                     </div>
                 </div>
@@ -122,10 +128,13 @@
                     <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                         {% set phoenixTrucksOnPort = craft.imager.transformImage(alias('@assetBaseUrl/images/game-media/phoenix_trucks_on_port.png'), {
                             format: 'webp',
+                            width: 1042,
+                            height: 586,
                         }) %}
 
                         <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                              src="{{ phoenixTrucksOnPort }}"
+                             width="1042" height="586"
                              alt="Four Phoenix trucks parked on a port, with an airplane in the background.">
                     </div>
                 </div>

@@ -96,8 +96,10 @@
                     </svg>
                     {% set trackerHomeDark = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/tracker/home_dark.png'), {
                         format: 'webp',
+                        width: 578,
+                        height: 370,
                     }) %}
-                    <img class="pl-10 relative mx-auto" width="618" src="{{ trackerHomeDark }}"
+                    <img class="pl-10 relative mx-auto" width="578" height="370" src="{{ trackerHomeDark }}"
                          alt="Phoenix Tracker home page screenshot">
                 </div>
             </div>
@@ -196,8 +198,10 @@
                         </svg>
                         {% set myDriverLevel = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/base/my_driver_level.png'), {
                             format: 'webp',
+                            width: 490,
+                            height: 446,
                         }) %}
-                        <img class="relative mx-auto" width="490" src="{{ myDriverLevel }}"
+                        <img class="relative mx-auto" width="490" height="446" src="{{ myDriverLevel }}"
                              alt="My driver level screenshot">
                     </div>
                 </div>
@@ -210,7 +214,7 @@
             <div>
                 <h2 class="text-base font-semibold tracking-wider text-orange-600 uppercase">Event System</h2>
                 <p class="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                    For convoys, truckfests, and more.
+                    For convoys, truckfests and more.
                 </p>
                 <p class="mt-5 max-w-prose mx-auto text-xl text-gray-400">
                     Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc,
@@ -220,9 +224,11 @@
             <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
                 {% set eventSystemHome = craft.imager.transformImage(alias('@assetBaseUrl/images/screenshots/base/event_system_home.png'), {
                     format: 'webp',
+                    width: 1208,
+                    height: 871,
                 }) %}
                 <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 border-2 border-orange-600"
-                     src="{{ eventSystemHome }}" alt="Phoenix Event System homepage">
+                     width="1208" height="871" src="{{ eventSystemHome }}" alt="Phoenix Event System homepage">
             </div>
         </div>
     </div>
@@ -386,7 +392,8 @@
                     <div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                         <div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                             <img class="object-cover object-center rounded-3xl shadow-2xl bg-gray-900"
-                                 src="{{ alias('@assetBaseUrl/images/branding/logo.svg') }}" alt="Phoenix Logo">
+                                 src="{{ alias('@assetBaseUrl/images/branding/logo.svg') }}" width="214" height="150"
+                                 alt="Phoenix Logo">
                         </div>
                     </div>
                 </div>

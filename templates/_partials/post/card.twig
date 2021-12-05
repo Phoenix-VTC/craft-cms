@@ -26,6 +26,7 @@
     <div class="flex-shrink-0">
         {% set featuredImage = entry.featuredImage[0] ?? null %}
         <img class="h-48 w-full object-cover"
+             width="413" height="192"
              src="{{ featuredImage.getUrl(featuredImageOptions) }}"
              alt="{{ entry.title }}">
     </div>
@@ -52,6 +53,7 @@
                 {% set authorProfilePicture = entry.authorUser[0].profilePicture[0] ?? null %}
                 <span class="sr-only">{{ entry.authorUser[0].title ?? null }}</span>
                 <img class="h-10 w-10 rounded-full"
+                     width="40" height="40"
                      src="{{ authorProfilePicture.getUrl(profilePictureOptions) }}"
                      alt="{{ entry.authorUser[0].title ?? null }}'s profile picture">
             </div>

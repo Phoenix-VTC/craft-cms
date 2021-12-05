@@ -1,4 +1,4 @@
-dateModified: 1638673123
+dateModified: 1638677261
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -236,6 +236,88 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  freeform:
+    edition: pro
+    enabled: true
+    licenseKey: K1BCFVTCAOIP7QNOY149FDKH
+    schemaVersion: 3.5.1
+    settings:
+      ajaxByDefault: true
+      alertNotificationRecipients: management@phoenixvtc.com
+      autoScroll: ''
+      autoScrollToErrors: ''
+      badgeType: submissions
+      blockedEmails: ''
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: ''
+      blockedKeywords: ''
+      blockedKeywordsError: 'Invalid Entry Data'
+      clientDigestFrequency: 1
+      clientDigestRecipients: ''
+      customErrorMessage: ''
+      customHoneypotName: ''
+      defaultTemplates: true
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: ''
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      fieldDisplayOrder: name
+      fillWithGet: ''
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: ''
+      formSubmitDisable: '1'
+      formSubmitExpiration: ''
+      formTemplateDirectory: form-templates/
+      formattingTemplate: tailwind.html
+      freeformHoneypot: '1'
+      freeformHoneypotEnhancement: '1'
+      hideBannerDemo: '1'
+      hideBannerOldFreeform: false
+      minimumSubmitTime: ''
+      pluginName: ''
+      purgableSpamAgeInDays: '0'
+      purgableSubmissionAgeInDays: '0'
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: spam
+      recaptchaEnabled: '1'
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: $RECAPTCHA_SITE_KEY
+      recaptchaLazyLoad: '1'
+      recaptchaMinScore: '0.5'
+      recaptchaSecret: $RECAPTCHA_SECRET_KEY
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v3
+      rememberPageSubmitOrder: '1'
+      removeNewlines: ''
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      saveFormSessionLimit: '10'
+      saveFormTtl: '30'
+      scriptInsertLocation: footer
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: '100'
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: '180'
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: ''
+      showErrorsForBlockedKeywords: ''
+      showTutorial: false
+      spamFolderEnabled: '1'
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: ''
+      submissionThrottlingTimeFrame: m
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: '1'
   imager-x:
     edition: pro
     enabled: true

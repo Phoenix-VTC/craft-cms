@@ -1,3 +1,5 @@
+{% do craft.blitz.options.cachingEnabled(false) %}
+
 {% do eagerLoadElements(entry, [
     'faqItems',
 ]) %}
@@ -135,48 +137,11 @@
                     <!-- Contact form -->
                     <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                         <h3 class="text-lg font-medium text-gray-900">Send us a message</h3>
-                        <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-900">
-                                    Name
-                                </label>
-                                <div class="mt-1">
-                                    <input type="text" name="name" id="name" autocomplete="username"
-                                           class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-500 rounded-md">
-                                </div>
-                            </div>
-                            <div>
-                                <label for="email"
-                                       class="block text-sm font-medium text-gray-900">Email</label>
-                                <div class="mt-1">
-                                    <input type="email" name="email" id="email" autocomplete="email"
-                                           class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-500 rounded-md">
-                                </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                                <label for="subject"
-                                       class="block text-sm font-medium text-gray-900">Subject</label>
-                                <div class="mt-1">
-                                    <input type="text" name="subject" id="subject"
-                                           class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-500 rounded-md">
-                                </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                                <label for="message"
-                                       class="block text-sm font-medium text-gray-900">Message</label>
-                                <div class="mt-1">
-                                    <textarea id="message" name="message" rows="4"
-                                              class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border border-gray-500 rounded-md"
-                                              aria-describedby="message-max"></textarea>
-                                </div>
-                            </div>
-                            <div class="sm:col-span-2 sm:flex sm:justify-end">
-                                <button type="submit"
-                                        class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 sm:w-auto">
-                                    Submit
-                                </button>
-                            </div>
-                        </form>
+                        {{ craft.freeform.form('contact').render() }}
+                        <p class="prose prose-sm max-w-none">
+                            This site is protected by reCAPTCHA and the Google
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                        </p>
                     </div>
                 </div>
             </div>

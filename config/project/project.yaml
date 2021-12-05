@@ -1,4 +1,4 @@
-dateModified: 1638728996
+dateModified: 1638730229
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -36,7 +36,6 @@ meta:
     6ac6b856-c4bb-47c0-9d8a-749cbe20f95e: Requirement # Requirement
     6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
     6bccb7b8-eeac-42b5-981c-cc567a1d2314: 'Discord Invite' # Discord Invite
-    6c32e995-6ab2-43a2-8e6c-6e3083c0e81f: 'Contact Form' # Contact Form
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
     7a444e6c-effe-4031-a9b7-f24f92b4ef2b: Contact # Contact
     8b8f7d8a-ced8-41b7-8132-2ff407ac591c: 'News Index' # News Index
@@ -62,6 +61,7 @@ meta:
     480f7c1b-cf61-408a-bd58-9cf1741fb7ad: 'Instagram Username' # Instagram Username
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
     665ef879-9eb6-4341-9bde-0fa85e06f7cb: 'Blog Index' # Blog Index
+    782ec44e-152d-4eda-9c77-e07ca1fecd99: Contact # Contact
     917f5627-3dc6-423b-aa1d-d3e9d2553add: 'Member Rules' # Member Rules
     3238e03c-bb36-4104-99b4-49ba379e23ca: 'Global Fields' # Global Fields
     5307bdd9-65c1-4010-8063-0082b5513429: Position # Position

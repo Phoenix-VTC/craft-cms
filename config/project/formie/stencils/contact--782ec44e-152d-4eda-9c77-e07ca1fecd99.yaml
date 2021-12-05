@@ -1,0 +1,699 @@
+data:
+  availability: always
+  availabilityFrom: null
+  availabilitySubmissions: null
+  availabilityTo: null
+  dataRetention: months
+  dataRetentionValue: '3'
+  fileUploadsAction: retain
+  notifications:
+    -
+      attachFiles: true
+      bcc: null
+      cc: null
+      conditions: null
+      content: '[{"type":"paragraph","content":[{"type":"text","text":"A user submission has been made on the \""},{"type":"variableTag","attrs":{"label":"Form Name","value":"{formName}"}},{"type":"text","text":"\" form on "},{"type":"variableTag","attrs":{"label":"Site Name","value":"{siteName}"}},{"type":"text","text":" at "},{"type":"variableTag","attrs":{"label":"Timestamp (yyyy-mm-dd hh:mm:ss)","value":"{timestamp}"}}]},{"type":"paragraph","content":[{"type":"text","text":"Their submission details are:"}]},{"type":"paragraph","content":[{"type":"variableTag","attrs":{"label":"All Form Fields","value":"{allFields}"}}]}]'
+      enableConditions: false
+      enabled: '1'
+      formId: '409'
+      from: null
+      fromName: null
+      id: '1'
+      name: 'Admin Notification'
+      replyTo: '{field.emailAddress}'
+      replyToName: null
+      subject: 'A new submission was made on "{formName}"'
+      templateId: null
+      to: '{systemEmail}'
+      uid: 1d683917-978e-4adf-8362-4fecec4a4ded
+    -
+      attachFiles: true
+      bcc: null
+      cc: null
+      conditions: '{"sendRule":"send","conditionRule":"all","conditions":[]}'
+      content: '[{"type":"paragraph","content":[{"type":"text","text":"Thanks again for contacting us. Our team will get back to you as soon as we can."}]},{"type":"paragraph","content":[{"type":"text","text":"As a reminder, you submitted the following details at "},{"type":"variableTag","attrs":{"label":"Timestamp (yyyy-mm-dd hh:mm:ss)","value":"{timestamp}"}}]},{"type":"paragraph","content":[{"type":"variableTag","attrs":{"label":"All Form Fields","value":"{allFields}"}}]}]'
+      enableConditions: false
+      enabled: '1'
+      formId: '409'
+      from: null
+      fromName: null
+      id: '2'
+      name: 'User Notification'
+      replyTo: support@phoenixvtc.com
+      replyToName: null
+      subject: 'Thanks for contacting us!'
+      templateId: null
+      to: '{field.emailAddress}'
+      uid: 4815cfec-7247-4f59-aec1-3a9b899fcac7
+  pages:
+    -
+      id: new602103059
+      label: Start
+      rows:
+        -
+          fields:
+            -
+              columnSuffix: pcvaqsbl
+              handle: yourNamea
+              hasLabel: true
+              hasSubfields: false
+              id: new922923610
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'Your name'
+              name: 'Your name'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                firstNameCollapsed: true
+                firstNameDefaultValue: ''
+                firstNameEnabled: true
+                firstNameErrorMessage: null
+                firstNameLabel: 'First Name'
+                firstNamePlaceholder: null
+                firstNamePrePopulate: ''
+                firstNameRequired: null
+                formId: 409
+                handle: yourNamea
+                includeInEmail: true
+                inputAttributes: null
+                instructions: null
+                instructionsPosition: verbb\formie\positions\FieldsetStart
+                isNested: false
+                label: 'Your name'
+                labelPosition: ''
+                lastNameCollapsed: true
+                lastNameDefaultValue: ''
+                lastNameEnabled: true
+                lastNameErrorMessage: null
+                lastNameLabel: 'Last Name'
+                lastNamePlaceholder: null
+                lastNamePrePopulate: ''
+                lastNameRequired: null
+                limit: null
+                limitAmount: null
+                limitType: characters
+                middleNameCollapsed: true
+                middleNameDefaultValue: ''
+                middleNameEnabled: false
+                middleNameErrorMessage: null
+                middleNameLabel: 'Middle Name'
+                middleNamePlaceholder: null
+                middleNamePrePopulate: ''
+                middleNameRequired: null
+                placeholder: null
+                prePopulate: null
+                prefixCollapsed: true
+                prefixDefaultValue: ''
+                prefixEnabled: false
+                prefixErrorMessage: null
+                prefixLabel: Prefix
+                prefixPlaceholder: null
+                prefixPrePopulate: ''
+                prefixRequired: null
+                required: true
+                subfieldLabelPosition: ''
+                useMultipleFields: null
+                visibility: ''
+              subfieldOptions:
+                -
+                  handle: prefix
+                  label: Prefix
+                -
+                  handle: firstName
+                  label: 'First Name'
+                -
+                  handle: middleName
+                  label: 'Middle Name'
+                -
+                  handle: lastName
+                  label: 'Last Name'
+              supportsNested: false
+              type: verbb\formie\fields\formfields\Name
+              vid: new8382-3344
+            -
+              columnSuffix: ppypjqmd
+              handle: emailAddress
+              hasLabel: true
+              id: new1821852412
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'Your email'
+              name: 'Your email'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: emailAddress
+                includeInEmail: true
+                instructions: ''
+                instructionsPosition: ''
+                isNested: false
+                label: 'Your email'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: ''
+                prePopulate: null
+                required: true
+                uniqueValue: false
+                validateDomain: false
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\Email
+              vid: new2272-9235
+          id: new1997719039
+        -
+          fields:
+            -
+              columnSuffix: lczvjjry
+              handle: howCanWeHelpYou
+              hasLabel: true
+              id: new863458488
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: false
+              label: 'How can we help you?'
+              name: 'How can we help you?'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: howCanWeHelpYou
+                includeInEmail: true
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: 'How can we help you?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                multi: null
+                multiple: null
+                optgroups: true
+                options:
+                  -
+                    __isNew: true
+                    isDefault: true
+                    isOptgroup: false
+                    label: 'Please choose an option'
+                    value: choose
+                  -
+                    isDefault: false
+                    isOptgroup: false
+                    label: 'Invite Phoenix to an event'
+                    value: event_invitation
+                  -
+                    isDefault: false
+                    isOptgroup: false
+                    label: 'Recruitment question'
+                    value: recruitment_question
+                  -
+                    isDefault: false
+                    isOptgroup: false
+                    label: 'Report a Phoenix driver'
+                    value: report_driver
+                  -
+                    isDefault: false
+                    isOptgroup: false
+                    label: Other
+                    value: other
+                placeholder: null
+                prePopulate: null
+                required: true
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\Dropdown
+              vid: new4584-3237
+          id: new671489250
+        -
+          fields:
+            -
+              columnSuffix: txmjrlkr
+              handle: question
+              hasLabel: true
+              id: new1085736276
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: false
+              label: 'What is your question?'
+              name: 'What is your question?'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"any","conditions":[{"id":"new2735-8257","field":"{howCanWeHelpYou}","condition":"=","value":"recruitment_question"},{"id":"new5308-5350","field":"{howCanWeHelpYou}","condition":"=","value":"other"}]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: true
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: question
+                includeInEmail: true
+                inputAttributes:
+                  -
+                    label: rows
+                    value: '4'
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: 'What is your question?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                richTextButtons:
+                  - bold
+                  - italic
+                useRichText: null
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new7687-5747
+          id: new387753203
+      settings:
+        backButtonLabel: Back
+        buttonsPosition: left
+        cssClasses: null
+        enableNextButtonConditions: true
+        enablePageConditions: false
+        nextButtonConditions: '{"showRule":"show","conditionRule":"all","conditions":[{"id":"new5409-657","field":"{howCanWeHelpYou}","condition":"!=","value":"choose"}]}'
+        pageConditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+        showBackButton: false
+        submitButtonLabel: Continue
+    -
+      id: new1922768128
+      label: 'Event Invitation'
+      rows:
+        -
+          fields:
+            -
+              columnSuffix: bwyxsgvg
+              handle: eventDate
+              hasLabel: true
+              hasSubfields: false
+              id: new284332722
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'When is the event?'
+              name: 'When is the event?'
+              settings:
+                ampmLabel: AM/PM
+                ampmPlaceholder: ''
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                dateFormat: Y-m-d
+                dayLabel: Day
+                dayPlaceholder: ''
+                defaultOption: ''
+                defaultValue: ''
+                displayType: calendar
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: eventDate
+                hourLabel: Hour
+                hourPlaceholder: ''
+                includeInEmail: true
+                includeTime: true
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: 'When is the event?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                minuteLabel: Minute
+                minutePlaceholder: ''
+                monthLabel: Month
+                monthPlaceholder: ''
+                placeholder: null
+                prePopulate: null
+                required: true
+                secondLabel: Second
+                secondPlaceholder: ''
+                subfieldLabelPosition: ''
+                timeFormat: 'H:i'
+                timeLabel: ''
+                useDatePicker: true
+                visibility: ''
+                yearLabel: Year
+                yearPlaceholder: ''
+              subfieldOptions:
+                -
+                  handle: year
+                  label: Year
+                -
+                  handle: month
+                  label: Month
+                -
+                  handle: day
+                  label: Day
+                -
+                  handle: hour
+                  label: Hour
+                -
+                  handle: minute
+                  label: Minute
+                -
+                  handle: second
+                  label: Second
+                -
+                  handle: ampm
+                  label: AM/PM
+              supportsNested: false
+              type: verbb\formie\fields\formfields\Date
+              vid: new4643-8808
+          id: new1908838560
+        -
+          fields:
+            -
+              columnSuffix: kijtazxc
+              handle: truckersmpEventUrl
+              hasLabel: true
+              id: new349900745
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'What is the TruckersMP event URL?'
+              name: 'What is the TruckersMP event URL?'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: truckersmpEventUrl
+                includeInEmail: true
+                inputAttributes:
+                  -
+                    label: type
+                    value: url
+                instructions: 'e.g. https://truckersmp.com/events/6373-phoenix-anniversary'
+                instructionsPosition: ''
+                isNested: false
+                label: 'What is the TruckersMP event URL?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\SingleLineText
+              vid: new6391-931
+          id: new1716146410
+        -
+          fields:
+            -
+              columnSuffix: ejlivurf
+              handle: message
+              hasLabel: true
+              id: new2010096100
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: false
+              label: 'Is there anything else we should know?'
+              name: 'Is there anything else we should know?'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: message
+                includeInEmail: true
+                inputAttributes:
+                  -
+                    label: rows
+                    value: '4'
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: 'Is there anything else we should know?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: false
+                richTextButtons:
+                  - bold
+                  - italic
+                useRichText: false
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new3826-2881
+          id: new1655179141
+      settings:
+        backButtonLabel: Back
+        buttonsPosition: left
+        containerAttributes: null
+        cssClasses: null
+        enableNextButtonConditions: false
+        enablePageConditions: true
+        inputAttributes: null
+        pageConditions: '{"showRule":"show","conditionRule":"all","conditions":[{"id":"new2409-5760","field":"{howCanWeHelpYou}","condition":"=","value":"event_invitation"}]}'
+        showBackButton: true
+        submitButtonLabel: Submit
+    -
+      id: new1938815671
+      label: 'Driver Report'
+      rows:
+        -
+          fields:
+            -
+              columnSuffix: bkxhybiw
+              handle: driverName
+              hasLabel: true
+              id: new1644741770
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'What is the driver''s name?'
+              name: 'What is the driver''s name?'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: driverName
+                includeInEmail: true
+                instructions: 'Preferably their TruckersMP username or ID'
+                instructionsPosition: ''
+                isNested: false
+                label: 'What is the driver''s name?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\SingleLineText
+              vid: new9208-9034
+          id: new4012461
+        -
+          fields:
+            -
+              columnSuffix: merhsloc
+              handle: explanation
+              hasLabel: true
+              id: new2044739580
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: false
+              label: Explanation
+              name: Explanation
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: explanation
+                includeInEmail: true
+                inputAttributes:
+                  -
+                    label: rows
+                    value: '4'
+                instructions: 'Please tell us exactly what happened, as detailed as possible'
+                instructionsPosition: ''
+                isNested: false
+                label: Explanation
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                richTextButtons:
+                  - bold
+                  - italic
+                useRichText: null
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new6746-7517
+          id: new2017706008
+        -
+          fields:
+            -
+              columnSuffix: lmjuzazv
+              handle: proof
+              hasLabel: true
+              id: new97869386
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: false
+              label: 'Do you have any proof?'
+              name: 'Do you have any proof?'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: ''
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 409
+                handle: proof
+                includeInEmail: true
+                inputAttributes:
+                  -
+                    label: rows
+                    value: '4'
+                instructions: 'Preferably uploaded to a video or image sharing platform, since we will not download any files'
+                instructionsPosition: ''
+                isNested: false
+                label: 'Do you have any proof?'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                richTextButtons:
+                  - bold
+                  - italic
+                useRichText: null
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new9013-1351
+          id: new592498607
+      settings:
+        backButtonLabel: Back
+        buttonsPosition: left
+        containerAttributes: null
+        cssClasses: null
+        enableNextButtonConditions: false
+        enablePageConditions: true
+        inputAttributes: null
+        pageConditions: '{"showRule":"show","conditionRule":"all","conditions":[{"id":"new6205-509","field":"{howCanWeHelpYou}","condition":"=","value":"report_driver"}]}'
+        showBackButton: true
+        submitButtonLabel: Submit
+  requireUser: false
+  settings:
+    availabilityMessage: null
+    availabilityMessageDate: null
+    availabilityMessageSubmissions: null
+    collectIp: ''
+    collectUser: ''
+    dataRetention: null
+    dataRetentionValue: null
+    defaultEmailTemplateId: ''
+    defaultInstructionsPosition: verbb\formie\positions\AboveInput
+    defaultLabelPosition: verbb\formie\positions\AboveInput
+    displayCurrentPageTitle: ''
+    displayFormTitle: ''
+    displayPageProgress: ''
+    displayPageTabs: ''
+    errorMessage: '[{"type":"paragraph","content":[{"type":"text","text":"There are some errors that must be corrected before continuing."}]}]'
+    errorMessagePosition: top-form
+    fileUploadsAction: null
+    integrations:
+      honeypot:
+        enabled: true
+        showAllPages: '1'
+      recaptcha:
+        enabled: true
+        showAllPages: '1'
+    loadingIndicator: spinner
+    loadingIndicatorText: ''
+    progressPosition: end
+    redirectUrl: null
+    storeData: null
+    submissionTitleFormat: '{timestamp}'
+    submitAction: message
+    submitActionFormHide: '1'
+    submitActionMessage: '[{"type":"paragraph","content":[{"type":"text","text":"Thank you for contacting Phoenix! We will get back to you as soon as possible via e-mail."}]}]'
+    submitActionMessagePosition: top-form
+    submitActionMessageTimeout: ''
+    submitActionTab: null
+    submitActionUrl: ''
+    submitMethod: ajax
+    userDeletedAction: null
+    validationOnFocus: '1'
+    validationOnSubmit: '1'
+  userDeletedAction: retain
+defaultStatusId: 1
+handle: contact
+name: Contact
+templateId: null

@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html lang="{{ craft.app.language }}">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    {% include 'includes/favicons.twig' %}
-    <link rel="stylesheet" type="text/css" href="{{ rev('/assets/css/app.css') }}">
-    {% do view.registerJsFile(rev('/assets/js/cookie-consent.js')) %}
-    {% block scripts_top %}
-    {% endblock %}
-</head>
-<body class="flex flex-col h-screen">
-{{ craft.blitz.getTemplate('includes/cookie-banner') }}
-<div class="flex-grow bg-gray-900">
-    {% block content %}
-    {% endblock %}
-</div>
+{%- minify -%}
+    <!DOCTYPE html>
+    <html lang="{{ craft.app.language }}">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        {% include 'includes/favicons.twig' %}
+        <link rel="stylesheet" type="text/css" href="{{ rev('/assets/css/app.css') }}">
+        {% do view.registerJsFile(rev('/assets/js/cookie-consent.js')) %}
+        {% block scripts_top %}
+        {% endblock %}
+    </head>
+    <body class="flex flex-col h-screen">
+    {{ craft.blitz.getTemplate('includes/cookie-banner') }}
+    <div class="flex-grow bg-gray-900">
+        {% block content %}
+        {% endblock %}
+    </div>
 
-{% include 'includes/footer.twig' %}
+    {% include 'includes/footer.twig' %}
 
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<script src="{{ rev('/assets/js/manifest.js') }}"></script>
-<script src="{{ rev('/assets/js/app.js') }}"></script>
-<script defer src="https://kit.fontawesome.com/c7f1836c17.js" crossorigin="anonymous"></script>
-{% block scripts_bottom %}
-{% endblock %}
-</body>
-</html>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="{{ rev('/assets/js/manifest.js') }}"></script>
+    <script src="{{ rev('/assets/js/app.js') }}"></script>
+    <script defer src="https://kit.fontawesome.com/c7f1836c17.js" crossorigin="anonymous"></script>
+    {% block scripts_bottom %}
+    {% endblock %}
+    </body>
+    </html>
+{%- endminify -%}

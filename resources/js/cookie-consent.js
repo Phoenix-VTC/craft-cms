@@ -150,7 +150,7 @@ function toggleTab(event)
 function addWindowObject()
 {
     let form = document.querySelector('#elc-cookie-consent-form');
-    if (typeof form.dataset.show !== 'undefined')
+    if (form && typeof form.dataset.show !== 'undefined')
     {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', form.dataset.show);

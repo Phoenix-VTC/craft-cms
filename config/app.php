@@ -46,10 +46,5 @@ return [
             // Instantiate and return it
             return Craft::createObject($config);
         },
-        'queue' => [
-            'class' => yii\queue\redis\Queue::class,
-            'redis' => 'redis', // Redis connection component or its config
-            'channel' => 'queue', // Queue channel key
-        ],
     ],
 ];

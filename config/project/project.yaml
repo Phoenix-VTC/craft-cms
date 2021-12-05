@@ -1,4 +1,4 @@
-dateModified: 1638654493
+dateModified: 1638666505
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -114,7 +114,35 @@ plugins:
       cacheDuration: null
       cacheElementQueries: true
       cacheElements: true
-      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cachePurgerSettings:
+        __assoc__:
+          -
+            - zoneIds
+            -
+              __assoc__:
+                -
+                  - 0a9ef065-97f8-4583-b4a1-5a8e4d790203 # Phoenix
+                  -
+                    __assoc__:
+                      -
+                        - zoneId
+                        - 62311f4a569d9453da33311ad1afd523
+          -
+            - authenticationMethod
+            - apiToken
+          -
+            - apiToken
+            - $CLOUDFLARE_API_TOKEN
+          -
+            - apiKey
+            - ''
+          -
+            - email
+            - ''
+          -
+            - warmCacheDelay
+            - '0'
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\CloudflarePurger
       cacheStorageSettings:
         __assoc__:
           -
@@ -122,7 +150,7 @@ plugins:
             - '@webroot/cache/blitz'
           -
             - createGzipFiles
-            - ''
+            - '1'
           -
             - createBrotliFiles
             - ''
@@ -163,7 +191,7 @@ plugins:
       maxRetryAttempts: 10
       mutexTimeout: 1
       outputComments: true
-      queryStringCaching: '0'
+      queryStringCaching: '1'
       queueJobTtr: 300
       refreshCacheAutomaticallyForGlobals: true
       refreshCacheJobPriority: 10

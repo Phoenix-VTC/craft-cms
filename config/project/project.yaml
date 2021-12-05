@@ -1,4 +1,4 @@
-dateModified: 1638677261
+dateModified: 1638728632
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -19,6 +19,7 @@ meta:
     0a9ef065-97f8-4583-b4a1-5a8e4d790203: Phoenix # Phoenix
     0a8951d8-3817-4ac4-8ec2-57051f00238a: 'Our Fleet' # Our Fleet
     0bddbef9-ed48-48d3-8400-ae8d91152a64: News # News
+    0ed9685f-56ae-4d50-b010-18db58c0c4f5: Completed # Completed
     1b03c006-2839-4652-b534-5f6e6640bb1f: Item # Item
     1b8d609a-4d46-4b14-a53e-b08fd8c89e5a: News # News
     1d3d2f8a-80e9-4f2f-ad50-69e13aa8d67f: Question # Question
@@ -35,6 +36,7 @@ meta:
     6ac6b856-c4bb-47c0-9d8a-749cbe20f95e: Requirement # Requirement
     6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
     6bccb7b8-eeac-42b5-981c-cc567a1d2314: 'Discord Invite' # Discord Invite
+    6c32e995-6ab2-43a2-8e6c-6e3083c0e81f: 'Contact Form' # Contact Form
     6d529a0f-713a-4b29-b07b-1172eff1cd0e: 'Featured Image' # Featured Image
     7a444e6c-effe-4031-a9b7-f24f92b4ef2b: Contact # Contact
     8b8f7d8a-ced8-41b7-8132-2ff407ac591c: 'News Index' # News Index
@@ -47,6 +49,7 @@ meta:
     18e13e63-45a0-48c2-a5ae-2dfb7c27424f: Logo # Logo
     25ed42ae-bd38-4a53-a160-9fca36906d1f: 'Facebook Username' # Facebook Username
     27c27297-3638-454a-92b0-4fbf0313ef85: 'Cookie Policy' # Cookie Policy
+    34c5216f-50a5-4dac-ab17-844b6ad4ac26: New # New
     38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
     56fd09ac-063c-4650-b977-ad67708341c6: 'Our DriversHub' # Our DriversHub
     79a4a62f-a360-4b4b-acf3-4c2a7028f9cb: Text # Text
@@ -90,6 +93,7 @@ meta:
     c8389542-b6fa-4246-b78a-2fc2e1264ece: About # About
     ca553da7-62b5-4f20-a874-5d7d846cb931: Team # Team
     d81fe9c4-26c1-4f72-8c78-89894a2ae2f4: 'Post Fields' # Post Fields
+    d804ee0f-dda6-44c6-945a-43844a425f57: 'In Progress' # In Progress
     dc6e9949-7832-497f-8453-c4982c626a9c: Partners # Partners
     dcd87449-f024-484e-b16d-21f3a078647e: 'Company Socials' # Company Socials
     de5d5736-6132-4731-a93d-e5a74d0d6b36: Blog # Blog
@@ -186,6 +190,11 @@ plugins:
             -
               - uriPattern
               - /knock-knock/who-is-there
+        -
+          __assoc__:
+            -
+              - uriPattern
+              - /contact
       includedQueryStringParams:
         - '.*'
       includedUriPatterns:
@@ -236,88 +245,136 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  freeform:
-    edition: pro
+  formie:
+    edition: standard
     enabled: true
-    licenseKey: K1BCFVTCAOIP7QNOY149FDKH
-    schemaVersion: 3.5.1
+    licenseKey: HQQCLQJN56WBSMUBD076DO0B
+    schemaVersion: 1.1.11
     settings:
-      ajaxByDefault: true
-      alertNotificationRecipients: management@phoenixvtc.com
-      autoScroll: ''
-      autoScrollToErrors: ''
-      badgeType: submissions
-      blockedEmails: ''
-      blockedEmailsError: 'Invalid Email Address'
-      blockedIpAddresses: ''
-      blockedKeywords: ''
-      blockedKeywordsError: 'Invalid Entry Data'
-      clientDigestFrequency: 1
-      clientDigestRecipients: ''
-      customErrorMessage: ''
-      customHoneypotName: ''
-      defaultTemplates: true
-      defaultView: dashboard
-      digestFrequency: 1
-      digestOnlyOnProduction: false
-      digestRecipients: ''
-      displayFeed: true
-      emailTemplateDirectory: null
-      emailTemplateStorage: db
-      fieldDisplayOrder: name
-      fillWithGet: ''
-      footerScripts: false
-      formFieldShowOnlyAllowedForms: ''
-      formSubmitDisable: '1'
-      formSubmitExpiration: ''
-      formTemplateDirectory: form-templates/
-      formattingTemplate: tailwind.html
-      freeformHoneypot: '1'
-      freeformHoneypotEnhancement: '1'
-      hideBannerDemo: '1'
-      hideBannerOldFreeform: false
-      minimumSubmitTime: ''
-      pluginName: ''
-      purgableSpamAgeInDays: '0'
-      purgableSubmissionAgeInDays: '0'
-      purgableUnfinalizedAssetAgeInMinutes: 180
-      recaptchaBehaviour: spam
-      recaptchaEnabled: '1'
-      recaptchaErrorMessage: 'Please verify that you are not a robot.'
-      recaptchaKey: $RECAPTCHA_SITE_KEY
-      recaptchaLazyLoad: '1'
-      recaptchaMinScore: '0.5'
-      recaptchaSecret: $RECAPTCHA_SECRET_KEY
-      recaptchaSize: normal
-      recaptchaTheme: light
-      recaptchaType: v3
-      rememberPageSubmitOrder: '1'
-      removeNewlines: ''
-      renderFormHtmlInCpViews: true
-      salesforce_client_id: null
-      salesforce_client_secret: null
-      salesforce_password: null
-      salesforce_username: null
-      saveFormSessionLimit: '10'
-      saveFormTtl: '30'
-      scriptInsertLocation: footer
-      scriptInsertType: pointers
-      sessionContext: payload
-      sessionContextCount: '100'
-      sessionContextSecret: ''
-      sessionContextTimeToLiveMinutes: '180'
-      sessionEntryMaxCount: 50
-      sessionEntryTTL: 10800
-      showErrorsForBlockedEmails: ''
-      showErrorsForBlockedKeywords: ''
-      showTutorial: false
-      spamFolderEnabled: '1'
-      spamProtectionBehaviour: simulate_success
-      submissionThrottlingCount: ''
-      submissionThrottlingTimeFrame: m
-      twigInHtml: true
-      twigInHtmlIsolatedMode: true
-      updateSearchIndexes: '1'
+      ajaxTimeout: '10'
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - $RECAPTCHA_SECRET_KEY
+                      -
+                        - siteKey
+                        - $RECAPTCHA_SITE_KEY
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomleft
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - '0.5'
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - false
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - false
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+                      -
+                        - minTime
+                        - ''
+      defaultDateDisplayType: ''
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: submissions
+      enableCsrfValidationForGuests: true
+      enableGatsbyCompatibility: false
+      enableUnloadWarning: ''
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pluginName: Forms
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
   imager-x:
     edition: pro
     enabled: true

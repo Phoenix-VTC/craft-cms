@@ -1,4 +1,4 @@
-dateModified: 1638730229
+dateModified: 1638740002
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -476,7 +476,7 @@ system:
   name: Phoenix
   retryDuration: null
   schemaVersion: 3.7.8
-  timeZone: America/Los_Angeles
+  timeZone: Europe/London
 users:
   allowPublicRegistration: false
   defaultGroup: null

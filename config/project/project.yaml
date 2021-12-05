@@ -1,4 +1,4 @@
-dateModified: 1638666505
+dateModified: 1638667150
 email:
   fromEmail: me@diegor.nl
   fromName: Phoenix
@@ -231,6 +231,10 @@ plugins:
     enabled: true
     licenseKey: 1F7TBF6XNRHVC2VZQWSQM5IC
     schemaVersion: 3.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   plausible:
     edition: standard
     enabled: true

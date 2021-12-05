@@ -30,9 +30,11 @@
                     <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
                         {% set phoenixTrucksSteps = craft.imager.transformImage(alias('@assetBaseUrl/images/game-media/phoenix_trucks_steps.png'), {
                             format: 'webp',
+                            width: 560,
+                            height: 480,
                         }) %}
                         <img class="absolute inset-0 h-full w-full object-cover"
-                             src="{{ phoenixTrucksSteps }}"
+                             src="{{ phoenixTrucksSteps }}" width="560" height="480"
                              alt="Phoenix fleet in step formation">
                         <div class="absolute inset-0 bg-orange-500 mix-blend-multiply"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-orange-600 via-orange-600 opacity-90"></div>
@@ -55,6 +57,7 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="flex-shrink-0">
                                             <img class="h-6 w-6 rounded-full"
+                                                 width="24" height="24"
                                                  src="{{ alias('@assetBaseUrl/images/profile-pictures/diego.jpg') }}"
                                                  alt="Diego's profile picture">
                                         </div>
@@ -178,6 +181,7 @@
                                         {% set partnerLogo = partner.logo[0] ?? null %}
                                         {% if partnerLogo is not null %}
                                             <img class="object-contain"
+                                                 width="384" height="384"
                                                  src="{{ partnerLogo.getUrl(partnerLogoOptions) }}"
                                                  alt="{{ partner.title }}'s logo">
                                         {% endif %}

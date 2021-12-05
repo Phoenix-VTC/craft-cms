@@ -1,0 +1,6 @@
+color: yellow
+description: ''
+handle: inProgress
+isDefault: false
+name: 'In Progress'
+sortOrder: 99

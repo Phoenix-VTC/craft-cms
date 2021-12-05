@@ -1,5 +1,3 @@
-{% do craft.blitz.options.cachingEnabled(false) %}
-
 {% do eagerLoadElements(entry, [
     'faqItems',
 ]) %}
@@ -137,11 +135,9 @@
                     <!-- Contact form -->
                     <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                         <h3 class="text-lg font-medium text-gray-900">Send us a message</h3>
-                        {{ craft.freeform.form('contact').render() }}
-                        <p class="prose prose-sm max-w-none">
-                            This site is protected by reCAPTCHA and the Google
-                            <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-                        </p>
+                        <div class="mt-6">
+                            {{ craft.formie.renderForm('contact') }}
+                        </div>
                     </div>
                 </div>
             </div>

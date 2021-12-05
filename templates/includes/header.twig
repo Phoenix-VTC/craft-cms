@@ -41,7 +41,7 @@
                         {% if authorProfilePicture is not null %}
                             <img class="h-6 w-6 rounded-full"
                                  width="40" height="40"
-                                 src="{{ authorProfilePicture.getUrl(profilePictureOptions) }}"
+                                 src="{{ authorProfilePicture.getUrl(profilePictureOptions) ?? null }}"
                                  alt="{{ entry.authorUser[0].title ?? null }}'s profile picture">
                             <span class="ml-2">{{ entry.authorUser[0].title ?? null }}</span>
                         {% endif %}

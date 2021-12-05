@@ -1,8 +1,18 @@
-dateModified: 1638667150
+dateModified: 1638673123
 email:
-  fromEmail: me@diegor.nl
-  fromName: Phoenix
-  transportType: craft\mail\transportadapters\Sendmail
+  fromEmail: $MAIL_FROM_ADDRESS
+  fromName: $MAIL_FROM_NAME
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    encryptionMethod: $MAIL_ENCRYPTION
+    host: $MAIL_HOST
+    password: $MAIL_PASSWORD
+    port: $MAIL_PORT
+    timeout: '10'
+    useAuthentication: '1'
+    username: $MAIL_USERNAME
+  transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
     0a9bf03d-0f29-4dd6-83c6-03d236e25e91: 'Post Content' # Post Content

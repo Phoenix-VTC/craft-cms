@@ -1,0 +1,79 @@
+{% do eagerLoadElements(entry, [
+    'profilePicture',
+]) %}
+
+{% set profilePictureOptions = {
+    format: 'webp',
+    mode: 'crop',
+    width: 384,
+    height: 384,
+    quality: 90
+} %}
+
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    <div class="bg-gray-900 overflow-hidden">
+        <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                <div>
+                    <p class="text-base text-orange-600 font-semibold tracking-wide uppercase">The Phoenix team</p>
+                    <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                        Meet {{ entry.title }}
+                    </h1>
+                </div>
+            </div>
+            <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="relative lg:row-start-1 lg:col-start-2">
+                    <svg class="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20" width="404" height="384"
+                         fill="none" viewBox="0 0 404 384" aria-hidden="true">
+                        <defs>
+                            <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20"
+                                     patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-orange-700" fill="currentColor"/>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"/>
+                    </svg>
+                    <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
+                        {% set profilePicture = entry.profilePicture[0] ?? null %}
+                        <div class="w-full flex items-center justify-center flex-col">
+                            <div class="w-full px-5 -mb-10 relative">
+                                <img class="mx-auto w-40 h-40 rounded-full xl:w-96 xl:h-96"
+                                     src="{{ profilePicture.getUrl(profilePictureOptions) ?? '' }}"
+                                     width="384" height="384" alt="{{ profilePicture.title ?? '' }}">
+                            </div>
+                            <div class="pb-8 pt-14 bg-orange-600 rounded-md w-full">
+                                <h2 class="text-xl font-semibold leading-5 text-center text-white">{{ entry.title }}</h2>
+                                <h3 class="text-base leading-4 mt-2 text-center text-white">{{ entry.jobTitle }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 lg:mt-0">
+                    <div class="prose prose-lg prose-orange text-gray-400 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                        {{ entry.about }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-orange-600">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white md:text-4xl">
+                <span class="block">So, what are you waiting for?</span>
+                <span class="block text-orange-200">Break the mould and apply now!</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="{{ url('apply') }}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-orange-50">
+                        Let's do this!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

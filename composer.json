@@ -19,7 +19,7 @@
     "shornuk/craft-plausible": "1.0.5",
     "spacecatninja/imager-x": "v3.5.4",
     "verbb/expanded-singles": "1.1.4",
-    "verbb/formie": "1.4.27",
+    "verbb/formie": "1.4.28",
     "vlucas/phpdotenv": "^3.4.0",
     "yiisoft/yii2-redis": "~2.0.0"
   },

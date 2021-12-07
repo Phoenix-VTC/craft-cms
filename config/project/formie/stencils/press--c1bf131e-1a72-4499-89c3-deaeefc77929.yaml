@@ -1,0 +1,291 @@
+data:
+  availability: always
+  availabilityFrom: null
+  availabilitySubmissions: null
+  availabilityTo: null
+  dataRetention: forever
+  dataRetentionValue: ''
+  fileUploadsAction: retain
+  pages:
+    -
+      id: new1481701791
+      label: 'Page 1'
+      rows:
+        -
+          fields:
+            -
+              columnSuffix: wfjmtdfk
+              handle: name1
+              hasLabel: true
+              hasSubfields: false
+              id: new1574302725
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: Name
+              name: Name
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                firstNameCollapsed: true
+                firstNameDefaultValue: ''
+                firstNameEnabled: true
+                firstNameErrorMessage: null
+                firstNameLabel: 'First Name'
+                firstNamePlaceholder: null
+                firstNamePrePopulate: ''
+                firstNameRequired: null
+                formId: 476
+                handle: name1
+                includeInEmail: true
+                inputAttributes: null
+                instructions: null
+                instructionsPosition: verbb\formie\positions\FieldsetStart
+                isNested: false
+                label: Name
+                labelPosition: ''
+                lastNameCollapsed: true
+                lastNameDefaultValue: ''
+                lastNameEnabled: true
+                lastNameErrorMessage: null
+                lastNameLabel: 'Last Name'
+                lastNamePlaceholder: null
+                lastNamePrePopulate: ''
+                lastNameRequired: null
+                limit: null
+                limitAmount: null
+                limitType: characters
+                middleNameCollapsed: true
+                middleNameDefaultValue: ''
+                middleNameEnabled: false
+                middleNameErrorMessage: null
+                middleNameLabel: 'Middle Name'
+                middleNamePlaceholder: null
+                middleNamePrePopulate: ''
+                middleNameRequired: null
+                placeholder: null
+                prePopulate: null
+                prefixCollapsed: true
+                prefixDefaultValue: ''
+                prefixEnabled: false
+                prefixErrorMessage: null
+                prefixLabel: Prefix
+                prefixPlaceholder: null
+                prefixPrePopulate: ''
+                prefixRequired: null
+                required: true
+                subfieldLabelPosition: ''
+                useMultipleFields: false
+                visibility: ''
+              subfieldOptions:
+                -
+                  handle: prefix
+                  label: Prefix
+                -
+                  handle: firstName
+                  label: 'First Name'
+                -
+                  handle: middleName
+                  label: 'Middle Name'
+                -
+                  handle: lastName
+                  label: 'Last Name'
+              supportsNested: false
+              type: verbb\formie\fields\formfields\Name
+              vid: new6218-2526
+          id: new340689634
+        -
+          fields:
+            -
+              columnSuffix: fmyzqarg
+              handle: emailAddress
+              hasLabel: true
+              id: new2141938587
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'Email Address'
+              name: 'Email Address'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 476
+                handle: emailAddress
+                includeInEmail: true
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: 'Email Address'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                uniqueValue: false
+                validateDomain: false
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\Email
+              vid: new7103-7233
+          id: new2101459222
+        -
+          fields:
+            -
+              columnSuffix: cnryvzyu
+              handle: organizationCompany
+              hasLabel: true
+              id: new1742606136
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: true
+              label: 'Organization / Company'
+              name: 'Organization / Company'
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 476
+                handle: organizationCompany
+                includeInEmail: true
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: 'Organization / Company'
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: false
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\SingleLineText
+              vid: new2212-5450
+          id: new501325116
+        -
+          fields:
+            -
+              columnSuffix: ewarpwvq
+              handle: message
+              hasLabel: true
+              id: new1512012749
+              isCosmetic: false
+              isNested: false
+              isSynced: false
+              isTextInput: false
+              label: Message
+              name: Message
+              settings:
+                columnWidth: 12
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                cssClasses: null
+                defaultValue: null
+                enableConditions: null
+                enableContentEncryption: false
+                errorMessage: null
+                formId: 476
+                handle: message
+                includeInEmail: true
+                inputAttributes:
+                  -
+                    label: rows
+                    value: '4'
+                instructions: null
+                instructionsPosition: ''
+                isNested: false
+                label: Message
+                labelPosition: ''
+                limit: null
+                limitAmount: null
+                limitType: characters
+                placeholder: null
+                prePopulate: null
+                required: true
+                richTextButtons:
+                  - bold
+                  - italic
+                useRichText: null
+                visibility: ''
+              supportsNested: false
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new1525-3270
+          id: new1826944039
+      settings:
+        backButtonLabel: Back
+        buttonsPosition: left
+        containerAttributes: null
+        cssClasses: null
+        enableNextButtonConditions: false
+        enablePageConditions: false
+        inputAttributes: null
+        showBackButton: false
+        submitButtonLabel: Submit
+  requireUser: false
+  settings:
+    availabilityMessage: null
+    availabilityMessageDate: null
+    availabilityMessageSubmissions: null
+    collectIp: ''
+    collectUser: ''
+    dataRetention: null
+    dataRetentionValue: null
+    defaultEmailTemplateId: ''
+    defaultInstructionsPosition: verbb\formie\positions\AboveInput
+    defaultLabelPosition: verbb\formie\positions\AboveInput
+    displayCurrentPageTitle: ''
+    displayFormTitle: ''
+    displayPageProgress: ''
+    displayPageTabs: ''
+    errorMessage: '[{"type":"paragraph","content":[{"type":"text","text":"There are some errors that must be corrected before continuing."}]}]'
+    errorMessagePosition: top-form
+    fileUploadsAction: null
+    integrations:
+      honeypot:
+        enabled: true
+        showAllPages: ''
+      recaptcha:
+        enabled: true
+        showAllPages: ''
+    loadingIndicator: spinner
+    loadingIndicatorText: ''
+    progressPosition: end
+    redirectUrl: null
+    scrollToTop: '1'
+    storeData: null
+    submissionTitleFormat: '{timestamp}'
+    submitAction: message
+    submitActionFormHide: '1'
+    submitActionMessage: '[{"type":"paragraph","content":[{"type":"text","text":"Thank you for contacting Phoenix! We will get back to you as soon as possible via e-mail."}]}]'
+    submitActionMessagePosition: top-form
+    submitActionMessageTimeout: ''
+    submitActionTab: null
+    submitActionUrl: ''
+    submitMethod: ajax
+    userDeletedAction: null
+    validationOnFocus: '1'
+    validationOnSubmit: '1'
+  userDeletedAction: retain
+defaultStatusId: 1
+handle: press
+name: Press
+templateId: null

@@ -1,0 +1,93 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'Phoenix',
+        'title': 'Press Inquiries and Brand Guidelines',
+        'description': 'For inquires, please contact management@phoenixvtc.com'
+    } %}
+
+    <div class="bg-gray-900 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
+                {% if siteInformation.pressKitUrl is not null %}
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
+                            Press Kit
+                        </h2>
+                        <div class="mt-3 text-gray-400 prose prose-lg prose-orange">
+                            <p>
+                                In one quick download, get the most up-to-date Phoenix information and media.
+                            </p>
+
+                            <a href="{{ siteInformation.pressKitUrl }}" target="_blank">
+                                See our Press Kit
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <div>
+                    <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
+                        Brand Assets
+                    </h2>
+                    <div class="mt-3 text-gray-400 prose prose-lg prose-orange">
+                        <p>
+                            Need a Phoenix logo, font, or our brand guidelines? This is the place to be!
+                        </p>
+
+                        <a href="{{ url('brand') }}">
+                            See our Brand Guidelines
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 border-b-2 border-orange-600">
+        <div class="relative max-w-xl mx-auto">
+            <svg class="absolute left-full transform translate-x-1/2" width="404" height="404" fill="none"
+                 viewBox="0 0 404 404" aria-hidden="true">
+                <defs>
+                    <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+                             patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-orange-900" fill="currentColor"/>
+                    </pattern>
+                </defs>
+                <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"/>
+            </svg>
+            <svg class="absolute right-full bottom-0 transform -translate-x-1/2" width="404" height="404" fill="none"
+                 viewBox="0 0 404 404" aria-hidden="true">
+                <defs>
+                    <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+                             patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
+                    </pattern>
+                </defs>
+                <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"/>
+            </svg>
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                    Media and press enquiries
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-gray-400">
+                    If you have any press or marketing enquiries, please fill in the form below and we will get back to
+                    you as soon as possible.
+                </p>
+            </div>
+            <div class="mt-12 text-white">
+                {{ craft.formie.renderForm('press') }}
+
+                <style>
+                    :root {
+                        --fui-label-color: white;
+                        --fui-label-error-color: var(--fui-error-color);
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+{% endblock %}

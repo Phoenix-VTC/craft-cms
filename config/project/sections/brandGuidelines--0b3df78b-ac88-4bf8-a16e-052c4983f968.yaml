@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: brandGuidelines
+name: 'Brand Guidelines'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  0a9ef065-97f8-4583-b4a1-5a8e4d790203: # Phoenix
+    enabledByDefault: true
+    hasUrls: true
+    template: brand-guidelines/_entry
+    uriFormat: brand
+type: single

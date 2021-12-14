@@ -1,0 +1,55 @@
+field: 63bc3fb9-7e4a-44e1-abf8-b4a8eda1fd8c # Logos
+fieldLayouts:
+  ec27989a-f474-4296-91d2-c1a675f58fdf:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 17745760-d15d-404c-8007-88aa827c733d # Logo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  17745760-d15d-404c-8007-88aa827c733d: # Logo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: logo
+    instructions: ''
+    name: Logo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:b415578a-cf2b-4b20-8324-b17eed10e0e5' # Brand
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: logos
+name: Logos
+sortOrder: 1

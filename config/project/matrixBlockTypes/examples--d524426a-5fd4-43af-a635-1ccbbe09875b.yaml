@@ -1,0 +1,84 @@
+field: 759acc15-f189-482d-af8b-3b8eb87ddd66 # Correct Logo Usage
+fieldLayouts:
+  49483b52-13be-4db3-a6d1-a36d66dc5f46:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bdf8d171-13f4-464d-9eb6-58ef078c2118 # Example
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 706c4c9e-4c90-418d-926e-9e26151b71e4 # Example Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  706c4c9e-4c90-418d-926e-9e26151b71e4: # Example Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: exampleDescription
+    instructions: 'An explanation of what the example image shows. E.g. "Minimum logo spacing"'
+    name: 'Example Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bdf8d171-13f4-464d-9eb6-58ef078c2118: # Example
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: example
+    instructions: ''
+    name: Example
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:b415578a-cf2b-4b20-8324-b17eed10e0e5' # Brand
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: examples
+name: Examples
+sortOrder: 1

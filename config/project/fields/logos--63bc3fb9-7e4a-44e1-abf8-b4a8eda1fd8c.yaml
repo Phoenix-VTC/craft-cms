@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 9c6a2d68-bb02-44d9-8d54-d315b160f045 # Brand Guidelines
+handle: logos
+instructions: ''
+name: Logos
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_logos}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,84 @@
+field: 83f2c17a-02dc-452e-8f88-9a24d342fa4e # Incorrect Logo Usage
+fieldLayouts:
+  5997eb02-ea77-41e9-9603-7431f87beb50:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3e5b7079-f29c-42b8-8234-f7d8ce164ce6 # Example
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7c8ec1a0-39aa-4d3e-96bf-2aa905289ffa # Example Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3e5b7079-f29c-42b8-8234-f7d8ce164ce6: # Example
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: example
+    instructions: ''
+    name: Example
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:707026a3-1953-4b64-a6fb-f842bdfafde7' # News
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:b415578a-cf2b-4b20-8324-b17eed10e0e5' # Brand
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  7c8ec1a0-39aa-4d3e-96bf-2aa905289ffa: # Example Description
+    columnSuffix: nrvqhfzf
+    contentColumnType: text
+    fieldGroup: null
+    handle: exampleDescription
+    instructions: 'An explanation as to why this isn''t allowed'
+    name: 'Example Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: examples
+name: Examples
+sortOrder: 1

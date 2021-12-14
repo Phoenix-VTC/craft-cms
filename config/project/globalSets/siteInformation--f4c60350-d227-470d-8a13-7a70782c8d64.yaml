@@ -88,7 +88,16 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Press
+          -
+            fieldUid: c3004940-6ea1-4bd4-845f-9dbef81fa243 # Brand Book URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Branding & Press'
         sortOrder: 2
 handle: siteInformation
 name: 'Site Information'

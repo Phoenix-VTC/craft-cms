@@ -1,0 +1,15 @@
+columnSuffix: plwbymnc
+contentColumnType: string(255)
+fieldGroup: 3238e03c-bb36-4104-99b4-49ba379e23ca # Global Fields
+handle: brandBookUrl
+instructions: ''
+name: 'Brand Book URL'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

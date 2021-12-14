@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b58dbe19f88d45d55a8df3e26afc7ff",
+    "content-hash": "59c1ea79b8258333699b420dcbf4327e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1950,11 +1950,11 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.0",
+            "version": "7.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/868b3571a039f0ebc11ac8f344f4080babe2cb94",
-                "reference": "868b3571a039f0ebc11ac8f344f4080babe2cb94",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
                 "shasum": ""
             },
             "require": {
@@ -1963,7 +1963,7 @@
                 "guzzlehttp/psr7": "^1.8.3 || ^2.1",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
-                "symfony/deprecation-contracts": "^2.2"
+                "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
             "provide": {
                 "psr/http-client-implementation": "1.0"
@@ -2039,7 +2039,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2021-10-18T09:52:00+00:00"
+            "time": "2021-12-06T18:43:05+00:00"
         },
         {
             "name": "guzzlehttp/oauth-subscriber",
@@ -4634,6 +4634,56 @@
                 "source": "https://github.com/nystudio107/craft-typogrify/tree/v1"
             },
             "time": "2019-04-30T21:24:04+00:00"
+        },
+        {
+            "name": "olivierbon/craft-squeeze",
+            "version": "1.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/olivierbon/craft-squeeze/zipball/2a8425e8295c54583f076ffbc110aa21cd56fcee",
+                "reference": "2a8425e8295c54583f076ffbc110aa21cd56fcee",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "php": ">=7.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Squeeze",
+                "handle": "squeeze",
+                "class": "olivierbon\\squeeze\\Squeeze"
+            },
+            "autoload": {
+                "psr-4": {
+                    "olivierbon\\squeeze\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Olivier Bon",
+                    "homepage": "http://olivierbon.com",
+                    "email": "help@olivierbon.com"
+                }
+            ],
+            "description": "Zip one or multiple craft assets on the fly for frontend user to download.",
+            "keywords": [
+                "assets",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "squeeze",
+                "zip"
+            ],
+            "support": {
+                "docs": "https://github.com/olivierbon/craft-squeeze",
+                "issues": "https://github.com/olivierbon/craft-squeeze"
+            },
+            "time": "2019-05-30T09:38:31+00:00"
         },
         {
             "name": "opis/closure",

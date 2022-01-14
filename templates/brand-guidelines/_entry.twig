@@ -9,59 +9,61 @@
         'description': 'For inquires, please contact management@phoenixvtc.com'
     } %}
 
-    <div class="bg-gray-800 border-t border-gray-900 px-4" id="logos">
-        <div class="sm:py-8 lg:max-w-7xl lg:mx-auto lg:px-8">
-            <div class="px-4 flex items-center justify-between sm:px-6 lg:px-0">
-                <h2 class="text-2xl font-bold text-white">Our logos</h2>
-                <form method="post">
-                    {{ csrfInput() }}
-                    {{ actionInput('squeeze/download') }}
-                    <input type="hidden" name="archivename" value="foobar">
-                    {% for logo in entry.logos.all() %}
-                        {% set logo = logo.logo[0] %}
-                        <input type="hidden" name="files[]" value="{{ logo.id }}">
-                    {% endfor %}
-                    <button type="submit"
-                            class="hidden sm:block text-sm font-semibold text-orange-600 hover:text-orange-500">
-                        Download
-                    </button>
-                </form>
-            </div>
-
-            <div class="mt-8 relative">
-                <div class="relative w-full pb-6 -mb-6 overflow-x-auto">
-                    <ul role="list"
-                        class="grid grid-cols-1 gap-x-4 gap-y-8 sm:gap-x-6 md:grid-cols-3 xl:gap-x-8">
+    {% if entry.logos|length %}
+        <div class="bg-gray-800 border-t border-gray-900 px-4" id="logos">
+            <div class="sm:py-8 lg:max-w-7xl lg:mx-auto lg:px-8">
+                <div class="px-4 flex items-center justify-between sm:px-6 lg:px-0">
+                    <h2 class="text-2xl font-bold text-white">Our logos</h2>
+                    <form method="post">
+                        {{ csrfInput() }}
+                        {{ actionInput('squeeze/download') }}
+                        <input type="hidden" name="archivename" value="foobar">
                         {% for logo in entry.logos.all() %}
-                            <li class="relative">
-                                {% set logo = logo.logo[0] %}
-                                <div class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden">
-                                    <img src="{{ logo.getUrl() }}" alt="{{ logo.title|title }}"
-                                         class="object-contain" width="280" height="196">
-                                </div>
-                                <div class="mt-3 px-4 flex items-center justify-between sm:px-6 lg:px-0 text-lg">
-                                    <p class="font-bold text-gray-300">
-                                        {{ logo.title }}
-                                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                            {% set logo = logo.logo[0] %}
+                            <input type="hidden" name="files[]" value="{{ logo.id }}">
+                        {% endfor %}
+                        <button type="submit"
+                                class="hidden sm:block text-sm font-semibold text-orange-600 hover:text-orange-500">
+                            Download
+                        </button>
+                    </form>
+                </div>
+
+                <div class="mt-8 relative">
+                    <div class="relative w-full pb-6 -mb-6 overflow-x-auto">
+                        <ul role="list"
+                            class="grid grid-cols-1 gap-x-4 gap-y-8 sm:gap-x-6 md:grid-cols-3 xl:gap-x-8">
+                            {% for logo in entry.logos.all() %}
+                                <li class="relative">
+                                    {% set logo = logo.logo[0] %}
+                                    <div class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden">
+                                        <img src="{{ logo.getUrl() }}" alt="{{ logo.title|title }}"
+                                             class="object-contain" width="280" height="196">
+                                    </div>
+                                    <div class="mt-3 px-4 flex items-center justify-between sm:px-6 lg:px-0 text-lg">
+                                        <p class="font-bold text-gray-300">
+                                            {{ logo.title }}
+                                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
                                             {{ logo.extension|upper }}
                                         </span>
-                                    </p>
-                                    <a href="{{ logo.getUrl() }}" target="_blank"
-                                       class="text-sm font-semibold text-orange-600 hover:text-orange-500">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                             viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                                        </p>
+                                        <a href="{{ logo.getUrl() }}" target="_blank"
+                                           class="text-sm font-semibold text-orange-600 hover:text-orange-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    {% endif %}
 
     {% if entry.correctLogos|length %}
         <div class="bg-gray-800 px-4" id="correct-logo-usage">
@@ -123,6 +125,47 @@
                                         </span>
                                         <p class="font-bold text-gray-300">
                                             {{ incorrectLogo.exampleDescription }}
+                                        </p>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if entry.brandColours|length %}
+        <div class="bg-gray-800 px-4" id="correct-logo-usage">
+            <div class="sm:py-8 lg:max-w-7xl lg:mx-auto lg:px-8">
+                <div class="px-4 flex items-center justify-between sm:px-6 lg:px-0">
+                    <h2 class="text-2xl font-bold text-white">Our brand colours</h2>
+                </div>
+
+                <div class="mt-8 relative">
+                    <div class="relative w-full pb-6 -mb-6 overflow-x-auto">
+                        <ul role="list"
+                            class="grid grid-cols-1 gap-x-4 gap-y-8 sm:gap-x-6 md:grid-cols-3 xl:gap-x-8">
+                            {% for colour in entry.brandColours.all() %}
+                                <li class="relative">
+                                    {# The below code generates a text colour based on the stored colour, so it always is clearly visible. #}
+                                    {# First, get an array of gradient colours based on the stored colour, the parameter meaning how much lighter/darker the gradient colour should be (0-100) #}
+                                    {% set gradientColours = colour.colour | gradientColors(100) %}
+                                    {# If the 'light' array key isn't equal to the stored colour, that's the value that the text colour should be. Otherwise, use the dark key #}
+                                    {% if gradientColours['light'] != colour.colour %}
+                                        {% set textColour = gradientColours['light'] %}
+                                    {% else %}
+                                        {% set textColour = gradientColours['dark'] %}
+                                    {% endif %}
+                                    <div class="flex items-center justify-center aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden"
+                                         style="background-color: {{ colour.colour }}; color: {{ textColour }}">
+                                        <button class="font-semibold text-5xl"
+                                                @click="$clipboard('{{ colour.colour | upper }}')">{{ colour.colour | upper }}</button>
+                                    </div>
+                                    <div class="mt-3 px-4 flex items-center justify-between sm:px-6 lg:px-0 text-lg">
+                                        <p class="font-bold text-gray-300">
+                                            {{ colour.description }}
                                         </p>
                                     </div>
                                 </li>

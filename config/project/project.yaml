@@ -1,4 +1,4 @@
-dateModified: 1639476977
+dateModified: 1642101751
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -34,6 +34,7 @@ meta:
     4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
     5b3a42e5-ec56-4dab-8b94-d0a45f61734c: 'Profile Picture' # Profile Picture
     5e19c644-0362-4afe-9fc4-45cc5f32ee43: Description # Description
+    5ea22a6f-7c9e-481a-9d5b-082865124bf6: Colour # Colour
     5eaf4579-5ea7-41fd-9ea5-20cfcef34af0: 'News Categories' # News Categories
     6ac6b856-c4bb-47c0-9d8a-749cbe20f95e: Requirement # Requirement
     6b9b8791-54fd-4a11-acb5-43f1692e6f6b: 'Partner Fields' # Partner Fields
@@ -130,7 +131,10 @@ meta:
     f2cf9586-f81f-404f-b8e6-57b9fe1d530d: 'Post Categories' # Post Categories
     f4c60350-d227-470d-8a13-7a70782c8d64: 'Site Information' # Site Information
     f8d2fcf0-a54c-4729-854b-11f93c2ae7a8: Blog # Blog
+    f191a082-28aa-4279-8d57-3f94faa7645d: 'Brand Colours' # Brand Colours
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
+    f4479ce4-5eda-4b2a-90e7-63c5bf0b14a4: Colours # Colours
+    f2688023-802e-4b37-b142-63bff5102c1f: Description # Description
     fc020470-86c3-46e1-9bca-440954ee7bf6: Rules # Rules
     ff836a93-5b57-4613-8ff8-f2a28e86ff77: Press # Press
 plugins:
@@ -196,7 +200,7 @@ plugins:
             - concurrency
             - '3'
       cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
-      cachingEnabled: '1'
+      cachingEnabled: ''
       clearCacheAutomatically: '1'
       customSiteUris: ''
       debug: false
@@ -249,6 +253,10 @@ plugins:
     enabled: true
     licenseKey: MOW4MYYEDJW7JLMR4VWR9R5Q
     schemaVersion: 1.5.0
+  craft-color-mixer:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   eager-beaver:
     edition: standard
     enabled: true
@@ -277,7 +285,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: HQQCLQJN56WBSMUBD076DO0B
-    schemaVersion: 1.1.11
+    schemaVersion: 1.2.6
     settings:
       ajaxTimeout: '10'
       alertEmails: null

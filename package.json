@@ -5,6 +5,7 @@
     "prod": "mix --production"
   },
   "dependencies": {
+    "@ryangjchandler/alpine-clipboard": "^2.1.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/line-clamp": "^0.2.1",

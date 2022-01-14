@@ -1,8 +1,8 @@
 {
   "require": {
     "clubstudioltd/craft-asset-rev": "6.0.2",
-    "craftcms/cms": "3.7.24",
-    "craftcms/feed-me": "4.4.1",
+    "craftcms/cms": "3.7.25.1",
+    "craftcms/feed-me": "4.4.1.1",
     "craftcms/redactor": "2.8.8",
     "elleracompany/craft-cookie-consent": "1.6.1",
     "internetztube/craft-element-relations": "1.0.6",
@@ -12,7 +12,7 @@
     "nystudio107/craft-eagerbeaver": "1.0.4",
     "nystudio107/craft-minify": "1.2.10",
     "nystudio107/craft-retour": "3.1.67",
-    "nystudio107/craft-seomatic": "3.4.20",
+    "nystudio107/craft-seomatic": "3.4.21",
     "nystudio107/craft-typogrify": "1.1.18",
     "olivierbon/craft-squeeze": "1.1.2",
     "putyourlightson/craft-blitz": "3.11.0",
@@ -20,8 +20,9 @@
     "shornuk/craft-plausible": "1.0.5",
     "spacecatninja/imager-x": "v3.5.4",
     "verbb/expanded-singles": "1.1.4",
-    "verbb/formie": "1.4.28",
+    "verbb/formie": "1.5.2",
     "vlucas/phpdotenv": "^3.4.0",
+    "whoisjuan/craft-color-mixer": "1.0.9",
     "yiisoft/yii2-redis": "~2.0.0"
   },
   "require-dev": {

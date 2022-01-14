@@ -1,0 +1,63 @@
+field: f191a082-28aa-4279-8d57-3f94faa7645d # Brand Colours
+fieldLayouts:
+  76a26195-77b2-47fa-bcf5-656be24907cc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f2688023-802e-4b37-b142-63bff5102c1f # Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5ea22a6f-7c9e-481a-9d5b-082865124bf6 # Colour
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5ea22a6f-7c9e-481a-9d5b-082865124bf6: # Colour
+    columnSuffix: null
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: colour
+    instructions: ''
+    name: Colour
+    searchable: false
+    settings:
+      defaultColor: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  f2688023-802e-4b37-b142-63bff5102c1f: # Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: 'E.g. "Primary colour"'
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: colours
+name: Colours
+sortOrder: 1

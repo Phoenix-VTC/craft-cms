@@ -1,4 +1,4 @@
-dateModified: 1642101751
+dateModified: 1642158695
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -17,7 +17,6 @@ meta:
   __names__:
     0a9bf03d-0f29-4dd6-83c6-03d236e25e91: 'Post Content' # Post Content
     0a9ef065-97f8-4583-b4a1-5a8e4d790203: Phoenix # Phoenix
-    0a8951d8-3817-4ac4-8ec2-57051f00238a: 'Our Fleet' # Our Fleet
     0b3df78b-ac88-4bf8-a16e-052c4983f968: 'Brand Guidelines' # Brand Guidelines
     0bddbef9-ed48-48d3-8400-ae8d91152a64: News # News
     0ed9685f-56ae-4d50-b010-18db58c0c4f5: Completed # Completed
@@ -100,7 +99,6 @@ meta:
     b6aabefd-345d-4c38-a13a-caf0636d73ca: 'Team Positions' # Team Positions
     b6223c95-f24b-47d0-85a1-21d91382e1bf: Press # Press
     b415578a-cf2b-4b20-8324-b17eed10e0e5: Brand # Brand
-    ba185bf2-d6ec-4a15-898e-f2bb827f9e67: 'Our Fleet' # Our Fleet
     bdf8d171-13f4-464d-9eb6-58ef078c2118: Example # Example
     bee2519e-ac80-4425-a6b0-8cdbb8e094d4: 'Team Index' # Team Index
     bfb6dafa-b0e3-4838-a9d9-b73b1b958087: 'Terms and Conditions' # Terms and Conditions

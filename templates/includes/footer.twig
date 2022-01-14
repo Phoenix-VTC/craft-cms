@@ -4,7 +4,8 @@
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-8 xl:col-span-1">
                 <a href="{{ siteUrl }}">
-                    <img class="h-12" src="{{ alias('@assetBaseUrl/images/branding/logo.svg') }}" width="68" height="48" alt="Phoenix Logo">
+                    <img class="h-12" src="{{ alias('@assetBaseUrl/images/branding/logo.svg') }}" width="68" height="48"
+                         alt="Phoenix Logo">
                 </a>
                 <p class="text-gray-300 text-base">
                     We believe in forward thinking, and strive to put our members first!
@@ -96,12 +97,12 @@
                                 </a>
                             </li>
 
-                            <li>
-                                <a href="{{ url('about-us/our-fleet') }}"
-                                   class="text-base text-gray-300 hover:text-white">
-                                    Our Fleet
-                                </a>
-                            </li>
+                            {#                            <li> #}
+                            {#                                <a href="{{ url('about-us/our-fleet') }}" #}
+                            {#                                   class="text-base text-gray-300 hover:text-white"> #}
+                            {#                                    Our Fleet #}
+                            {#                                </a> #}
+                            {#                            </li> #}
                         </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
@@ -124,7 +125,8 @@
                             </li>
 
                             <li>
-                                <a href="{{ url('contact') }}?questionType=event_invitation" class="text-base text-gray-300 hover:text-white">
+                                <a href="{{ url('contact') }}?questionType=event_invitation"
+                                   class="text-base text-gray-300 hover:text-white">
                                     Event Invitations
                                 </a>
                             </li>

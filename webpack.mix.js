@@ -5,9 +5,10 @@ require("laravel-mix-versionhash");
 
 mix.disableSuccessNotifications();
 
-mix.js(["resources/js/app.js"], "web/assets/js/app.js")
+mix.js("resources/js/app.js", "web/assets/js/app.js")
+    .setPublicPath("web")
     .js("resources/js/cookie-consent.js", "web/assets/js/cookie-consent.js")
-    .extract();
+    .sourceMaps();
 
 mix
     .sass("resources/sass/app.scss", "assets/css/app.css")
@@ -31,3 +32,6 @@ if (!mix.inProduction()) {
 if (mix.inProduction()) {
     mix.versionHash();
 }
+
+// Disable success notifications
+mix.disableSuccessNotifications();

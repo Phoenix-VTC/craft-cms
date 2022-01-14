@@ -9,6 +9,7 @@
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
+    "alpinejs": "^3.8.0",
     "autoprefixer": "^10.3.3",
     "axios": "^0.21.1",
     "browser-sync": "^2.27.5",

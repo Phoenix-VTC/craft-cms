@@ -28,6 +28,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: c8389542-b6fa-4246-b78a-2fc2e1264ece # About
+            instructions: 'A short, one/two sentence description that describes what the position does'
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 4cce5b3f-ef9a-4e49-91bc-9bb461e25220 # Relations
             instructions: ''
             label: 'Members with position'

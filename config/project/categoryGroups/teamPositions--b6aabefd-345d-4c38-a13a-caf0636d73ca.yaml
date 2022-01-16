@@ -37,7 +37,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4cce5b3f-ef9a-4e49-91bc-9bb461e25220 # Relations
+            fieldUid: 4cce5b3f-ef9a-4e49-91bc-9bb461e25220
             instructions: ''
             label: 'Members with position'
             required: ''

@@ -1,4 +1,4 @@
-dateModified: 1642297215
+dateModified: 1642315295
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -30,7 +30,6 @@ meta:
     03a56dd8-a050-4970-8941-d3a2e37639f8: Careers # Careers
     3e5b7079-f29c-42b8-8234-f7d8ce164ce6: Example # Example
     4c882c79-0491-44ed-8f8f-73419177aad3: Home # Home
-    4cce5b3f-ef9a-4e49-91bc-9bb461e25220: Relations # Relations
     4e5fac71-6919-4b9b-a0e6-96fd59b4bd16: 'Public Schema' # Public Schema
     5b3a42e5-ec56-4dab-8b94-d0a45f61734c: 'Profile Picture' # Profile Picture
     5e19c644-0362-4afe-9fc4-45cc5f32ee43: Description # Description
@@ -274,11 +273,6 @@ plugins:
   eager-beaver:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
-  element-relations:
-    edition: standard
-    enabled: true
-    licenseKey: J4MMSAA5V8DHJ6BHMY6VDUM2
     schemaVersion: 1.0.0
   expanded-singles:
     edition: standard

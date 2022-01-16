@@ -1,4 +1,4 @@
-dateModified: 1642159610
+dateModified: 1642297215
 email:
   fromEmail: $MAIL_FROM_ADDRESS
   fromName: $MAIL_FROM_NAME
@@ -27,6 +27,7 @@ meta:
     1ee3f36f-8538-47a1-8ed5-6f0e6986693f: 'FAQ Items' # FAQ Items
     2c8cdca8-a909-4cc0-8aaf-bab454f00013: 'Recruitment FAQ' # Recruitment FAQ
     2c156369-c025-4b90-86b7-878137ad5113: Requirements # Requirements
+    03a56dd8-a050-4970-8941-d3a2e37639f8: Careers # Careers
     3e5b7079-f29c-42b8-8234-f7d8ce164ce6: Example # Example
     4c882c79-0491-44ed-8f8f-73419177aad3: Home # Home
     4cce5b3f-ef9a-4e49-91bc-9bb461e25220: Relations # Relations
@@ -44,24 +45,30 @@ meta:
     8b8f7d8a-ced8-41b7-8132-2ff407ac591c: 'News Index' # News Index
     8ed20a17-9666-4d48-acbb-87e39d5f2831: Team # Team
     9a2d8217-0087-49b4-b760-b4dad07a1c57: 'About Us' # About Us
+    9b77cf51-b441-4259-afbb-a8152e52e04a: 'Careers Index' # Careers Index
     9c6a2d68-bb02-44d9-8d54-d315b160f045: 'Brand Guidelines' # Brand Guidelines
     9d57e550-7644-47f6-a197-47ddaa230d1f: Home # Home
     9e4e2aa5-2938-472c-9ef6-c2d3d67203a1: Answer # Answer
     11f1310a-4e06-4290-8371-2a05672b9151: 'About Us' # About Us
     15ea378a-5d78-40c9-9f13-caec26f279e1: 'Privacy Policy' # Privacy Policy
     18e13e63-45a0-48c2-a5ae-2dfb7c27424f: Logo # Logo
+    22af219c-17b5-4cc2-babf-45ecb8f1799e: Requirement # Requirement
     25ed42ae-bd38-4a53-a160-9fca36906d1f: 'Facebook Username' # Facebook Username
     27c27297-3638-454a-92b0-4fbf0313ef85: 'Cookie Policy' # Cookie Policy
     34c5216f-50a5-4dac-ab17-844b6ad4ac26: New # New
     38bc5335-6961-4b32-b011-c2925eb5486f: Common # Common
+    42e9f4ef-4fdd-413b-ad9c-b753e620481f: Responsibility # Responsibility
+    50d301ba-be10-4c08-9775-22b0e221ef5c: Information # Information
     56fd09ac-063c-4650-b977-ad67708341c6: 'Our DriversHub' # Our DriversHub
     63bc3fb9-7e4a-44e1-abf8-b4a8eda1fd8c: Logos # Logos
     67db21f0-d180-441b-b8ca-aa6a11c9b00e: Examples # Examples
+    68d83b64-a88b-4296-891d-5292a362e035: Careers # Careers
     79a4a62f-a360-4b4b-acf3-4c2a7028f9cb: Text # Text
     79b7c25d-1c23-4710-9989-91bd5bfee85a: 'Team Index' # Team Index
     81b6781d-4224-4093-a577-480f15545861: Slogan # Slogan
     81bec3ca-8e95-4530-b7a6-75bc23a56604: Contact # Contact
     83f2c17a-02dc-452e-8f88-9a24d342fa4e: 'Incorrect Logo Usage' # Incorrect Logo Usage
+    96bdc149-2600-44b5-858a-2af4809c1602: 'Career Position' # Career Position
     98c2bfe5-6e45-4f37-8c99-e319f1a88af1: Logos # Logos
     231de198-3683-4015-b299-f40a845715bd: Partners # Partners
     402e0153-4328-4d36-89a4-f12deb063b01: 'SEO Settings' # SEO Settings
@@ -69,8 +76,10 @@ meta:
     480f7c1b-cf61-408a-bd58-9cf1741fb7ad: 'Instagram Username' # Instagram Username
     611a4f85-a52f-4a80-8c72-a08f043b4268: Summary # Summary
     641a4c89-68e5-4d42-a403-94c4e5607f4c: 'Press Kit URL' # Press Kit URL
+    643ef5bf-cc86-4678-a02d-f1e08646d8f5: Careers # Careers
     665ef879-9eb6-4341-9bde-0fa85e06f7cb: 'Blog Index' # Blog Index
     706c4c9e-4c90-418d-926e-9e26151b71e4: 'Example Description' # Example Description
+    744aa3e9-c706-4bc0-87b1-3c6243a7c3a8: 'Application Form' # Application Form
     759acc15-f189-482d-af8b-3b8eb87ddd66: 'Correct Logo Usage' # Correct Logo Usage
     782ec44e-152d-4eda-9c77-e07ca1fecd99: Contact # Contact
     833dd4dc-ac2c-4413-b32f-76f0b12d02c4: 'Brand Guidelines' # Brand Guidelines
@@ -85,6 +94,7 @@ meta:
     47331c11-260a-426b-9818-ae9c5211bacc: Press # Press
     121970e2-9425-45cd-a8f1-7f026e67839e: Socials # Socials
     707026a3-1953-4b64-a6fb-f842bdfafde7: News # News
+    855765ce-61a1-412d-a223-8fbb56315290: 'Careers Index' # Careers Index
     17745760-d15d-404c-8007-88aa827c733d: Logo # Logo
     20481930-71dd-40a8-95d9-706aebeb215a: 'Twitch Username' # Twitch Username
     33577458-f61e-48ff-975b-66e9b15f8fe1: 'Terms and Conditions' # Terms and Conditions
@@ -130,6 +140,7 @@ meta:
     f4c60350-d227-470d-8a13-7a70782c8d64: 'Site Information' # Site Information
     f8d2fcf0-a54c-4729-854b-11f93c2ae7a8: Blog # Blog
     f191a082-28aa-4279-8d57-3f94faa7645d: 'Brand Colours' # Brand Colours
+    f564dcc3-bd5e-4c0f-9ed0-bc8d97f6e917: Default # Default
     f769ee18-1b99-4a77-ac43-171d9805aa76: 'Site Description' # Site Description
     f4479ce4-5eda-4b2a-90e7-63c5bf0b14a4: Colours # Colours
     f2688023-802e-4b37-b142-63bff5102c1f: Description # Description
@@ -198,7 +209,7 @@ plugins:
             - concurrency
             - '3'
       cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
-      cachingEnabled: ''
+      cachingEnabled: '1'
       clearCacheAutomatically: '1'
       customSiteUris: ''
       debug: false
@@ -218,6 +229,11 @@ plugins:
             -
               - uriPattern
               - /press
+        3:
+          __assoc__:
+            -
+              - uriPattern
+              - '/careers/*'
       includedQueryStringParams:
         - '.*'
       includedUriPatterns:

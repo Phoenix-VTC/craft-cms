@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 68d83b64-a88b-4296-891d-5292a362e035 # Careers
+handle: careerPosition
+instructions: ''
+name: 'Career Position'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: 'Add a position'
+  showSiteMenu: false
+  source: 'group:b6aabefd-345d-4c38-a13a-caf0636d73ca' # Team Positions
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

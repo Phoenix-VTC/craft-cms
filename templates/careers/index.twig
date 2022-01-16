@@ -1,0 +1,42 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {% include '_partials/navbar/navbar.twig' %}
+
+    {% include 'includes/header.twig' with {
+        'tag': 'Team Openings',
+        'title': 'Join the Phoenix Team',
+        'description': 'Have you always wanted to join the Phoenix Team? One of our open positions might spark your interest!'
+    } %}
+
+    <div class="relative bg-orange-700 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div class="absolute inset-0">
+            <div class="bg-gray-900 h-1/3 sm:h-2/3"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto">
+            <div class="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                {% set entries = craft.entries()
+                    .section('careers')
+                    .all() %}
+
+                {% for entry in entries %}
+                    {% include '_partials/careers/card.twig' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-orange-700" id="cta">
+        <div class="max-w-2xl mx-auto text-center pb-28 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Are you not a Phoenix Member yet?</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-gray-50">Applying only takes 10 minutes! And if you choose to join us,
+                you're sure to enjoy your time here greatly.</p>
+            <a href="{{ url('apply') }}"
+               class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-orange-50 sm:w-auto">
+                Apply now
+            </a>
+        </div>
+    </div>
+{% endblock %}

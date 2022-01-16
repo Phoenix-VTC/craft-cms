@@ -1,0 +1,78 @@
+fieldLayouts:
+  6feb3129-5567-4b05-ad89-91165ecf2d8b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: __blank__
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6d529a0f-713a-4b29-b07b-1172eff1cd0e # Featured Image
+            instructions: 'Will be shown on the career overview page & embeds'
+            label: 'Featured Image'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 96bdc149-2600-44b5-858a-2af4809c1602 # Career Position
+            instructions: 'This will be used for the career opening **title** and **position description**.'
+            label: Position
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            fieldUid: 50d301ba-be10-4c08-9775-22b0e221ef5c # Information
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            fieldUid: 744aa3e9-c706-4bc0-87b1-3c6243a7c3a8 # Application Form
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: default
+hasTitleField: false
+name: Default
+section: 03a56dd8-a050-4970-8941-d3a2e37639f8 # Careers
+sortOrder: 1
+titleFormat: '{careerPosition.one()}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

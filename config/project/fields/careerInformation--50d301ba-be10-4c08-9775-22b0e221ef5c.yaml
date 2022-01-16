@@ -1,0 +1,29 @@
+columnSuffix: gtvrjjtj
+contentColumnType: text
+fieldGroup: 68d83b64-a88b-4296-891d-5292a362e035 # Careers
+handle: careerInformation
+instructions: 'Things like the application **description**, **responsibilities**, **requirements** etc should go here.'
+name: Information
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - 643ef5bf-cc86-4678-a02d-f1e08646d8f5 # Careers
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

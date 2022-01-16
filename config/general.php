@@ -48,4 +48,6 @@ return [
 
     // Set the CSRF token name
     'csrfTokenName' => 'PHXCMS_CSRF_TOKEN',
+
+    'pageTrigger' => 'page/'
 ];

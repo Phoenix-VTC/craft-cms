@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5680e3ad6b2599eac5e4808ed14652de",
+    "content-hash": "3bf4a6ea28bdf7aff14f6486b1a9effd",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -723,11 +723,6 @@
         {
             "name": "cpliakas/git-wrapper",
             "version": "v3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cpliakas/git-wrapper.git",
-                "reference": "da6bb720a2041ee82aa990f1b11b3106c06598f0"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cpliakas/git-wrapper/zipball/da6bb720a2041ee82aa990f1b11b3106c06598f0",
@@ -740,19 +735,6 @@
                 "symfony/event-dispatcher": "^4.4|^5.0",
                 "symfony/process": "^4.4|^5.0"
             },
-            "require-dev": {
-                "migrify/config-transformer": "^0.3.48",
-                "phpstan/phpstan": "^0.12.18",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpunit/phpunit": "^8.5|^9.4",
-                "psr/log": "^1.1",
-                "rector/rector": "^0.8.10",
-                "symfony/filesystem": "^4.4|^5.0",
-                "symplify/changelog-linker": "^8.3",
-                "symplify/easy-coding-standard": "^8.3",
-                "symplify/phpstan-extensions": "^8.3",
-                "tracy/tracy": "^2.7"
-            },
             "suggest": {
                 "monolog/monolog": "Enables logging of executed git commands"
             },
@@ -762,7 +744,6 @@
                     "GitWrapper\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -782,11 +763,6 @@
                 "git",
                 "git wrapper"
             ],
-            "support": {
-                "issues": "https://github.com/cpliakas/git-wrapper/issues",
-                "source": "https://github.com/cpliakas/git-wrapper/tree/v3.0.3"
-            },
-            "abandoned": "symplify/git-wrapper",
             "time": "2020-10-04T20:38:52+00:00"
         },
         {
@@ -4131,11 +4107,6 @@
         {
             "name": "nette/utils",
             "version": "v3.2.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/utils.git",
-                "reference": "2f261e55bd6a12057442045bf2c249806abc1d02"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/utils/zipball/2f261e55bd6a12057442045bf2c249806abc1d02",
@@ -4147,11 +4118,6 @@
             },
             "conflict": {
                 "nette/di": "<3.0.6"
-            },
-            "require-dev": {
-                "nette/tester": "~2.0",
-                "phpstan/phpstan": "^1.0",
-                "tracy/tracy": "^2.3"
             },
             "suggest": {
                 "ext-gd": "to use Image",
@@ -4173,7 +4139,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0-only",
@@ -4207,10 +4172,6 @@
                 "utility",
                 "validation"
             ],
-            "support": {
-                "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.6"
-            },
             "time": "2021-11-24T15:47:23+00:00"
         },
         {
@@ -5391,16 +5352,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "3.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-blitz.git",
-                "reference": "53888104870bbcd10abcb6a5288e1695c4ce12fd"
-            },
+            "version": "3.11.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/53888104870bbcd10abcb6a5288e1695c4ce12fd",
-                "reference": "53888104870bbcd10abcb6a5288e1695c4ce12fd",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/8509f9baa40f1b3cbf8a00767fac4d87ec67368c",
+                "reference": "8509f9baa40f1b3cbf8a00767fac4d87ec67368c",
                 "shasum": ""
             },
             "require": {
@@ -5408,12 +5364,6 @@
                 "craftcms/cms": "^3.2.1",
                 "ext-json": "*",
                 "putyourlightson/craft-log-to-file": "^1.2.3"
-            },
-            "require-dev": {
-                "codeception/codeception": "^4.0.0",
-                "codeception/module-asserts": "^1.0.0",
-                "codeception/module-yii2": "^1.0.0",
-                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -5433,17 +5383,16 @@
                     "putyourlightson\\blitztests\\fixtures\\": "tests/fixtures/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
             "description": "Intelligent static page caching for creating lightning-fast sites.",
             "homepage": "https://putyourlightson.com/plugins/blitz",
             "keywords": [
-                "Craft",
                 "cache",
                 "caching",
                 "cms",
+                "craft",
                 "craftcms",
                 "performance",
                 "plugin",
@@ -5451,10 +5400,10 @@
             ],
             "support": {
                 "docs": "https://putyourlightson.com/plugins/blitz",
-                "issues": "https://github.com/putyourlightson/craft-blitz/issues",
-                "source": "https://github.com/putyourlightson/craft-blitz"
+                "source": "https://github.com/putyourlightson/craft-blitz",
+                "issues": "https://github.com/putyourlightson/craft-blitz/issues"
             },
-            "time": "2021-11-15T10:50:34+00:00"
+            "time": "2021-12-21T11:37:15+00:00"
         },
         {
             "name": "putyourlightson/craft-blitz-recommendations",
@@ -5503,11 +5452,6 @@
         {
             "name": "putyourlightson/craft-log-to-file",
             "version": "1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-log-to-file.git",
-                "reference": "c03aec429710e9b3d54392cd75881090ae1c6457"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/putyourlightson/craft-log-to-file/zipball/c03aec429710e9b3d54392cd75881090ae1c6457",
@@ -5531,7 +5475,6 @@
                     "putyourlightson\\logtofile\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5545,11 +5488,6 @@
                 "log",
                 "plugin"
             ],
-            "support": {
-                "docs": "https://github.com/putyourlightson/craft-log-to-file",
-                "issues": "https://github.com/putyourlightson/craft-log-to-file/issues",
-                "source": "https://github.com/putyourlightson/craft-log-to-file"
-            },
             "time": "2020-08-24T09:13:24+00:00"
         },
         {
@@ -6360,11 +6298,6 @@
         {
             "name": "symfony/event-dispatcher",
             "version": "v5.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "27d39ae126352b9fa3be5e196ccf4617897be3eb"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/27d39ae126352b9fa3be5e196ccf4617897be3eb",
@@ -6384,16 +6317,6 @@
                 "psr/event-dispatcher-implementation": "1.0",
                 "symfony/event-dispatcher-implementation": "2.0"
             },
-            "require-dev": {
-                "psr/log": "^1|^2|^3",
-                "symfony/config": "^4.4|^5.0|^6.0",
-                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
-                "symfony/error-handler": "^4.4|^5.0|^6.0",
-                "symfony/expression-language": "^4.4|^5.0|^6.0",
-                "symfony/http-foundation": "^4.4|^5.0|^6.0",
-                "symfony/service-contracts": "^1.1|^2|^3",
-                "symfony/stopwatch": "^4.4|^5.0|^6.0"
-            },
             "suggest": {
                 "symfony/dependency-injection": "",
                 "symfony/http-kernel": ""
@@ -6407,7 +6330,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6423,23 +6345,6 @@
             ],
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v5.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2021-11-23T10:19:22+00:00"
         },
         {

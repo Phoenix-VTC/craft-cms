@@ -1,0 +1,36 @@
+{% if pageInfo.totalPages > 1 %}
+    <div class="mt-12">
+        <div class="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl">
+            <nav class="border-t border-white px-4 flex items-center justify-between sm:px-0">
+                <div class="-mt-px w-0 flex-1 flex">
+                    {% if pageInfo.prevUrl %}
+                        {% embed '_partials/pagination/textButton.twig' with {'direction': 'previous', 'href': pageInfo.prevUrl} %}
+                        {% endembed %}
+                    {% endif %}
+                </div>
+                <div class="hidden md:-mt-px md:flex">
+                    {% for page, url in pageInfo.getPrevUrls(5) %}
+                        {% embed '_partials/pagination/numberButton.twig' %}
+                        {% endembed %}
+                    {% endfor %}
+
+                    <span class="border-white text-white border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+                          aria-current="page">
+                    {{ pageInfo.currentPage }}
+                </span>
+
+                    {% for page, url in pageInfo.getNextUrls(5) %}
+                        {% embed '_partials/pagination/numberButton.twig' %}
+                        {% endembed %}
+                    {% endfor %}
+                </div>
+                <div class="-mt-px w-0 flex-1 flex justify-end">
+                    {% if pageInfo.nextUrl %}
+                        {% embed '_partials/pagination/textButton.twig' with {'direction': 'next', 'href': pageInfo.nextUrl} %}
+                        {% endembed %}
+                    {% endif %}
+                </div>
+            </nav>
+        </div>
+    </div>
+{% endif %}

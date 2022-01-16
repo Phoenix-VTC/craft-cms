@@ -15,14 +15,17 @@
         </div>
         <div class="relative max-w-7xl mx-auto">
             <div class="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-                {% set entries = craft.entries()
+                {% paginate
+                    craft.entries
                     .section('news')
-                    .all() %}
+                    .limit(6) as pageInfo, newsEntries %}
 
-                {% for entry in entries %}
+                {% for entry in newsEntries %}
                     {% include '_partials/post/card.twig' %}
                 {% endfor %}
             </div>
+
+            {% embed '_partials/pagination/paginator.twig' %}{% endembed %}
         </div>
     </div>
 
@@ -34,13 +37,13 @@
                 </h2>
             </div>
             <div class="mt-8 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-                {% set entries = craft.entries()
+                {% set blogEntries = craft.entries()
                     .section('blog')
                     .orderBy('popular')
                     .limit(3)
                     .all() %}
 
-                {% for entry in entries %}
+                {% for entry in blogEntries %}
                     {% include '_partials/post/card.twig' %}
                 {% endfor %}
             </div>

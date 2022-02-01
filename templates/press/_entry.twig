@@ -10,8 +10,8 @@
     } %}
 
     <div class="bg-gray-900 border-b border-gray-800">
-        <div class="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-3 md:gap-8">
                 {% if siteInformation.pressKitUrl is not null %}
                     <div>
                         <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
@@ -19,12 +19,32 @@
                         </h2>
                         <div class="mt-3 text-gray-400 prose prose-lg prose-orange">
                             <p>
-                                In one quick download, get the most up-to-date Phoenix information and media.
+                                In one quick download, get the most up-to-date Phoenix information, media and brand
+                                resources.
                             </p>
 
                             <a href="{{ siteInformation.pressKitUrl }}" target="_blank"
                                rel="noopener noreferrer nofollow">
-                                See our Press Kit
+                                Download our Press Kit
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if siteInformation.brandBookUrl is not null %}
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
+                            Brand Book
+                        </h2>
+                        <div class="mt-3 text-gray-400 prose prose-lg prose-orange">
+                            <p>
+                                Our brand book is a great resource that provides you with all our logo and branding
+                                information.
+                            </p>
+
+                            <a href="{{ siteInformation.brandBookUrl }}" target="_blank"
+                               rel="noopener noreferrer nofollow">
+                                Open our Brand Book
                             </a>
                         </div>
                     </div>
@@ -32,7 +52,7 @@
 
                 <div>
                     <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
-                        Brand Assets
+                        Brand Guidelines
                     </h2>
                     <div class="mt-3 text-gray-400 prose prose-lg prose-orange">
                         <p>
@@ -40,7 +60,7 @@
                         </p>
 
                         <a href="{{ url('brand') }}">
-                            See our Brand Guidelines
+                            View our Brand Guidelines
                         </a>
                     </div>
                 </div>
